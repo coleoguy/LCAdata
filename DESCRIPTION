@@ -1,0 +1,10 @@
+Package: LCAdata
+Type: Package
+Title: Collection of Data from LCA Manuscripts
+Version: 0.1
+Date: 2015-11-20
+Author: Heath Blackmon
+Maintainer: Heath Blackmon <coleoguy@gmail.com>
+Description: Provides easy access to over 80 line cross analysis studies in a format ready for analysis with SAGA
+License: GPL (>= 2)
+Suggests: SAGA
