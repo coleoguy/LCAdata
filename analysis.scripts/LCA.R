@@ -49,7 +49,7 @@ plot(res, col.ramp=viridis(100))
 #####
 
 #skin reflectance 
-skin.data <- read.csv("skin_data.csv")
+skin.data <- read.csv("../data/Skin Reflectance/skin_data.csv")
 res <- LCA(data = skin.data,
            SCS="XY", parental = "calc", env=TRUE, 
            max.pars = 6, ret.all=F)
@@ -59,17 +59,17 @@ plot(res, col.ramp=viridis(100))
 #####
 
 #seedweight of lima beans
-seedweight.data <- read.csv("seedweight.data.csv")
+seedweight.data <- read.csv("../data/Seed weight/seedweight.data.csv")
 res <- LCA(data= seedweight.data,
-               SCS="XY", parental = "calc", env=TRUE,
-               max.pars = 5, ret.all=F)
+               SCS="XY", parental = "calc", 
+               max.pars = 5, ret.all=F, env=T)
 plot(res, col.ramp=viridis(100))
 
 #####
 
 #time from seed to silking in zea mays
-silking.data <- read.csv("silking_data.csv")
+silking.data <- read.csv("../data/Seed to silking/silking_data.csv")
 res <- LCA(data=silking.data,
-           SCS="XY", parental="calc", env=TRUE, 
+           SCS="XY", parental="calc", env=T, 
            max.pars = 5, ret.all=F)
 plot(res, col.ramp=viridis(100))
