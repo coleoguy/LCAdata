@@ -73,3 +73,12 @@ res <- LCA(data=silking.data,
            SCS="XY", parental="calc", env=T, 
            max.pars = 5, ret.all=F)
 plot(res, col.ramp=viridis(100))
+
+#####
+
+#time from seed to shedding pollen in zea mays 
+pollen.data <- read.csv("../data/Shedding Pollen/pollen_data.csv")
+res <- LCA(data=pollen.data, 
+           SCS="XY", parental="calc", env=T, 
+           max.pars=5, ret.all=F)
+plot(res, col.ramp=viridis(100))
