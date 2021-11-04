@@ -1,11 +1,10 @@
 library(SAGA2)
 ########################## Untransformed Data #######################
+###SAMPLE CODE FOR LCA###
 beetle.dat <- read.csv("../data/saga.single.val.data.csv")
   res <- LCA(data=beetle.dat,
                    SCS="XY",parental = "calc",env=FALSE,
                    max.pars = 7, ret.all=F)
-
-
 library(viridis)
 plot(res, col.ramp = viridis(100))
 
@@ -15,7 +14,10 @@ barplot(res$best.models[[1]]$coefficients[3:4],
 #VisModelSpace(res)
 plot(res, min.vi = .55, main = "")
 
-skin.data <- read.csv("skin_data.csv")
+#####
+
+#skin reflectance
+skin.data <- read.csv("../data/Skin Reflectance/skin_data.csv")
 res <- LCA(data=skin.data, 
              SCS="XY", parental = "calc", env=FALSE,
              max.pars = 7, ret.all=F)
@@ -53,7 +55,7 @@ skin.data <- read.csv("../data/Skin Reflectance/skin_data.csv")
 res <- LCA(data = skin.data,
            SCS="XY", parental = "calc", env=TRUE, 
            max.pars = 6, ret.all=F)
-plot(res, col.ramp=viridis(100))
+plot(res, col.ramp=viridis(100), main="Skin Reflectance")
 
 
 #####
@@ -63,16 +65,16 @@ seedweight.data <- read.csv("../data/Seed weight/seedweight.data.csv")
 res <- LCA(data= seedweight.data,
                SCS="XY", parental = "calc", 
                max.pars = 5, ret.all=F, env=T)
-plot(res, col.ramp=viridis(100))
+plot(res, col.ramp=viridis(100), main="Lima Bean Seedweight")
 
 #####
 
 #time from seed to silking in zea mays
 silking.data <- read.csv("../data/Seed to silking/silking_data.csv")
 res <- LCA(data=silking.data,
-           SCS="XY", parental="calc", env=T, 
-           max.pars = 5, ret.all=F)
-plot(res, col.ramp=viridis(100))
+           SCS="XY", parental="calc", env=T,
+           max.pars =6, ret.all=F)
+plot(res, col.ramp=viridis(100), main="Seed to Silking")
 
 #####
 
@@ -80,5 +82,5 @@ plot(res, col.ramp=viridis(100))
 pollen.data <- read.csv("../data/Shedding Pollen/pollen_data.csv")
 res <- LCA(data=pollen.data, 
            SCS="XY", parental="calc", env=T, 
-           max.pars=5, ret.all=F)
-plot(res, col.ramp=viridis(100))
+           max.pars=6, ret.all=F)
+plot(res, col.ramp=viridis(100), main="Seed to Shedding Pollen")
