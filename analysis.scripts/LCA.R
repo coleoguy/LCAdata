@@ -41,12 +41,12 @@ res$best.models
 
 
 #sticklebacks without rF1 -- use this one for analysis 
-stickleback.dat2 <- read.csv("stickleback_data2.csv")
+stickleback.dat2 <- read.csv("../data/Sticklebacks/stickleback_data2.csv")
 res <- LCA(data = stickleback.dat2,
            SCS="XY", parental = "calc", env=TRUE, 
            max.pars = 6, ret.all=F, drop.pars = "Ca")
 library(viridis)
-plot(res, col.ramp=viridis(100))
+plot(res, col.ramp=viridis(100), main="Sticklebacks")
 
 #####
 
@@ -56,6 +56,7 @@ res <- LCA(data = skin.data,
            SCS="XY", parental = "calc", env=TRUE, 
            max.pars = 6, ret.all=F)
 plot(res, col.ramp=viridis(100), main="Skin Reflectance")
+#most of the variation within this dataset can be explained by simple additive affects 
 
 
 #####
