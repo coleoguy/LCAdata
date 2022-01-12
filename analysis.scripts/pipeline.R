@@ -18,3 +18,7 @@ for(i in 1:length(data.files)){
 
 rm(list=ls()[c(-6,-7)])
 save.image("../results/full.results2.RData")
+
+
+simp.plot(results[[5]])
+
