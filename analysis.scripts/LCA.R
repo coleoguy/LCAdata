@@ -42,6 +42,7 @@ res$best.models
 
 #sticklebacks without rF1 -- use this one for analysis 
 stickleback.dat2 <- read.csv("../data/Sticklebacks/stickleback_data2.csv")
+stickleback.dat2 <- read.csv("stickleback_data2.csv")
 res <- LCA(data = stickleback.dat2,
            SCS="XY", parental = "calc", env=TRUE, 
            max.pars = 6, ret.all=F, drop.pars = "Ca")
@@ -85,3 +86,5 @@ res <- LCA(data=pollen.data,
            SCS="XY", parental="calc", env=T, 
            max.pars=6, ret.all=F)
 plot(res, col.ramp=viridis(100), main="Seed to Shedding Pollen")
+
+
