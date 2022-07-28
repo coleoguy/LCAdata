@@ -17,7 +17,7 @@ plot(res, min.vi = .55, main = "")
 #####
 
 #skin reflectance
-skin.data <- read.csv("../data/Skin Reflectance/skin_data.csv")
+skin.data <- read.csv("../data/skin_data.csv")
 res <- LCA(data=skin.data, 
              SCS="XY", parental = "calc", env=FALSE,
              max.pars = 7, ret.all=F)
@@ -41,7 +41,7 @@ res$best.models
 
 
 #sticklebacks without rF1 -- use this one for analysis 
-stickleback.dat2 <- read.csv("../data/Sticklebacks/stickleback_data2.csv")
+stickleback.dat2 <- read.csv("../stickleback_data2.csv")
 stickleback.dat2 <- read.csv("stickleback_data2.csv")
 res <- LCA(data = stickleback.dat2,
            SCS="XY", parental = "calc", env=TRUE, 
@@ -52,7 +52,7 @@ plot(res, col.ramp=viridis(100), main="Sticklebacks")
 #####
 
 #skin reflectance 
-skin.data <- read.csv("../data/Skin Reflectance/skin_data.csv")
+skin.data <- read.csv("../data/skin_data.csv")
 res <- LCA(data = skin.data,
            SCS="XY", parental = "calc", env=TRUE, 
            max.pars = 6, ret.all=F)
@@ -63,7 +63,7 @@ plot(res, col.ramp=viridis(100), main="Skin Reflectance")
 #####
 
 #seedweight of lima beans
-seedweight.data <- read.csv("../data/Seed weight/seedweight.data.csv")
+seedweight.data <- read.csv("..data/seedweight.data.csv")
 res <- LCA(data= seedweight.data,
                SCS="XY", parental = "calc", 
                max.pars = 5, ret.all=F, env=T)
@@ -72,7 +72,7 @@ plot(res, col.ramp=viridis(100), main="Lima Bean Seedweight")
 #####
 
 #time from seed to silking in zea mays
-silking.data <- read.csv("../data/Seed to silking/silking_data.csv")
+silking.data <- read.csv("../data/silking_data.csv")
 res <- LCA(data=silking.data,
            SCS="XY", parental="calc", env=T,
            max.pars =6, ret.all=F)
@@ -81,7 +81,7 @@ plot(res, col.ramp=viridis(100), main="Seed to Silking")
 #####
 
 #time from seed to shedding pollen in zea mays 
-pollen.data <- read.csv("../data/Shedding Pollen/pollen_data.csv")
+pollen.data <- read.csv("../data/pollen_data.csv")
 res <- LCA(data=pollen.data, 
            SCS="XY", parental="calc", env=T, 
            max.pars=6, ret.all=F)
