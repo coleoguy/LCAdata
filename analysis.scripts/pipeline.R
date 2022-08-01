@@ -5,7 +5,7 @@ results <- list()
 mod.nums <- c()
 
 data.files <- list.files("../data/")
-
+data.files <- data.files[data.files != "refs.xls"]
 #allows you to make environment false (which is default) for 
 #all datasets except dataset 12 (sticklebacks), which has environment = true 
 #this same setup would work for xy chromosome systems, if needed
