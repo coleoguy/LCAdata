@@ -5,6 +5,7 @@ results <- list()
 mod.nums <- c()
 
 data.files <- list.files("../data/")
+data.files <- data.files[data.files != "ref.xlsx"]
 
 #allows you to make environment false (which is default) for 
 #all datasets except dataset 12 (sticklebacks), which has environment = true 
@@ -29,5 +30,5 @@ rm(list=ls()[c(-6,-7)])
 save.image("../results/full.results2.RData")
 
 #function is in file helpfunctions.R in analysis.scripts folder
-simp.plot(results[[1]])
+simp.plot(results[[10]])
 
