@@ -57,3 +57,11 @@ plot(res4, main="time to flowering", col.ramp=viridis(100))
 
 
 
+#####################
+#test mew batch of tomatoes for applicable genetic effects, using FAKE DATA
+test.tomato <- read.csv("test.tomato.csv")
+res <- LCA(data=test.tomato,
+           SCS="NSC", parental="calc", env=FALSE,
+           max.pars=7, ret.all=F)
+plot(res, col.ramp=viridis(100))
+
