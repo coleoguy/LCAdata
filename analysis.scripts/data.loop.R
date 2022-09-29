@@ -3,8 +3,8 @@
 library(SAGA2)
 
 data.files <- list.files("../data/") #data in LCAdata rep; all csvs
-data.files <- data.files[data.files != "ref.xlsx"] #remove the file with list of references
-
+data.files <- data.files[data.files != "ref.xlsx"] #remove the file with list of references and file with final table
+data.files <- data.files[data.files != "results.table.csv"]
 
 d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # lines 9-15 establish the basic data frame
 res <- LCA(data=d1, 
