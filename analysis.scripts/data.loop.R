@@ -6,19 +6,22 @@ data.files <- list.files("../data/") #data in LCAdata rep; all csvs
 data.files <- data.files[data.files != "ref.xlsx"] #remove the file with list of references and file with final table
 data.files <- data.files[data.files != "results.table.csv"]
 
+# this holds the sex chromosome system for each dataset
+# beetles silene and drosophila stickelbacks all XY run toads as NSC run any birds ZW
+SCS <- c(rep("NSC", 3),....)
+
 d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # lines 9-15 establish the basic data frame
 res <- LCA(data=d1, 
-           SCS="NSC", parental="calc", env=FALSE,
+           SCS=SCS[1], parental="calc", env=FALSE,
            max.pars=7, ret.all=F)
 full.table <- data.frame(res$estimates[,-1]) 
 full.table[3,] <- res$varimp[,2]
 row.names(full.table)[3] <- "vi"
 
-
 for(i in 2:length(data.files)){ # loop through all datasets in LCA data folder
   cur.dat <- read.csv(paste("../data/", data.files[i], sep = ""))
   res <- LCA(data=cur.dat,
-              SCS="NSC", parental="calc", env=FALSE,
+              SCS=SCS[i], parental="calc", env=FALSE,
               max.pars = 7, ret.all = F)
   next.row <- nrow(full.table) + 1 # where in the table the loop should start putting data 
   for(j in 2:ncol(res$estimates)){ # looping through the genetic effects
