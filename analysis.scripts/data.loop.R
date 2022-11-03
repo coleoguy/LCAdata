@@ -12,7 +12,8 @@ data.files <- data.files[data.files != "results.table.csv"]
 SCS <- c(rep("XY", 4), rep("NSC", 2), rep("XY", 4), rep("NSC", 1), 
          rep("XY", 3), rep("NSC", 12), rep("XY", 9), rep("NSC", 5), 
          rep("XY", 8), rep("NSC", 1), rep("XY", 2), rep("NSC", 10), 
-         rep("XY", 1), rep("NSC",4), rep("XY", 3), rep("NSC", 22))
+         rep("XY", 1), rep("NSC", 1), rep("XY", 1), rep("NSC", 2), 
+         rep("XY", 3), rep("NSC", 22))
 
 d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # lines 16-22 establish the basic data frame
 res <- LCA(data=d1, 
