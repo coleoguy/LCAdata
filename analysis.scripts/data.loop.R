@@ -9,11 +9,15 @@ data.files <- data.files[data.files != "results.table.csv"]
 # this holds the sex chromosome system for each dataset
 # beetles, silene, drosophila, and stickelbacks all XY 
 # run toads and plants as NSC
-SCS <- c(rep("XY", 4), rep("NSC", 2), rep("XY", 4), rep("NSC", 1), 
-         rep("XY", 3), rep("NSC", 12), rep("XY", 9), rep("NSC", 5), 
-         rep("XY", 8), rep("NSC", 1), rep("XY", 2), rep("NSC", 10), 
-         rep("XY", 1), rep("NSC", 1), rep("XY", 1), rep("NSC", 2), 
-         rep("XY", 3), rep("NSC", 22))
+SCS <- c(rep("NSC", 1), rep("XY", 7), rep("NSC", 3), rep("XY", 4), 
+         rep("NSC", 5), rep("XY", 4), rep("NSC", 1), rep("XY", 2), 
+         rep("NSC", 2), rep("XY", 1), rep("NSC", 1), rep("XY", 4), 
+         rep("NSC", 18), rep("XY", 3), rep("NSC", 1), rep("XY", 9), 
+         rep("NSC", 7), rep("XY", 5), rep("NSC", 2), rep("XY", 2), 
+         rep("NSC", 1), rep("XY", 2), rep("NSC", 7), rep("XY", 4), 
+         rep("NSC", 10), rep("XY", 2), rep("NSC", 1), rep("XY", 1), 
+         rep("NSC", 4), rep("XY", 1), rep("NSC", 3), rep("XY", 10), 
+         rep("NSC", 1), rep("XY", 2), rep("NSC", 36))
 
 d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # lines 16-22 establish the basic data frame
 res <- LCA(data=d1, 
