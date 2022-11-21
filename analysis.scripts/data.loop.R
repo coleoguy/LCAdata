@@ -10,7 +10,7 @@ data.files <- data.files[data.files != "results.table.csv"]
 # beetles, silene, drosophila, and stickelbacks all XY 
 # run toads and plants as NSC
 SCS <- c(rep("NSC", 1), rep("XY", 7), rep("NSC", 3), rep("XY", 4), 
-         rep("NSC", 5), rep("XY", 4), rep("NSC", 1), rep("XY", 2), 
+         rep("NSC", 5), rep("XY", 4), rep("NSC", 1), 
          rep("NSC", 2), rep("XY", 1), rep("NSC", 1), rep("XY", 4), 
          rep("NSC", 18), rep("XY", 3), rep("NSC", 1), rep("XY", 9), 
          rep("NSC", 7), rep("XY", 5), rep("NSC", 2), rep("XY", 2), 
