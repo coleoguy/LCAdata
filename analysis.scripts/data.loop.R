@@ -7,8 +7,7 @@ data.files <- data.files[data.files != "ref.xlsx"] #remove the file with list of
 data.files <- data.files[data.files != "results.table.csv"]
 
 # this holds the sex chromosome system for each dataset
-# beetles, silene, drosophila, and stickelbacks all XY 
-# run toads and plants as NSC
+# details for each dataset found in ref file
 SCS <- c(rep("NSC", 1), rep("XY", 7), rep("NSC", 3), rep("XY", 4), 
          rep("NSC", 5), rep("XY", 4), rep("NSC", 1), 
          rep("NSC", 2), rep("XY", 1), rep("NSC", 1), rep("XY", 4), 
@@ -19,7 +18,7 @@ SCS <- c(rep("NSC", 1), rep("XY", 7), rep("NSC", 3), rep("XY", 4),
          rep("NSC", 4), rep("XY", 1), rep("NSC", 3), rep("XY", 10), 
          rep("NSC", 1), rep("XY", 2), rep("NSC", 36))
 
-d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # lines 16-22 establish the basic data frame
+d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # establish the basic data frame
 res <- LCA(data=d1, 
            SCS=SCS[1], parental="calc", env=FALSE,
            max.pars=7, ret.all=F)
@@ -34,7 +33,7 @@ for(i in 2:length(data.files)){ # loop through all datasets in LCA data folder
   if(cur.dat$sex[1] == FALSE){ #fixing datasets where sex is all female and "F" for female is incorrectly called as "FALSE" 
     cur.dat$sex <- rep("F", nrow(cur.dat))
   }
-  max.pars <- nrow(cur.dat) - 1 #changing max pars for each dataset. max 7 pars for the datasets with many rows
+  max.pars <- nrow(cur.dat) - 2 #changing max pars for each dataset. max 7 pars for the datasets with many rows
   if(max.pars > 7){
     max.pars <- 7
   }
