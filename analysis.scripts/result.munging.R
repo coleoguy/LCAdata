@@ -1,9 +1,10 @@
-dat <- read.csv("results.table.csv")[,-1]
+dat <- read.csv("results.all.csv")[,-1]
 starts <- seq(from=1, by=3, length.out=nrow(dat)/3) #where each new dataset starts (each have 3 rows)
 
 desc <- dat$dataset[starts]
 additive <- dominance <- epistatic <- rep(0, length(desc))
 res <- data.frame(desc, additive, dominance, epistatic)
+
 rm(list=ls()[-c(2,6,7)]) #clean up environ
 
 
@@ -36,13 +37,14 @@ getGoods <- function(tab){
   
   }
 
-
+  
 for(i in 1:nrow(res)){
   sta <- starts[i]
   sto <- starts[i] + 2
   res[i, 2:4] <- getGoods(dat[sta:sto,])
 }
 
+write.csv(res, "complete.results.csv")
 
 
 
