@@ -56,8 +56,93 @@ legend("bottomleft", legend=c("between species", "within species"),
 #######
 
 
+#plot for LH vs M
+dat <- read.csv("complete.results.csv")
+cat <- read.csv("results.category.csv")
+datp <- dat[cat$LH.or.M == "LH",]
+datq <- dat[cat$LH.or.M == "M",]
+datp$type <- "LH"
+datq$type <- "M"
+datp <- datp[order(datp$epistatic), ]
+datq <- datq[order(datq$epistatic), ]
+dat <- rbind(datp,datq)
+dat <- dat[complete.cases(dat), ]
+
+datp <- datp[complete.cases(datp),]
+datpx <- seq(from=0, to=100, length.out=nrow(datp))
+datq <- datq[complete.cases(datq),]
+datqx <- seq(from=0, to=100, length.out=nrow(datq))
+plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
+     xaxt="n", xlab="",ylab="")
+axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
+lines(y=datp$epistatic, x=datpx, col=rgb(1,.2,0),lwd=3) #LH
+lines(y=datq$epistatic, x=datqx, col=rgb(0,.2,1),lwd=3) #M
+points(y=datp$epistatic, x=datpx, col=rgb(1,.2,0),pch=16, cex=.9)
+points(y=datq$epistatic, x=datqx, col=rgb(0,.2,1),pch=16, cex=.9)
+legend("topleft", legend=c("LH", "M"), 
+       fill=c("red", "blue"), cex=0.8)
 
 
-install.packages("Ternary")
-library("Ternary")
-Ternary::TernaryApp()
+
+#plot for plants vs animals
+dat <- read.csv("complete.results.csv")
+cat <- read.csv("results.category.csv")
+datp <- dat[cat$plant.or.animal == "plant",]
+datq <- dat[cat$plant.or.animal == "animal",]
+datp$type <- "plant"
+datq$type <- "animal"
+datp <- datp[order(datp$epistatic), ]
+datq <- datq[order(datq$epistatic), ]
+dat <- rbind(datp,datq)
+dat <- dat[complete.cases(dat), ]
+
+datp <- datp[complete.cases(datp),]
+datpx <- seq(from=0, to=100, length.out=nrow(datp))
+datq <- datq[complete.cases(datq),]
+datqx <- seq(from=0, to=100, length.out=nrow(datq))
+plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
+     xaxt="n", xlab="",ylab="")
+axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
+lines(y=datp$epistatic, x=datpx, col=rgb(1,.2,0),lwd=3) #plant
+lines(y=datq$epistatic, x=datqx, col=rgb(0,.2,1),lwd=3) #animal
+points(y=datp$epistatic, x=datpx, col=rgb(1,.2,0),pch=16, cex=.9)
+points(y=datq$epistatic, x=datqx, col=rgb(0,.2,1),pch=16, cex=.9)
+legend("topleft", legend=c("plant", "animal"), 
+       fill=c("red", "blue"), cex=0.8)
+
+
+#plot for within vs between species
+dat <- read.csv("complete.results.csv")
+cat <- read.csv("results.category.csv")
+datp <- dat[cat$withinor.between.species == "within",]
+datq <- dat[cat$withinor.between.species == "between",]
+datp$type <- "within"
+datq$type <- "between"
+datp <- datp[order(datp$epistatic), ]
+datq <- datq[order(datq$epistatic), ]
+dat <- rbind(datp,datq)
+dat <- dat[complete.cases(dat), ]
+
+datp <- datp[complete.cases(datp),]
+datpx <- seq(from=0, to=100, length.out=nrow(datp))
+datq <- datq[complete.cases(datq),]
+datqx <- seq(from=0, to=100, length.out=nrow(datq))
+plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
+     xaxt="n", xlab="",ylab="")
+axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
+lines(y=datp$epistatic, x=datpx, col=rgb(1,.2,0),lwd=3) #within
+lines(y=datq$epistatic, x=datqx, col=rgb(0,.2,1),lwd=3) #between
+points(y=datp$epistatic, x=datpx, col=rgb(1,.2,0),pch=16, cex=.9)
+points(y=datq$epistatic, x=datqx, col=rgb(0,.2,1),pch=16, cex=.9)
+legend("topleft", legend=c("within", "between"), 
+       fill=c("red", "blue"), cex=0.8)
+
+
+
+
+
+
+
+
+
+
