@@ -22,7 +22,6 @@ legend("bottomleft", legend=c("animal", "plant"),
 
 
 
-
 #plot of LH vs M traits
 plot(0,0,col="white",xlim=c(-1,1),ylim=c(0,160),
      yaxt="n", xaxt="n", xlab="",ylab="")
@@ -36,7 +35,6 @@ for(i in 1:152){
 }
 legend("bottomleft", legend=c("LH", "M"), 
        fill=c("red", "blue"), cex=0.8)
-
 
 
 
