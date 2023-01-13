@@ -1,41 +1,40 @@
-# How I can add data with no extra work for you :-)  - dispersal, pot, etc.
-# Show spots in code I changed
-# plots axes and N
-# folders add depricated and clean out
-## tomato
-## LCA
-## etc.
+##first section should pull data from "standard" folder within all.data
+##needs to use [,5] of ref for SCS
+##standard files in ref organized a to z
+
+##second section should pull data from "cmat" folder within all.data
+##each run needs to use [,5] of ref for SCS
+
+##third section should pull data from "PSU" folder within all.data
+##each run needs to use [,5] of ref for SCS
+##PSU files in ref organized a to z
 
 
 
-#storing results from each LCA run into dataframe to allow better access to data
+
+
+
+
 ####################
 library(SAGA2)
 
-data.files <- list.files("../data/") #data in LCAdata rep; all csvs
-data.files <- data.files[data.files != "ref.xlsx"] #remove the file with list of references and file with final table
-data.files <- data.files[data.files != "results.table.csv"]
 
-# this holds the sex chromosome system for each dataset
-# details for each dataset found in ref file
-SCS <- c(rep("NSC", 1), rep("XY", 7), rep("NSC", 3), rep("XY", 4), 
-         rep("NSC", 5), rep("XY", 4), rep("NSC", 1), 
-         rep("NSC", 2), rep("XY", 1), rep("NSC", 1), rep("XY", 4), 
-         rep("NSC", 18), rep("XY", 3), rep("NSC", 1), rep("XY", 9), 
-         rep("NSC", 7), rep("XY", 5), rep("NSC", 2), rep("XY", 2), 
-         rep("NSC", 1), rep("XY", 2), rep("NSC", 7), rep("XY", 4), 
-         rep("NSC", 10), rep("XY", 2), rep("NSC", 1), rep("XY", 1), 
-         rep("NSC", 4), rep("XY", 1), rep("NSC", 3), rep("XY", 10), 
-         rep("NSC", 1), rep("XY", 2), rep("NSC", 36))
+#########standard files
 
-d1 <- read.csv(paste("../data/", data.files[1], sep = "")) # establish the basic data frame
+data.files <- list.files("../all.data/standard") #data in standard folder
+ref <- read.csv("../all.data/ref.csv")
+
+#pull SCS from 5th column in ref file
+SCS <- ref[,5]
+
+d1 <- read.csv(paste("../all.data/standard", data.files[1], sep = "")) # establish the basic data frame
 res <- list()
 res[[1]] <- LCA(data=d1,
            SCS=SCS[1], parental="calc", env=FALSE,
            max.pars=7, ret.all=F)
 
 for(i in 2:length(data.files)){ # loop through all datasets in LCA data folder
-  cur.dat <- read.csv(paste("../data/", data.files[i], sep = ""))
+  cur.dat <- read.csv(paste("../all.data/standard", data.files[i], sep = ""))
   # check to make sure F for female is not being converted to FALSE
   
   if(cur.dat$sex[1] == FALSE){ #fixing datasets where sex is all female and "F" for female is incorrectly called as "FALSE" 
@@ -51,191 +50,116 @@ for(i in 2:length(data.files)){ # loop through all datasets in LCA data folder
 
 }
 
-
-#armbruster files
-dat <- read.csv("../data.cmat/armbruster/eFL.ME.high.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/eFL.ME.low.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/eFL.wFL.high.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/eFL.wFL.low.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/ON.ME.high.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/ON.ME.low.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/wFL.ON.high.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/armbruster/wFL.ON.low.csv")
-cmat <- as.matrix(read.csv("../data.cmat/armbruster/cmat.armbruster.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
-
-
-#etterson files
-#cmat ACE
-dat <- read.csv("../data.cmat/etterson/seed.fruit.A.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.ACE.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seed.fruit.C.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.ACE.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seed.fruit.E.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.ACE.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seedwt.A.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.ACE.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seedwt.C.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.ACE.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seedwt.E.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.ACE.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-#cmat BD
-dat <- read.csv("../data.cmat/etterson/seed.fruit.B.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.BD.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seed.fruit.D.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.BD.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seedwt.B.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.BD.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seedwt.D.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.BD.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-#cmat F
-dat <- read.csv("../data.cmat/etterson/seed.fruit.F.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.F.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
-
-dat <- read.csv("../data.cmat/etterson/seedwt.F.csv")
-cmat <- as.matrix(read.csv("../data.cmat/etterson/cmat.etterson.F.csv"))
-res[[length(res)+1]] <- LCA(dat, SCS = "NSC", Cmatrix = cmat)
+#######cmat files
 
 
 #fox files
-dat <- read.csv("../data.cmat/fox/eggdisp.BF.csv")
-cmat <- as.matrix(read.csv("../data.cmat/fox/cmat.fox.csv"))
+dat <- read.csv("../all.data/cmat/fox/eggdisp.BF.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/fox/eggdisp.cowpeaA.csv")
-cmat <- as.matrix(read.csv("../data.cmat/fox/cmat.fox.csv"))
+dat <- read.csv("../all.data/cmat/fox/eggdisp.cowpeaA.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/fox/eggdisp.cowpeaB.csv")
-cmat <- as.matrix(read.csv("../data.cmat/fox/cmat.fox.csv"))
+dat <- read.csv("../all.data/cmat/fox/eggdisp.cowpeaB.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/fox/eggdisp.cowpeaC.csv")
-cmat <- as.matrix(read.csv("../data.cmat/fox/cmat.fox.csv"))
+dat <- read.csv("../all.data/cmat/fox/eggdisp.cowpeaC.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
 
 #mcclelland files
-dat <- read.csv("../data.cmat/mcclelland/salmonL.1-16-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.1-16-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.10-21-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.10-21-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.10-29-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.10-29-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.2-1-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.2-1-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.4-15-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.4-15-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.6-28-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.6-28-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.6-5-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.6-5-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonL.7-24-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonL.7-24-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.1-16-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.1-16-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.10-21-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.10-21-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.10-29-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.10-29-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.2-1-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.2-1-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.2-26-1.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.2-26-1.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.4-15-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.4-15-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.6-28-3.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.6-28-3.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.6-5-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.6-5-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
-dat <- read.csv("../data.cmat/mcclelland/salmonW.7-24-2.csv")
-cmat <- as.matrix(read.csv("../data.cmat/mcclelland/cmat.mcclelland.csv"))
+dat <- read.csv("../all.data/cmat/mcclelland/salmonW.7-24-2.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
 
 #miller files
 #cmat sperm
-dat <- read.csv("../data.cmat/miller/dros.sperm.csv")
-cmat <- as.matrix(read.csv("../data.cmat/miller/cmatrix.sperm.csv"))
+dat <- read.csv("../all.data/cmat/miller/dros.sperm.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/miller/cmatrix.sperm.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
 #cmat sr
-dat <- read.csv("../data.cmat/miller/dros.sr.csv")
-cmat <- as.matrix(read.csv("../data.cmat/miller/cmatrix.sr.csv"))
+dat <- read.csv("../all.data/cmat/miller/dros.sr.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/miller/cmatrix.sr.csv"))
+res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
+
+
+#starmer files
+dat <- read.csv("../all.data/cmat/starmer/ova25.csv")
+cmat <- as.matrix(read.csv("../all.data/cmat/starmer/cmat-starmer.csv"))
+res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
+
+dat <- read.csv("../all.data/cmat/starmer/thorax.len25")
+cmat <- as.matrix(read.csv("../all.data/cmat/starmer/cmat-starmer.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
 
