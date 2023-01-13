@@ -9,38 +9,27 @@
 ##each run needs to use [,5] of ref for SCS
 ##PSU files in ref organized a to z
 
-
-
-
-
-
-
-####################
 library(SAGA2)
 
 
-#########standard files
-
-data.files <- list.files("../all.data/standard") #data in standard folder
+######### standard files ######### 
+#data in standard folder
+data.files <- list.files("../all.data/standard")
 ref <- read.csv("../all.data/ref.csv")
 
 #pull SCS from 5th column in ref file
 SCS <- ref[,5]
-
-d1 <- read.csv(paste("../all.data/standard", data.files[1], sep = "")) # establish the basic data frame
 res <- list()
-res[[1]] <- LCA(data=d1,
-           SCS=SCS[1], parental="calc", env=FALSE,
-           max.pars=7, ret.all=F)
-
-for(i in 2:length(data.files)){ # loop through all datasets in LCA data folder
-  cur.dat <- read.csv(paste("../all.data/standard", data.files[i], sep = ""))
-  # check to make sure F for female is not being converted to FALSE
-  
-  if(cur.dat$sex[1] == FALSE){ #fixing datasets where sex is all female and "F" for female is incorrectly called as "FALSE" 
+for(i in 1:length(data.files)){ # loop through all datasets in LCA data folder
+  cur.dat <- read.csv(paste("../all.data/standard/", data.files[i], sep = ""))
+  # fixing datasets where sex is all female and "F" 
+  # for female is incorrectly called as "FALSE" 
+  if(cur.dat$sex[1] == FALSE){ 
     cur.dat$sex <- rep("F", nrow(cur.dat))
   }
-  max.pars <- nrow(cur.dat) - 2 #changing max pars for each dataset. max 7 pars for the datasets with many rows
+  # changing max pars for each dataset. max 7 pars 
+  # for the datasets with many rows
+  max.pars <- nrow(cur.dat) - 2 
   if(max.pars > 7){
     max.pars <- 7
   }
@@ -49,9 +38,9 @@ for(i in 2:length(data.files)){ # loop through all datasets in LCA data folder
               max.pars = max.pars, ret.all = F)
 
 }
+######### standard files done ######### 
 
-#######cmat files
-
+####### cmat files #######
 
 #fox files
 dat <- read.csv("../all.data/cmat/fox/eggdisp.BF.csv")
@@ -162,21 +151,39 @@ dat <- read.csv("../all.data/cmat/starmer/thorax.len25")
 cmat <- as.matrix(read.csv("../all.data/cmat/starmer/cmat-starmer.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 
+####### cmat files done #######
 
 
 
-#########PSU files
+######### PSU files #########
 
 data.files <- list.files("../all.data/PSU")
 
-???
+# loop through all datasets in PSU data folder
+for(i in 111:length(data.files)){ 
+  cur.dat <- read.csv(paste("../all.data/PSU/", data.files[i], sep = ""))
+  # fixing datasets where sex is all female and "F"
+  # for female is incorrectly called as "FALSE"
+  if (cur.dat$sex[1] == FALSE) {
+    cur.dat$sex <- rep("F", nrow(cur.dat))
+  }
+  # changing max pars for each dataset. max 7 pars 
+  # for the datasets with many rows
+  max.pars <- nrow(cur.dat) - 2 
+  if(max.pars > 7){
+    max.pars <- 7
+  }
+  res[[length(res) + 1]] <- LCA(data=cur.dat,
+                                parental="calc", 
+                                env=FALSE, 
+                                max.pars = max.pars, 
+                                ret.all = F,
+                                keep.pars = c("Aa","Ad","AaAa","AaAd","AdAd"))
+  
+}
 
 
-
-
-
-
-
+######### PSU files done #########
 
 
 
