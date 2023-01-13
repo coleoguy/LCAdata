@@ -2,7 +2,7 @@
 ##needs to use [,5] of ref for SCS
 ##standard files in ref organized a to z
 
-##second section should pull data from "cmat" folder within all.data
+##second section should pull data from "cmat" folder, then specific author folder within all.data
 ##each run needs to use [,5] of ref for SCS
 
 ##third section should pull data from "PSU" folder within all.data
@@ -161,6 +161,24 @@ res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
 dat <- read.csv("../all.data/cmat/starmer/thorax.len25")
 cmat <- as.matrix(read.csv("../all.data/cmat/starmer/cmat-starmer.csv"))
 res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)
+
+
+
+
+#########PSU files
+
+data.files <- list.files("../all.data/PSU")
+
+???
+
+
+
+
+
+
+
+
+
 
 
 save.image("~/Desktop/LCA-allresults.RData")
