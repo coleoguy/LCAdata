@@ -54,6 +54,7 @@ for(i in 1:length(data.files)){
   if (cur.dat$sex[1] == FALSE) {
     cur.dat$sex <- rep("F", nrow(cur.dat))
   }
+  max.pars <- nrow(cur.dat) - 2 
   keep.pars <- c("Aa","Ad","AaAa","AaAd","AdAd")
   res[[length(res) + 1]] <- LCA(data = cur.dat,
                                 parental = "calc", 
