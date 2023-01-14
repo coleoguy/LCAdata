@@ -1,4 +1,4 @@
-﻿cross,mean,SE,sex,environ,sire,dam
+cross,mean,SE,sex,environ,sire,dam
 P1,0.926,0.016882898,F,1,1,1
 P2,0.984,0.012846043,F,1,2,2
 F1 (P1xP2),1.041,0.008333333,F,1,1,2
