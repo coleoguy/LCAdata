@@ -1,245 +1,74 @@
-##first section should pull data from "standard" folder within all.data
-##needs to use [,5] of ref for SCS
-##standard files in ref organized a to z
-
-##second section should pull data from "cmat" folder, then specific author folder within all.data
-##each run needs to use [,5] of ref for SCS
-
-##third section should pull data from "PSU" folder within all.data
-##each run needs to use [,5] of ref for SCS
-##PSU files in ref organized a to z
-
+# Jorja Elliot 14 Jan 2023 jorjaelliott@tamu.edu
+# First section runs all "standard" data where we know sex of parents and 
+# SAGA can calculate a cmatrix. Second section runs all datasets where 
+# we are unable to calculate cmatrix automatically becuase of pooled 
+# cohorts. Third section runs all datasets where sex of parents is unknown 
+# so we can only fit a limited 5 parameter model. All section will make use 
+# of the ref file that contains dataset specific info for SCS, cmatrix, etc.
 library(SAGA2)
-
-
+ref <- read.csv("../all.data/ref.csv")
+res <- list()
+maximum.allowed <- 2
 ######### standard files ######### 
 #data in standard folder
 data.files <- list.files("../all.data/standard")
-ref <- read.csv("../all.data/ref.csv")
-
-#pull SCS from 5th column in ref file
-SCS <- ref[,5]
-res <- list()
-for(i in 1:length(data.files)){ # loop through all datasets in LCA data folder
-  cur.dat <- read.csv(paste("../all.data/standard/", data.files[i], sep = ""))
-  # fixing datasets where sex is all female and "F" 
-  # for female is incorrectly called as "FALSE" 
+for(i in 1:length(data.files)){
+  cat(paste("analyzing standard dataset", i, "of", length(data.files), "\r"))
+  flush.console()
+  cur.dat <- read.csv(paste("../all.data/standard/", data.files[i],sep = ""))
+  # assuring that F for female is not stored as False 
   if(cur.dat$sex[1] == FALSE){ 
     cur.dat$sex <- rep("F", nrow(cur.dat))
   }
-  # changing max pars for each dataset. max 7 pars 
-  # for the datasets with many rows
+  # max pars max = 7 otherwise 2 minus cohorts
   max.pars <- nrow(cur.dat) - 2 
-  if(max.pars > 7){
-    max.pars <- 7
-  }
+  if(max.pars > 7) max.pars <- maximum.allowed
   res[[i]] <- LCA(data=cur.dat,
-              SCS=SCS[i], parental="calc", env=FALSE,
-              max.pars = max.pars, ret.all = F)[c(4,6)]
-
+              SCS=ref[,5][i], parental="calc", env=FALSE,
+              max.pars = max.pars, ret.all = F, messages=F)[c(4,6)]
 }
 ######### standard files done ######### 
-
-####### cmat files #######
-
-#fox files
-dat <- read.csv("../all.data/cmat/fox/eggdisp.BF.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/fox/eggdisp.cowpeaA.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/fox/eggdisp.cowpeaB.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/fox/eggdisp.cowpeaC.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/fox/cmat.fox.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-
-#mcclelland files
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.1-16-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.10-21-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.10-29-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.2-1-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.4-15-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.6-28-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.6-5-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonL.7-24-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.1-16-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.10-21-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.10-29-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.2-1-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.2-26-1.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.4-15-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.6-28-3.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.6-5-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/mcclelland/salmonW.7-24-2.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/mcclelland/cmat.mcclelland.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-
-#miller files
-#cmat sperm
-dat <- read.csv("../all.data/cmat/miller/dros.sperm.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/miller/cmatrix.sperm.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-#cmat sr
-dat <- read.csv("../all.data/cmat/miller/dros.sr.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/miller/cmatrix.sr.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-
-#starmer files
-dat <- read.csv("../all.data/cmat/starmer/ova25.csv")
-cmat <- as.matrix(read.csv("../all.data/cmat/starmer/cmat-starmer.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-dat <- read.csv("../all.data/cmat/starmer/thorax.len25")
-cmat <- as.matrix(read.csv("../all.data/cmat/starmer/cmat-starmer.csv"))
-res[[length(res)+1]] <- LCA(dat, Cmatrix = cmat)[c(4,6)]
-
-####### cmat files done #######
-
-
-
-######### PSU files #########
-
-data.files <- list.files("../all.data/PSU")
-
+############# cmat files ##############
+data.files <- list.files("../all.data/cmat/data/")
 # loop through all datasets in PSU data folder
 for(i in 1:length(data.files)){ 
+  cat(paste("analyzing cmat dataset", i, "of", length(data.files), "\r"))
+  flush.console()
+  cur.dat <- read.csv(paste("../all.data/cmat/data/", data.files[i], sep = ""))
+  cname <- ref$cmat..if.assigned.[which(ref$new.file.name == data.files[i])]
+  cmat <- as.matrix(read.csv(paste("../all.data/cmat/cmats/", cname, sep = "")))
+  # max pars max = 7 otherwise 2 minus cohorts
+  max.pars <- nrow(cur.dat) - 2 
+  if(max.pars > 7) max.pars <- maximum.allowed
+  res[[length(res) + 1]] <- LCA(cur.dat, Cmatrix = cmat, messages=F)[c(4,6)]
+}
+########### cmat files done ###########
+############### PSU files #############
+data.files <- list.files("../all.data/PSU")
+# loop through all datasets in PSU data folder
+for(i in 1:length(data.files)){ 
+  cat(paste("analyzing PSU dataset", i, "of", length(data.files), "\r"))
+  flush.console()
   cur.dat <- read.csv(paste("../all.data/PSU/", data.files[i], sep = ""))
-  # fixing datasets where sex is all female and "F"
-  # for female is incorrectly called as "FALSE"
+  # assuring that F for female is not stored as False 
   if (cur.dat$sex[1] == FALSE) {
     cur.dat$sex <- rep("F", nrow(cur.dat))
   }
-  # changing max pars for each dataset. max 7 pars 
-  # for the datasets with many rows
-  max.pars <- nrow(cur.dat) - 2 
-  if(max.pars > 7){
-    max.pars <- 7
-  }
-  res[[length(res) + 1]] <- LCA(data=cur.dat,
-                                parental="calc", 
-                                env=FALSE, 
+  keep.pars <- c("Aa","Ad","AaAa","AaAd","AdAd")
+  res[[length(res) + 1]] <- LCA(data = cur.dat,
+                                parental = "calc", 
+                                env = FALSE, 
                                 max.pars = max.pars, 
                                 ret.all = F,
-                                keep.pars = c("Aa","Ad","AaAa","AaAd","AdAd"))[c(4,6)]
-  
+                                keep.pars = keep.pars,
+                                messages = F)[c(4, 6)]
 }
-
-
-######### PSU files done #########
-
-
-
-
+############# PSU files done ##########
 save.image("~/Desktop/LCA-allresults.RData")
 
 
 
 
 
-
-
-
-modspace <- confsetsize <- c()
-for(i in 1:209){
-  confsetsize[i] <- length(res[[i]]$best.eqns.w)
-  modspace[i] <- length(res[[i]]$daicc)
-}
-modexp <- data.frame(confsetsize,modspace)
-write.csv(modexp,file="modexp.csv")
-
-dat <- read.csv("../results/modexp.csv")[-200,]
-uncind <- c()
-linenums <-c()
-for(i in 1:209){
-  if(i != 200){
-    linenums[i] <- nrow(res[[i]]$cmatrix)
-  }
-  xi <- dat$confsetsize[i]/dat$modspace[i]
-  minx <- 1/dat$modspace[i]
-  maxx <- ceiling(.95*dat$modspace[i])/dat$modspace[i]
-  uncind[i] <- (xi-minx)/(maxx-minx)
-}
-
-est.res <- read.csv("../results/complete.results.csv")
-
-
-hist(uncind,breaks=20,xlab="uncertainty index")
-
-dd <- data.frame(uncind, 
-                 c("fail", "success")[as.numeric(!is.na(est.res$additive))+1])
-colnames(dd) <- c("unc_index", "outcome")
-
-
-ggplot(dd, aes(x=unc_index, fill=outcome, fill=outcome)) +
-  geom_histogram(position="dodge",alpha=.5)+
-  theme_bw() + xlab("Uncertainty Index")
-
-lidf <- data.frame(est.res$epistatic, linenums[-200])
-colnames(lidf) <- c("propepi","linenums")
-lidf <- lidf[complete.cases(lidf),]
-ggplot(lidf, aes(x=linenums, y=propepi, col=rgb(1,0,0,.5))) +
-  geom_point() +
-  theme_bw()
-lidf <- lidf[!is.na(lidf$propepi),]
-hist(lidf$propepi[lidf$linenums>6])
-hist(lidf$propepi[lidf$linenums<=6])
 
 
