@@ -8,7 +8,7 @@
 library(SAGA2)
 ref <- read.csv("../all.data/ref.csv")
 res <- list()
-maximum.allowed <- 2
+maximum.allowed <- 7
 ######### standard files ######### 
 #data in standard folder
 data.files <- list.files("../all.data/standard")
