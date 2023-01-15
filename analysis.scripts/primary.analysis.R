@@ -65,7 +65,7 @@ for(i in 1:length(data.files)){
                                 messages = F)[c(4, 6)]
 }
 ############# PSU files done ##########
-save.image("~/Desktop/LCA-allresults.RData")
+save(res, file="../results/full.run.RData")
 
 
 
