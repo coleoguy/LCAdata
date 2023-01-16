@@ -42,7 +42,6 @@ for(i in 1:length(data.files)){
                     messages = F)[c(4, 6)]
   }
 }
-
 save(res, file="../results/full.run.RData")
 
 
