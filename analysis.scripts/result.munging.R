@@ -58,6 +58,17 @@ for(i in SErows){
 res <- res[, colSums(res, na.rm=T) != 0]
 
 
+# start categorizing significant results by add, dom, epi 
+desc <- dat$dataset[starts]
+additive <- dominance <- epistatic <- rep(0, length(desc))
+res <- data.frame(desc, additive, dominance, epistatic)
+
+
+
+
+
+
+
 
 
 
