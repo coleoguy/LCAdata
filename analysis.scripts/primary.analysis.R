@@ -42,6 +42,7 @@ for(i in 1:length(data.files)){
                     messages = F)[c(4, 6)]
   }
 }
+names(res) <- ref$new.file.name
 save(res, file="../results/full.run.RData")
 
 
