@@ -79,7 +79,7 @@ getGoods <- function(res, rowval){
 
 final.results <- as.data.frame(matrix(NA, nrow(ref), 3))
 colnames(final.results) <- c("add", "dom", "epi")
-for(i in 1:nrow(res)){
+for(i in 1:nrow(final.results)){
   start <- starts[i]
   final.results[i, 1:3] <- getGoods(res, start)
 }
@@ -97,7 +97,7 @@ final.results$method <- ref$data.type..standard..PSU..cmat
 
 
 
-write.csv(final.results,"../results/complete.results.csv")
+write.csv(final.results,"../results/complete.results.csv", row.names = F)
 
 
 
