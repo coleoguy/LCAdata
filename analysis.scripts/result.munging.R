@@ -1,5 +1,5 @@
 load("../results/full.run.RData")
-
+ref <- read.csv("../all.data/ref.csv")
 ###### Pull in all results to single table ######
 starts <- seq(from = 1, length.out = length(res), by = 3)
 raw.res <- res
@@ -57,89 +57,47 @@ for(i in SErows){
 # clean up columns
 res <- res[, colSums(res, na.rm=T) != 0]
 
-
-# start categorizing significant results by add, dom, epi 
-desc <- dat$dataset[starts]
-additive <- dominance <- epistatic <- rep(0, length(desc))
-res <- data.frame(desc, additive, dominance, epistatic)
-
-
-
-
-
-
-
-
-
-
-dat <- read.csv("results.all.csv")[,-1]
-starts <- seq(from=1, by=3, length.out=nrow(dat)/3) #where each new dataset starts (each have 3 rows)
-
-desc <- dat$dataset[starts]
-additive <- dominance <- epistatic <- rep(0, length(desc))
-res <- data.frame(desc, additive, dominance, epistatic)
-
-rm(list=ls()[-c(2,6,7)]) #clean up environ
-
-
-for(j in 2:ncol(res$estimates)){ # looping through the genetic effects
-  cur.col <- which(colnames(full.table) == colnames(res$estimates)[j]) #which col in full.table matches the col in res$estimates that has the data you want to place
-  
-  if(length(cur.col) == 0){ # test the length of cur.col if it is zero then designate
-    cur.col <- ncol(full.table) + 1  ## the value of cur.col to be the next empty column
-    full.table[next.row:(next.row+1), cur.col] <- res$estimates[,j] #fill in the new col with data 
-    full.table[(next.row + 2), cur.col] <- res$varimp[(j-1),2]
-    colnames(full.table)[cur.col] <- colnames(res$estimates)[j]
-  }else{
-    full.table[next.row:(next.row+1), cur.col] <- res$estimates[,j] #if cur.col is not 0, fill in col normally w data
-    full.table[(next.row + 2), cur.col] <- res$varimp[(j-1),2]
-  }
-}
-}
-full.table$dataset <- rep(data.files, each = 3) #add col 'dataset' with names of datasets corresponding to the data
-full.table$par <- rep(row.names(full.table)[1:3], times = nrow(full.table)/3) #repeat the first 3 row names (mwa, se, vi) for each dataset (every three rows)
-x <- ncol(full.table)
-full.table <- full.table[, c((x-1):x, 1:(x-2))] #reorganize the order of the cols
-
-
-
-getGoods <- function(tab){
-  x <- as.matrix(tab[,-c(1,2)]) #next 4 lines remove datasets that do not meet 0.5 min.vi 
-  x <- x[,!is.na(x[1,])]
-  hits <- x[3,]>.5
-  x <- x[,hits, drop = F]
-  z <- abs(x[1, ]) - x[2, ] #next 2 lines remove datasets where se overlap zero
-  x <- x[, z > 0, drop = F]
-  
-  if(ncol(x)>0){ #if there are cols that meet criteria above...
-    additive <- c("Aa", "Ca", "Mea", "Xa", "Ya") #separate cols for add       
-    dominance <- c("Ad", "Med", "Xd")   
+# function to pool, scale, and pull out add, dom, epi from
+# each dataset
+getGoods <- function(res, rowval){
+    additive <- c("Aa", "Ca", "Mea", "Xa", "Ya","Ma") #separate cols for add       
+    dominance <- c("Ad", "Med", "Xd", "Md")   
     epistatic <- c("AaXa", "AaXd", "AdXd", "XaXd", "XdXd", "XdCa", "AaYa", #separate cols for dom
                    "AaAa", "AaAd", "AaCa", "AdAd", "AdXa", "AdYa", "XaYa", 
-                   "YaCa", "XaXa", "XaCa", "AdCa") #separate cols for epistatic interactions
-    wadd <- which(colnames(x) %in% additive)
-    wdom <- which(colnames(x) %in% dominance)
-    wepi <- which(colnames(x) %in% epistatic)
-    res <- c(sum(abs(x[1,wadd])),
-             sum(abs(x[1,wdom])),
-             sum(abs(x[1,wepi])))
-    res <- res/sum(res) #scale all values between 0-1
-  }
-  if(ncol(x)==0){ #if there are not cols that meet criteria above...
-    res <- c(NA,NA,NA) #replace all with NAs in res
-  }
-  return(res)
-  
-  }
-
-  
-for(i in 1:nrow(res)){
-  sta <- starts[i]
-  sto <- starts[i] + 2
-  res[i, 2:4] <- getGoods(dat[sta:sto,])
+                   "YaCa", "XaXa", "XaCa", "AdCa", "XaAa", "XaAd", "CaXa", 
+                   "CaYa", "CaXd", "AaWa") #separate cols for epistatic interactions
+    wadd <- which(colnames(res) %in% additive)
+    wdom <- which(colnames(res) %in% dominance)
+    wepi <- which(colnames(res) %in% epistatic)
+    results <- c(sum(abs(res[rowval,wadd]), na.rm = T),
+                 sum(abs(res[rowval,wdom]), na.rm = T),
+                 sum(abs(res[rowval,wepi]), na.rm = T))
+    results <- results/sum(results) #scale all values between 0-1
+    return(results)
 }
 
-write.csv(res, "complete.results.csv")
+
+final.results <- as.data.frame(matrix(NA, nrow(ref), 3))
+colnames(final.results) <- c("add", "dom", "epi")
+for(i in 1:nrow(res)){
+  start <- starts[i]
+  final.results[i, 1:3] <- getGoods(res, start)
+}
+
+
+# add interesting variables to go with the genetic architectures
+final.results$class <- ref$LH.or.M
+final.results$kingdom <- ref$plant.or.animal
+final.results$trait <- ref$phenotype
+final.results$species <- ref$organism
+final.results$SCS <- ref$SCS
+final.results$divergence <- ref$within.or.between.species
+final.results$weighted <- ref$SE.provided.
+final.results$method <- ref$data.type..standard..PSU..cmat
+
+
+
+write.csv(final.results,"../results/complete.results.csv")
 
 
 
