@@ -1,29 +1,23 @@
 #plot for LH vs M
-dat <- read.csv("complete.results.csv")
-cat <- read.csv("results.category.csv")
-datp <- dat[cat$LH.or.M == "LH",] #split data by trait type
-datq <- dat[cat$LH.or.M == "M",]
-datp$type <- "LH"
-datq$type <- "M"
-datp <- datp[order(datp$epistatic), ]
-datq <- datq[order(datq$epistatic), ]
-dat <- rbind(datp,datq)
-dat <- dat[complete.cases(dat), ]
+dat <- read.csv("../results/complete.results.csv")
+dat <- dat[!is.na(dat$add),]
+#split data by trait type
+LH <- sort(dat$epi[dat$class == "LH"])
+M <- sort(rowSums(dat[dat$class == "M",1:2]))
 
-datp <- datp[complete.cases(datp),]
-datpx <- seq(from=0, to=100, length.out=nrow(datp))
-datq <- datq[complete.cases(datq),]
-datqx <- seq(from=0, to=100, length.out=nrow(datq))
+LHx <- seq(from=0, to=100, length.out=length(LH))
+Mx <- seq(from=0, to=100, length.out=length(M))
+
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
      ylab="proportion of trait divergence that is epistasis")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
-lines(y=datp$epistatic, x=datpx, col= "#3F4788FF",lwd=3) #LH
-lines(y=datq$epistatic, x=datqx, col="#74D055FF",lwd=3) #M
-points(y=datp$epistatic, x=datpx, col="#3F4788FF",pch=16, cex=.9)
-points(y=datq$epistatic, x=datqx, col="#74D055FF",pch=16, cex=.9)
-legend("topleft", legend=c(paste("life history (n=", length(datpx),")", sep=""), 
-                           paste("morphological (n=", length(datqx),")", sep="")), 
+lines(y=LH, x=LHx, col= "#3F4788FF",lwd=3) #LH
+lines(y=M, x=Mx, col="#74D055FF",lwd=3) #M
+points(y=LH, x=LHx, col="#3F4788FF",pch=16, cex=.9)
+points(y=M, x=Mx, col="#74D055FF",pch=16, cex=.9)
+legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""), 
+                           paste("morphological (n=", length(Mx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
 
 
