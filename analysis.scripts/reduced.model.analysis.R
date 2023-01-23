@@ -89,6 +89,4 @@ for(i in 1:length(dat)){
 #### SAVE ANALYSIS ####
 save(res, file="../results/reduced.model.run.RData")
 
-ref[i,]
 
-rm(cur.dat)
