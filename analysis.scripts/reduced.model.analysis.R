@@ -5,38 +5,31 @@ library(SAGA2)
 
 #### READ IN REFERENCE FILE ####
 ref <- read.csv("../all.data/ref.csv")
+ref <- ref[-which(ref$new.file.name == ""),]
+ref <- ref[order(ref$new.file.name),]
+row.names(ref) <- NULL
 
 #### DEFINE DATA ####
-dat.standard <- list.files("../all.data/standard")
-dat.cmat <- list.files("../all.data/cmat/data")
-dat.psu <- list.files("../all.data/PSU")
-dat.all <- c(dat.standard,dat.cmat,dat.psu)
+dat <- list.files("../all.data/data/")
 
 #### OUTPUT LIST####
 res <- list()
 
 #### LOOP THROUGH DATA ####
-for(i in 1:length(dat.all)){
+for(i in 1:length(dat)){
 
   #Print message to track progress
-  cat(paste("analyzing dataset", i, "of", length(dat.all), "\r"))
+  cat(paste("analyzing dataset", i, "of", length(dat), "\r"))
   
   #### READ IN CURRENT DATA ####
   
   #Locate and read in data + cmatrix if necessary
-  if(dat.all[i] %in% dat.standard){
-    dat.cur <- read.csv(paste0("../all.data/standard/", dat.all[1]))
-  } else if(dat.all[i] %in% dat.cmat){
-    dat.cur <- read.csv(paste0("../all.data/cmat/data/",dat.all[i]))
-    cmat.cur <- as.matrix(read.csv(paste0("../all.data/cmat/cmats/",ref[i,12])))
-  } else {
-    dat.cur <- read.csv(paste0("../all.data/PSU/", dat.all[i]))
-  }
+  dat.cur <- read.csv(paste("../all.data/data/", dat[i],sep = ""))
   
   #### CLEAN DATA ####
   
   #Exclude cmat data
-  if(!dat.all[i] %in% dat.cmat){
+  if(ref$data.type..standard..PSU..cmat[i] != "cmat"){
     #Get cohort identifiers in upper case
     dat.cur$cross <- toupper(dat.cur$cross)
   }
@@ -50,7 +43,7 @@ for(i in 1:length(dat.all)){
   #### SET MAXIMUM PARAMETERS IN MODEL PARAMETERS TO KEEP####
   
   #Determine maximum parameters
-  if(nrow(dat.cur) <= 9){
+  if(nrow(dat.cur) <= 7){
     max.pars <- nrow(dat.cur) - 2
   } else {
     max.pars <- 5
@@ -61,9 +54,10 @@ for(i in 1:length(dat.all)){
   
   #### RUN ANALYSIS ####
   
-  if(dat.all[i] %in% dat.standard ||
-     dat.all[i] %in% dat.psu){
+  if(ref$data.type..standard..PSU..cmat[i] == "standard" ||
+     ref$data.type..standard..PSU..cmat[i] == "PSU"){
     
+    #Run LCA
     res[[i]] <- LCA(data = dat.cur,
                     parental = "calc", 
                     env = FALSE,
@@ -73,6 +67,13 @@ for(i in 1:length(dat.all)){
                     messages = F)[c(4, 6)]
   } else {
     
+    #Read in cmat
+    cmat.cur <- as.matrix(read.csv(paste("../all.data/cmat/", 
+                                         ref$cmat..if.assigned.[i], 
+                                         sep = "")))
+    
+    
+    #Run LCA
     res[[i]] <- LCA(data = dat.cur,
                     Cmatrix = cmat.cur,
                     parental = "calc", 
@@ -87,3 +88,7 @@ for(i in 1:length(dat.all)){
 
 #### SAVE ANALYSIS ####
 save(res, file="../results/reduced.model.run.RData")
+
+ref[i,]
+
+rm(cur.dat)
