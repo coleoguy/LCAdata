@@ -1,9 +1,12 @@
 #plot for LH vs M
 dat <- read.csv("../results/complete.results.csv")
-dat <- dat[!is.na(dat$add),]
+dat <- dat[! is.na(dat$add),]
+# get just within species
+# dat <- dat[dat$divergence == "within",]
+# dat <- dat[dat$method %in% c("cmat","standard"),]
 #split data by trait type
-LH <- sort(dat$epi[dat$class == "LH"])
-M <- sort(rowSums(dat[dat$class == "M",1:2]))
+LH <- sort(rowSums(dat[dat$class == "LH", 2:3]))
+M <- sort(rowSums(dat[dat$class == "M", 2:3]))
 
 LHx <- seq(from=0, to=100, length.out=length(LH))
 Mx <- seq(from=0, to=100, length.out=length(M))
@@ -78,6 +81,17 @@ points(y=datq$epistatic, x=datqx, col="#3F4788FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("within species (n=", length(datpx),")", sep=""), 
          paste("between species (n=", length(datqx),")", sep="")), 
 fill=c("#74D055FF", "#3F4788FF"), cex=0.8, bty="n")
+
+
+
+
+
+trait.table <- as.data.frame(table(dat$trait))
+trait.table$prop.epi <- NA
+for(i in 1:nrow(trait.table)){
+  trait.table$prop.epi[i] <-  mean(dat$epi[dat$trait == trait.table$Var1[i]])
+}
+
 
 
 
