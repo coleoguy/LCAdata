@@ -1,5 +1,5 @@
 load("../results/full.run.RData")
-ref <- read.csv("../all.data/ref2.csv")
+ref <- read.csv("../all.data/ref.csv")
 procLCA <- function(x){
   mcomp <- rep(0, 3)
   est <- matrix(as.numeric(unlist(x[[1]])),nrow=nrow(x[[1]]))
