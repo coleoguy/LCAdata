@@ -33,14 +33,14 @@ for(i in 1:length(res)){
 final.results$refile <- ref$new.file.name
 final.results$class <- ref$LH.or.M
 final.results$kingdom <- ref$plant.or.animal
+final.results$domestication <- ref$domestication
 final.results$trait <- ref$phenotype
 final.results$species <- ref$organism
 final.results$SCS <- ref$SCS
-final.results$divergence <- ref$within.or.between.species
+final.results$divergence <- ref$withinor.between.species
 final.results$weighted <- ref$SE.provided.
 final.results$method <- ref$data.type..standard..PSU..cmat
 write.csv(final.results,"../results/complete.results.csv", row.names = F)
-
 
 
 

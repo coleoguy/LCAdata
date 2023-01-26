@@ -3,8 +3,10 @@ dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
 # dat <- dat[dat$divergence == "within",]
-dat <- dat[dat$method %in% c("cmat","standard"),]
-#split data by trait type
+# dat <- dat[dat$divergence == "between",]
+# leave out psu datasets
+# dat <- dat[dat$method %in% c("cmat","standard"),]
+# split data by trait type
 LH <- sort(rowSums(dat[dat$class == "LH", 2:3]))
 M <- sort(rowSums(dat[dat$class == "M", 2:3]))
 LHx <- seq(from=0, to=100, length.out=length(LH))
@@ -28,6 +30,7 @@ dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
 dat <- dat[dat$divergence == "within",]
+# dat <- dat[dat$divergence == "between",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by trait type
@@ -54,6 +57,7 @@ dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
 # dat <- dat[dat$divergence == "within",]
+# dat <- dat[dat$divergence == "between",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by trait type
@@ -75,6 +79,36 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
 ######### plot for within vs between ######### 
 
 
+######### plot for domestic vs wild vs lab ######### 
+dat <- read.csv("../results/complete.results.csv")
+dat <- dat[! is.na(dat$add),]
+# get just within or between species
+# dat <- dat[dat$divergence == "within",]
+# dat <- dat[dat$divergence == "between",]
+# leave out psu datasets
+# dat <- dat[dat$method %in% c("cmat","standard"),]
+# split data by domestication status
+wild <- sort(rowSums(dat[dat$domestication == "wild", 2:3]))
+domestic <- sort(rowSums(dat[dat$domestication == "domestic", 2:3]))
+lab <- sort(rowSums(dat[dat$domestication == "lab", 2:3]))
+wildx <- seq(from=0, to=100, length.out=length(wild))
+domesticx <- seq(from=0, to=100, length.out=length(domestic))
+labx <- seq(from=0, to=100, length.out=length(lab))
+plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
+     xaxt="n", xlab="proportion of datasets analyzed",
+     ylab="proportion of trait divergence that is epistasis")
+axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
+lines(y=wild, x=wildx, col= "red",lwd=3) #wild
+lines(y=domestic, x=domesticx, col="blue",lwd=3) #domestic
+lines(y=lab, x=labx, col="green",lwd=3) #lab
+points(y=wild, x=wildx, col="red",pch=16, cex=.9)
+points(y=domestic, x=domesticx, col="blue",pch=16, cex=.9)
+points(y=lab, x=labx, col="green",pch=16, cex=.9)
+legend("topleft", legend=c(paste("wild (n=", length(wildx),")", sep=""), 
+                           paste("domestic (n=", length(domesticx),")", sep=""), 
+                           paste("lab (n=", length(labx),")", sep="")), 
+       fill=c("red", "blue", "green"), cex=0.8, bty="n")
+######### plot for domestic vs wild vs lab ######### 
 
 
 
@@ -88,17 +122,12 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
 
 
 
-
-
-
+dat <- read.csv("../results/complete.results.csv")
 trait.table <- as.data.frame(table(dat$trait))
 trait.table$prop.epi <- NA
 for(i in 1:nrow(trait.table)){
   trait.table$prop.epi[i] <-  mean(dat$epi[dat$trait == trait.table$Var1[i]])
 }
-
-
-
 
 
 
