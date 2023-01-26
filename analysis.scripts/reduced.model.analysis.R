@@ -5,9 +5,6 @@ library(SAGA2)
 
 #### READ IN REFERENCE FILE ####
 ref <- read.csv("../all.data/ref.csv")
-ref <- ref[-which(ref$new.file.name == ""),]
-ref <- ref[order(ref$new.file.name),]
-row.names(ref) <- NULL
 
 #### DEFINE DATA ####
 dat <- list.files("../all.data/data/")
