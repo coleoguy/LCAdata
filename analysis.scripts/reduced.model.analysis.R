@@ -84,6 +84,10 @@ for(i in 1:length(dat)){
 }
 
 #### SAVE ANALYSIS ####
+
+#Set names
+names(res) <- ref$new.file.name
+
 save(res, file="../results/reduced.model.run.RData")
 
 
