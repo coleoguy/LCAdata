@@ -21,8 +21,8 @@ dat.psu <- dat.psu[!dat.psu$method %in% "PSU",]
 dat <- dat[!dat$method %in% "PSU",]
 
 #### GET NON-ADDITIVE SUMS AND X PROPORTIONS ####
-psu.sums <- sort(rowSums(dat.psu[, 2:3]))
-full.sums <- sort(rowSums(dat[, 2:3]))
+psu.sums <- sort(rowSums(dat.psu[,3]))
+full.sums <- sort(rowSums(dat[,3]))
 psux <- seq(from=0, to=100, length.out=length(psu.sums))
 fullx <- seq(from=0, to=100, length.out=length(full.sums))
 
