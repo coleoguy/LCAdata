@@ -29,7 +29,7 @@ legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""),
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
-dat <- dat[dat$divergence == "within",]
+# dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
