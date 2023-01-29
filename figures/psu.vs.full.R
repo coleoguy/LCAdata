@@ -37,7 +37,7 @@ lines(y=psu.sums, x=psux, col= "#3F4788FF",lwd=3) #LH
 lines(y=full.sums, x=fullx, col="#74D055FF",lwd=3) #M
 points(y=psu.sums, x=psux, col="#3F4788FF",pch=16, cex=.9)
 points(y=full.sums, x=fullx, col="#74D055FF",pch=16, cex=.9)
-title("Standard and cmat datasets under PSU and Full models")
+#title("Standard and cmat datasets under PSU and Full models")
 legend("topleft", legend=c(paste("PSU model (n=", length(psux),")", sep=""), 
                            paste("Full model (n=", length(fullx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
