@@ -1,10 +1,11 @@
 library(shiny)
 library(DT)
-# Define UI for application that draws a histogram
+ref <- read.csv("ref_shiny.version.csv")
+# Define UI for application that creates figure
 ui <- fluidPage(
     # Application title
     titlePanel("The Role of Epistasis"),
-    # Sidebar with a slider input for number of bins 
+    # Sidebar with various dropdowns to subset data 
     sidebarLayout(
         sidebarPanel(
           h4("Select Data to include:"),
@@ -50,22 +51,37 @@ ui <- fluidPage(
                                       "Regression type" = 13), 
                        selected = 7),
         ),
-        # Show a plot of the generated distribution
         mainPanel(
-           plotOutput("distPlot"),
-           tabsetPanel(type = "tabs",
-                       tabPanel("Plot", plotOutput("plot")),
-                       tabPanel("Table", tableOutput("table")),
-        
+          
+          
+          tabsetPanel(
+            
+            
+            tabPanel("Plot",plotOutput("distPlot")),
+            tabPanel("Table",
+                     checkboxGroupInput(inputId = "table", label = "Choose columns to include",
+                                        choices = c("File name",
+                                                    "Organism",
+                                                    "Phenotype",
+                                                    "Sex chromosome System",
+                                                    "Trait class",
+                                                    "Clade",
+                                                    "Organism type",
+                                                    "Regression type",
+                                                    "Method",
+                                                    "Citation"),
+                                        selected = c("File name", "Organism", "Phenotype"),
+                                        inline = T),
+                     downloadButton("downloadData", "Download"), tableOutput("table"))
+          )
         )
     )
-))
+)
 
 
-# Define server logic required to draw a histogram
+# Define server logic required to create  plot
 server <- function(input, output) {
   output$value <- renderPrint({ input$method })
-
 
 
     output$distPlot <- renderPlot({
@@ -120,7 +136,36 @@ server <- function(input, output) {
           text(x=0,y=(.96+yinc*i), pos=4, paste(states[i]," ", "(n = ", ns[i],")", sep=""))
         }
      })
+      ref.table <- reactive({
+        x <- 0
+      if("File name" %in% input$table) x <- c(x, 1)
+      if("Organism" %in% input$table) x <- c(x, 2)
+      if("Phenotype" %in% input$table) x <- c(x, 3)
+      if("Sex chromosome System" %in% input$table) x <- c(x, 4)
+      if("Trait class" %in% input$table) x <- c(x, 5)
+      if("Clade" %in% input$table) x <- c(x, 6)
+      if("Divergence" %in% input$table) x <- c(x, 7)
+      if("Organism type" %in% input$table) x <- c(x, 8)
+      if("Regression type" %in% input$table) x <- c(x, 9)
+      if("Method" %in% input$table) x <- c(x, 10)
+      if("Citation" %in% input$table) x <- c(x, 11)
+      return(x)
+    })
+    output$table <- renderTable(ref[,ref.table()],
+                                  na = "",
+                                  striped = T)
+    
+      
+    output$downloadData <- downloadHandler(
+      filename = paste("epistasis", Sys.Date(), ".csv", sep=""),
+      content = function(file) {
+        write.csv(x[,ref.table()], file, row.names = FALSE)
+
+
+    })
 }
+
+
 
 # Run the application 
 shinyApp(ui = ui, server = server)
