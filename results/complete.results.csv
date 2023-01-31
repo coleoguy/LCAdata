@@ -1043,7 +1043,7 @@ NA,NA,NA,"podsplant.7x8.csv","podsplant.7x8.csv","LH","plant","domestic","number
 0.23103152333457,0,0.76896847666543,"podyield.30x7.csv","podyield.30x7.csv","LH","plant","domestic","pod yield per plant","Vigna sesquipedalis","NSC","within","N","PSU"
 NA,NA,NA,"podyield.30x8.csv","podyield.30x8.csv","LH","plant","domestic","pod yield per plant","Vigna sesquipedalis","NSC","within","N","PSU"
 1,0,0,"podyield.7x8.csv","podyield.7x8.csv","LH","plant","domestic","pod yield per plant","Vigna sesquipedalis","NSC","within","N","PSU"
-1,0,0,"polichaeta-sexchg.csv","polichaeta-sexchg.csv","M","animal","wild","number of chaetigerous segments at sex change","Ophryotrocha puerilis","XY","within","Y","PSU"
+1,0,0,"polichaeta-sexchg.csv","polichaeta-sexchg.csv","M","animal","wild","number of chaetigerous segments at sex change","Ophryotrocha puerilis","NSC","within","Y","PSU"
 0.502258397550737,0,0.497741602449263,"pollen_data.csv","pollen_data.csv","LH","plant","domestic","number of days from seeding to pollen shedding","Zea mays","NSC","within","Y","standard"
 0,0,1,"pollen.csv","pollen.csv","LH","plant","wild","proportion viable pollen","Silene latifolia, Silene diclinis","XY","between","Y","standard"
 NA,NA,NA,"populus1-root.csv","populus1-root.csv","M","plant","wild","root fractal","Populus angustifolia, Populus fremontii","NSC","between","Y","PSU"

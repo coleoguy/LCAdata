@@ -1,4 +1,7 @@
 ######## plot for LH vs M ########
+pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/LH_M.pdf", 
+    width = 2, 
+    height = 2)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -22,14 +25,18 @@ points(y=M, x=Mx, col="#74D055FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""), 
                            paste("morphological (n=", length(Mx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
+dev.off()
 ######## plot for LH vs M ########
 
 
 ######### plot for plant vs animal ######### 
+pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf", 
+    width = 2, 
+    height = 2)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
-# dat <- dat[dat$divergence == "within",]
+dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
@@ -49,10 +56,14 @@ points(y=animal, x=animalx, col="#74D055FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("plant (n=", length(plantx),")", sep=""), 
                            paste("animal (n=", length(animalx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
+dev.off()
 ######### plot for plant vs animal ######### 
 
 
 ######### plot for within vs between ######### 
+pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/W_B.pdf", 
+    width = 2, 
+    height = 2)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -76,10 +87,14 @@ points(y=between, x=betweenx, col="#74D055FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=""), 
                            paste("between species (n=", length(betweenx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
+dev.off()
 ######### plot for within vs between ######### 
 
 
-######### plot for domestic vs wild vs lab ######### 
+######### plot for domestic vs wild vs lab #########
+pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/D_W.pdf", 
+    width = 2, 
+    height = 2)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within or between species
@@ -108,6 +123,7 @@ legend("topleft", legend=c(paste("wild (n=", length(wildx),")", sep=""),
                            paste("domestic (n=", length(domesticx),")", sep=""), 
                            paste("lab (n=", length(labx),")", sep="")), 
        fill=c("red", "blue", "green"), cex=0.8, bty="n")
+dev.off()
 ######### plot for domestic vs wild vs lab ######### 
 
 
@@ -120,14 +136,6 @@ legend("topleft", legend=c(paste("wild (n=", length(wildx),")", sep=""),
 
 
 
-
-
-dat <- read.csv("../results/complete.results.csv")
-trait.table <- as.data.frame(table(dat$trait))
-trait.table$prop.epi <- NA
-for(i in 1:nrow(trait.table)){
-  trait.table$prop.epi[i] <-  mean(dat$epi[dat$trait == trait.table$Var1[i]])
-}
 
 
 
