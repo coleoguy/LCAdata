@@ -1,5 +1,4 @@
 library(shiny)
-library(DT)
 ref <- read.csv("ref_shiny.version.csv")
 # Define UI for application that creates figure
 ui <- fluidPage(
