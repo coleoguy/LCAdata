@@ -1,7 +1,7 @@
 ######## plot for LH vs M ########
 pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/LH_M.pdf", 
-    width = 2, 
-    height = 2)
+    width = 5, 
+    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -31,8 +31,8 @@ dev.off()
 
 ######### plot for plant vs animal ######### 
 pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf", 
-    width = 2, 
-    height = 2)
+    width = 5, 
+    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -62,8 +62,8 @@ dev.off()
 
 ######### plot for within vs between ######### 
 pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/W_B.pdf", 
-    width = 2, 
-    height = 2)
+    width = 5, 
+    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -93,8 +93,8 @@ dev.off()
 
 ######### plot for domestic vs wild vs lab #########
 pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/D_W.pdf", 
-    width = 2, 
-    height = 2)
+    width = 5, 
+    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within or between species
