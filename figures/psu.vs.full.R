@@ -37,8 +37,12 @@ plot(x=jitter(dat.psu$epi,20),
               green = 71/255,
               blue = 136/255,
               alpha=0.5))
+lines(x=c(0,1), y=c(0,1))
 
 dev.off()
+dat.psu$epi > 0 & dat$epi ==0
+dat.psu$epi == 0 & dat$epi > 0
+cor.test(dat.psu$epi,dat$epi)
 
 #### GET EPISTASIS SUMS AND X PROPORTIONS ####
 

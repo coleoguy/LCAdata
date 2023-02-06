@@ -4,7 +4,7 @@ library(SAGA2)
 dat <- read.csv("ACO.fem.time.csv")
 res <- LCA(dat, parental = "calc",env = FALSE, 
                 max.pars = 7, ret.all = F, SCS="XY", model.sum=0.3)
-plot(res) #13 models
+plot(res, cex.main=0.75, main="Best model") #13 models
 
 
 
@@ -12,5 +12,8 @@ plot(res) #13 models
 dat <- read.csv("ACO.fem.time.csv")
 res <- LCA(dat, parental = "calc",env = FALSE, 
            max.pars = 7, ret.all = F, SCS="XY")
-plot(res) #13 models
+plot(res, cex.main=0.75, main="Model weighted averages") #13 models
 
+
+
+VisModelSpace(dat)
