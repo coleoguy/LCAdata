@@ -1129,23 +1129,23 @@ NA,NA,NA,s.panicle2.csv,s.panicle2.csv,M,plant,domestic,plant height,Pennisetum 
 1,0,0,s.panicle4.csv,s.panicle4.csv,M,plant,domestic,plant height,Pennisetum typhoides,NSC,within,N,PSU
 0,1,0,s.panicle5.csv,s.panicle5.csv,M,plant,domestic,plant height,Pennisetum typhoides,NSC,within,N,PSU
 NA,NA,NA,s.panicle6.csv,s.panicle6.csv,M,plant,domestic,plant height,Pennisetum typhoides,NSC,within,N,PSU
-1,0,0,salmonL.1-16-3.csv,salmonL.1-16-3.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonL.10-21-3.csv,salmonL.10-21-3.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-0.875,0,0.125,salmonL.10-29-2.csv,salmonL.10-29-2.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonL.2-1-3.csv,salmonL.2-1-3.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-0.602502874,0.397497126,0,salmonL.4-15-2.csv,salmonL.4-15-2.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonL.6-28-3.csv,salmonL.6-28-3.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-0,1,0,salmonL.6-5-2.csv,salmonL.6-5-2.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-0.280674634,0.719325366,0,salmonL.7-24-2.csv,salmonL.7-24-2.csv,M,animal,wild,length ,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonW.1-16-3.csv,salmonW.1-16-3.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonW.10-21-3.csv,salmonW.10-21-3.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonW.10-29-2.csv,salmonW.10-29-2.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonW.2-1-3.csv,salmonW.2-1-3.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonW.2-26-1.csv,salmonW.2-26-1.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-0.50848522,0.49151478,0,salmonW.4-15-2.csv,salmonW.4-15-2.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-1,0,0,salmonW.6-28-3.csv,salmonW.6-28-3.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-0,1,0,salmonW.6-5-2.csv,salmonW.6-5-2.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
-0,1,0,salmonW.7-24-2.csv,salmonW.7-24-2.csv,M,animal,wild,width,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonL.1-16-3.csv,salmonL.1-16-3.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonL.10-21-3.csv,salmonL.10-21-3.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+0.875,0,0.125,salmonL.10-29-2.csv,salmonL.10-29-2.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonL.2-1-3.csv,salmonL.2-1-3.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+0.602502874,0.397497126,0,salmonL.4-15-2.csv,salmonL.4-15-2.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonL.6-28-3.csv,salmonL.6-28-3.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+0,1,0,salmonL.6-5-2.csv,salmonL.6-5-2.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+0.280674634,0.719325366,0,salmonL.7-24-2.csv,salmonL.7-24-2.csv,M,animal,wild,body length,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonW.1-16-3.csv,salmonW.1-16-3.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonW.10-21-3.csv,salmonW.10-21-3.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonW.10-29-2.csv,salmonW.10-29-2.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonW.2-1-3.csv,salmonW.2-1-3.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonW.2-26-1.csv,salmonW.2-26-1.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+0.50848522,0.49151478,0,salmonW.4-15-2.csv,salmonW.4-15-2.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+1,0,0,salmonW.6-28-3.csv,salmonW.6-28-3.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+0,1,0,salmonW.6-5-2.csv,salmonW.6-5-2.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
+0,1,0,salmonW.7-24-2.csv,salmonW.7-24-2.csv,M,animal,wild,body width,Onchorhynchus kisutch,XY,within,Y,cmat
 0,1,0,sec.root.csv,sec.root.csv,M,plant,domestic,number of secondary roots,Zea mays,NSC,within,N,PSU
 NA,NA,NA,second.branches.csv,second.branches.csv,M,plant,domestic,number of secondary branches,Brassica juncea,NSC,within,N,standard
 0.483031271,0,0.516968729,seed.beetle-bean-fem.csv,seed.beetle-bean-fem.csv,LH,animal,wild,"longevity, reared on bean",Acanthoscelides obtectus,XY,within,Y,PSU
