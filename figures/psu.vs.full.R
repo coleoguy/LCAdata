@@ -44,6 +44,24 @@ dat.psu$epi > 0 & dat$epi ==0
 dat.psu$epi == 0 & dat$epi > 0
 cor.test(dat.psu$epi,dat$epi)
 
+#Get datasets which are 0 in either PSU or full but not in other
+mismatch <- as.data.frame(cbind(c(c(paste0("n=",length(which(dat.psu$epi > 0 & dat$epi ==0))),
+                          paste0(dat.psu[which(dat.psu$epi > 0 & dat$epi ==0),5],
+                          ", method=",
+                          dat.psu[which(dat.psu$epi > 0 & dat$epi ==0),12])),
+                            rep(NA,
+                                length(which(dat.psu$epi == 0 & dat$epi > 0)) - 
+                                  length(which(dat.psu$epi > 0 & dat$epi == 0)))),
+                          c(paste0("n=",length(which(dat.psu$epi == 0 & dat$epi > 0))),
+                            paste0(dat[which(dat.psu$epi == 0 & dat$epi > 0),5],
+                                   ", method=",
+                                   dat.psu[which(dat.psu$epi > 0 & dat$epi ==0),12]))))
+
+colnames(mismatch) <- c("normal.0","psu.0")
+
+#Save
+write.csv(mismatch,"../results/psu.full.mismatch.csv", row.names = F)
+
 #### GET EPISTASIS SUMS AND X PROPORTIONS ####
 
 #Remove data with no significant models
