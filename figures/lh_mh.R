@@ -36,7 +36,7 @@ pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf",
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
-dat <- dat[dat$divergence == "within",]
+# dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
@@ -69,6 +69,7 @@ dat <- dat[! is.na(dat$add),]
 # get just within species
 # dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
+dat <- dat[dat$weighted == "Y",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by trait type
