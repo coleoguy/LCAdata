@@ -65,13 +65,15 @@ ui <- fluidPage(
                                                     "Sex chromosome System",
                                                     "Trait class",
                                                     "Clade",
+                                                    "Divergence",
+                                                    "Divergence time (MYA)",
                                                     "Organism type",
                                                     "Regression type",
                                                     "Method",
                                                     "Citation"),
                                         selected = c("File name", "Organism", "Phenotype"),
                                         inline = T),
-                     downloadButton("downloadData", "Download"), tableOutput("table"))
+                     downloadButton("downloadData", "Download table"), tableOutput("table"))
           )
         )
     )
@@ -144,10 +146,11 @@ server <- function(input, output) {
       if("Trait class" %in% input$table) x <- c(x, 5)
       if("Clade" %in% input$table) x <- c(x, 6)
       if("Divergence" %in% input$table) x <- c(x, 7)
-      if("Organism type" %in% input$table) x <- c(x, 8)
-      if("Regression type" %in% input$table) x <- c(x, 9)
-      if("Method" %in% input$table) x <- c(x, 10)
-      if("Citation" %in% input$table) x <- c(x, 11)
+      if("Divergence time (MYA)" %in% input$table) x <- c(x, 8)
+      if("Organism type" %in% input$table) x <- c(x, 9)
+      if("Regression type" %in% input$table) x <- c(x, 10)
+      if("Method" %in% input$table) x <- c(x, 11)
+      if("Citation" %in% input$table) x <- c(x, 12)
       return(x)
     })
     output$table <- renderTable(ref[,ref.table()],

@@ -114,16 +114,16 @@ plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
      ylab="proportion of trait divergence that is epistasis")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
-lines(y=wild, x=wildx, col= "red",lwd=3) #wild
-lines(y=domestic, x=domesticx, col="blue",lwd=3) #domestic
-lines(y=lab, x=labx, col="green",lwd=3) #lab
-points(y=wild, x=wildx, col="red",pch=16, cex=.9)
-points(y=domestic, x=domesticx, col="blue",pch=16, cex=.9)
-points(y=lab, x=labx, col="green",pch=16, cex=.9)
+lines(y=wild, x=wildx, col= "#3F4788FF",lwd=3) #wild
+lines(y=domestic, x=domesticx, col="#74D055FF",lwd=3) #domestic
+lines(y=lab, x=labx, col="#238a8d",lwd=3) #lab
+points(y=wild, x=wildx, col="#3F4788FF",pch=16, cex=.9)
+points(y=domestic, x=domesticx, col="#74D055FF",pch=16, cex=.9)
+points(y=lab, x=labx, col="#238a8d",pch=16, cex=.9)
 legend("topleft", legend=c(paste("wild (n=", length(wildx),")", sep=""), 
                            paste("domestic (n=", length(domesticx),")", sep=""), 
                            paste("lab (n=", length(labx),")", sep="")), 
-       fill=c("red", "blue", "green"), cex=0.8, bty="n")
+       fill=c("#3F4788FF", "#74D055FF", "#238a8d"), cex=0.8, bty="n")
 dev.off()
 ######### plot for domestic vs wild vs lab ######### 
 
