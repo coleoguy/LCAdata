@@ -7,7 +7,16 @@ ui <- fluidPage(
     # Sidebar with various dropdowns to subset data 
     sidebarLayout(
         sidebarPanel(
-          h4("Select Data to include:"),
+          radioButtons("colorby", label = h4("Select data to color by:"),
+                       choices = list("Clade" = 7, 
+                                      "Divergence" = 12, 
+                                      "Trait class" = 6,
+                                      "Organism type" = 8,
+                                      "Sex chromosome system" = 11,
+                                      "Method" = 14,
+                                      "Regression type" = 13), 
+                       selected = 7),
+          h4("Select subset options:"),
           selectInput("clade", label = h5("Clade"), 
                       choices = list("Plant" = "plant", 
                                      "Animal" = "animal", 
@@ -39,16 +48,7 @@ ui <- fluidPage(
                                      "Cmatrix provided" = "cmat",
                                      "Parental Sex Unknown" = "PSU",
                                      "All" = "all"), 
-                      selected = "all"),
-          radioButtons("colorby", label = h4("Color by:"),
-                       choices = list("Clade" = 7, 
-                                      "Divergence" = 12, 
-                                      "Trait class" = 6,
-                                      "Organism type" = 8,
-                                      "Sex chromosome system" = 11,
-                                      "Method" = 14,
-                                      "Regression type" = 13), 
-                       selected = 7),
+                      selected = "all")
         ),
         mainPanel(
           
@@ -71,7 +71,7 @@ ui <- fluidPage(
                                                     "Regression type",
                                                     "Method",
                                                     "Citation"),
-                                        selected = c("File name", "Organism", "Phenotype"),
+                                        selected = c("File name", "Organism", "Phenotype", "Citation"),
                                         inline = T),
                      downloadButton("downloadData", "Download table"), tableOutput("table"))
           )

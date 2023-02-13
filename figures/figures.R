@@ -130,9 +130,23 @@ dev.off()
 
 
 
+######### junk plot to see difference in within vs between for plant height ######### 
+dat <- dat[dat$trait =="plant height",]
+
+library(ggplot2)
+ggplot(dat, aes(divergence, epi)) + geom_point() + theme_bw() + 
+    theme(axis.line = element_line(color='black'), 
+          plot.background = element_blank(),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank())
 
 
+mean(dat[dat$divergence == "between", 'epi'])
+mean(dat[dat$divergence == "within", 'epi'])
 
+nrow(dat[dat$divergence == "between", ])
+nrow(dat[dat$divergence == "within", ])
 
 
 
