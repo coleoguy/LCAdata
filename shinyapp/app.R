@@ -64,8 +64,7 @@ ui <- fluidPage(
             tabPanel("Plot",plotOutput("distPlot")),
             tabPanel("Table",
                      checkboxGroupInput(inputId = "table", label = "Choose columns to include",
-                                        choices = c("File name",
-                                                    "Organism",
+                                        choices = c("Organism",
                                                     "Phenotype",
                                                     "Sex chromosome System",
                                                     "Trait class",
@@ -144,7 +143,6 @@ server <- function(input, output) {
      })
       ref.table <- reactive({
         x <- 0
-      if("File name" %in% input$table) x <- c(x, 1)
       if("Organism" %in% input$table) x <- c(x, 2)
       if("Phenotype" %in% input$table) x <- c(x, 3)
       if("Sex chromosome System" %in% input$table) x <- c(x, 4)

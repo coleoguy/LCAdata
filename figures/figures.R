@@ -134,10 +134,10 @@ dev.off()
  # this only works well if there are results for the same phenotype in within AND between divergence
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
-dat <- dat[dat$species =="Tribolium castaneum",]
+dat <- dat[dat$species =="plant height",]
 
 library(ggplot2)
-ggplot(dat, aes(, epi)) + geom_point() + theme_bw() + 
+ggplot(dat, aes(Divergence, epi)) + geom_point() + theme_bw() + 
     theme(axis.line = element_line(color='black'), 
           plot.background = element_blank(),
           panel.grid.major = element_blank(),
