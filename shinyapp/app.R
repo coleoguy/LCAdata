@@ -2,6 +2,11 @@ library(shiny)
 ref <- read.csv("ref_shiny.version.csv")
 # Define UI for application that creates figure
 ui <- fluidPage(
+  theme = "sandstone.css",
+  tags$style(type="text/css",
+             ".shiny-output-error { visibility: hidden; }",
+             ".shiny-output-error:before { visibility: hidden; }"),
+  
     # Application title
     titlePanel("The Role of Epistasis"),
     # Sidebar with various dropdowns to subset data 
@@ -153,9 +158,18 @@ server <- function(input, output) {
       if("Citation" %in% input$table) x <- c(x, 12)
       return(x)
     })
-    output$table <- renderTable(ref[,ref.table()],
-                                  na = "",
-                                  striped = T)
+
+    output$table <- renderTable({ 
+      ref[,ref.table()]
+      na = ""
+      striped = T    
+      
+      urls <- ref$new.file.name
+      refs <- paste0("<a href='",  urls,"' target='_blank'>", urls, "</a>")
+      ref$new.file.name <- refs
+      
+
+    }, sanitize.text.function = function(x) x)
     
       
     output$downloadData <- downloadHandler(
@@ -163,9 +177,12 @@ server <- function(input, output) {
       content = function(file) {
         write.csv(x[,ref.table()], file, row.names = FALSE)
 
+        
+       
+      }
+    )
+    }
 
-    })
-}
 
 
 
