@@ -75,9 +75,10 @@ ui <- fluidPage(
                                                     "Regression type",
                                                     "Method",
                                                     "Citation"),
-                                        selected = c("File name", "Organism", "Phenotype", "Citation"),
+                                        selected = c("Organism", "Phenotype", "Citation"),
                                         inline = T),
-                     downloadButton("downloadData", "Download table"), tableOutput("table"))
+                     downloadButton("downloadData", "Download table"), tableOutput("table")),
+            tabPanel("Citations", div(tableOutput("citTable"), style = "font-size:80%"))
           )
         )
     )
@@ -86,6 +87,7 @@ ui <- fluidPage(
 
 # Define server logic required to create  plot
 server <- function(input, output) {
+  cit.table <- read.csv("citations.csv", as.is=T, check.names=F)
   output$value <- renderPrint({ input$method })
 
 
@@ -171,11 +173,10 @@ server <- function(input, output) {
       filename = paste("epistasis", Sys.Date(), ".csv", sep=""),
       content = function(file) {
         write.csv(x[,ref.table()], file, row.names = FALSE)
-
-        
-       
-      }
-    )
+      })
+    output$citTable <- renderTable(cit.table,
+                                   na = "",
+                                   striped = T)
     }
 
 
