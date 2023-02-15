@@ -165,8 +165,8 @@ server <- function(input, output) {
       striped = T    
       
       urls <- ref$new.file.name
-      refs <- paste0("<a href='",  urls,"' target='_blank'>", urls, "</a>")
-      ref$new.file.name <- refs
+      links <- paste0("<a href='",  urls,"' target='_blank'>", urls, "</a>")
+      data.frame(links)
       
 
     }, sanitize.text.function = function(x) x)
