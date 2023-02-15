@@ -59,6 +59,35 @@ ui <- fluidPage(
           
           
           tabsetPanel(
+            tabPanel("Information", div(HTML("
+<br>
+<br>
+Since the 1930s, scientists have debated the importance of 
+epistatic gene action relative to additive gene action in trait divergence. Previous studies have been limited in the number of datasets for which
+they are able to accurately quantify epistatic effects. In an effort to resolve this debate, we have conducted an extensive literature search, 
+as well as generate several of our own datasets, allowing us to quantify the composite genetic effects that underlie trait
+divergence across the tree of life. This database houses over 1600 datasets sourced from 130 publications, allowing viewers to 
+visualize the effect of epistasis on a range of organisms and phenotypes. In the plot tab, you can select the data you wish to 
+color the base plot by, then select options to subset the data further. In the table tab, you can customize a table to include any 
+of the listed parameters and use the download button to retrieve a CSV file containing the selected data. Each dataset can also be downloaded by clicking
+the hyperlink file name in the last column. In the citations tab, you can see all of the complete citations used in the literature search.
+<br>
+<br>
+<b>Submitting Data:</b> If you are aware of any available records that should be added to the database, please email us and we will incorporate the missing data.
+<a href='mailto:jorjaelliott@tamu.edu'>Contact Us</a><br>
+<br>
+Data taken from the database must not be reproduced in published lists, online databases, or other
+formats, nor redistributed without permission. The information in this database is provided
+solely for personal and academic use, and must not be used for the purposes of financial gain.
+<br>
+<br>
+<b>The database should be cited as follows: ADD CITE HERE</b>
+<br>
+<a href='http://www.bioone.org/doi/abs/10.1649/0010-065X-69.1.174' target='_blank'> Blackmon, Heath, and Jeffery P. Demuth. Coleoptera Karyotype Database. The Coleopterists Bulletin 69.1 (2015): 174-175.</a>
+<br>
+<br>
+
+Current version of the database is XXX last updated XXXdate."), style = "font-size:100%")),
             
             
             tabPanel("Plot",plotOutput("distPlot")),
@@ -83,6 +112,7 @@ ui <- fluidPage(
         )
     )
 )
+
 
 
 # Define server logic required to create  plot
