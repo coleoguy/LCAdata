@@ -1,0 +1,448 @@
+"Var1","Freq","prop.epi"
+"% damage",1,1
+"% of eggs laid on mushrooms relative to tomatoes",1,0.485533717052318
+"100-seed weight",3,0
+"2.5% span length",6,0.644566757455552
+"20 year growth of survivors",1,0.935382061463581
+"20 year survival",1,0.918736303675095
+"24 hour estimate, locomotor activity",1,0.481353097205041
+"4 hour estimate, locomotor activity",1,0.321356588547646
+"48 hour estimate, locomotor activity",1,0.413724676054752
+"60 day bodyweight in females",1,0.195492883542381
+"60 day bodyweight in males",1,0
+"abdominal length",4,0.313861184996311
+"abdominal width",4,0.195179850279735
+"above ground biomass",1,NA
+"acetylene reduced (nmoles/h)",1,1
+"acrophase, locomotor activity",1,0
+"activity",6,0.0895374265869203
+"activity level",1,0.488272488692882
+"age of 1st reproduction",1,1
+"amplitude, locomotor activity",1,0.372267821375612
+"anthocyanin content",4,0.275556310910087
+"aphid survival",2,0
+"arachidic acid",3,0
+"ascorbic acid content",7,0.414918815455634
+"average weight per fruit",2,NA
+"beak length",2,0.410754932797771
+"behenic acid",3,1
+"biomass tolerance",1,0
+"body depth",2,0.394822128730836
+"body shape",2,0.316481738748957
+"body weight",2,1
+"body weight day 0",1,NA
+"body weight day 14",1,NA
+"body weight day 21",1,1
+"body weight day 28",1,NA
+"body weight day 35",1,NA
+"body weight day 42",1,NA
+"body weight day 49",1,NA
+"body weight day 56",1,1
+"body weight day 63",1,1
+"body weight day 7",1,1
+"body weight day 70",1,1
+"body weight day 77",1,0
+"body weight day 84",1,1
+"boll number",2,0.417097503156378
+"boll weight",2,0.369369105464921
+"branches per panicle",1,1
+"bristle size",1,0.306676568353444
+"bundle strength (g/tex)",6,0.75
+"BxACO fecundity",1,0.634379919226179
+"BxACO fem develop time",1,0.101953497518654
+"BxACO female starvation resist",1,0
+"BxACO female weight",1,0.652173913043477
+"BxACO male develop time",1,0
+"BxACO male starvation resist",1,0.249999984937591
+"BxACO male weight",1,0.343618459190852
+"BxSO fecundity",1,0.634704475787042
+"BxSO fem develop time",1,0
+"BxSO female starvation resist",1,0
+"BxSO female weight",1,0
+"BxSO male develop time",1,0
+"BxSO male starvation resist",1,0
+"BxSO male weight",1,0
+"calyx length",1,0
+"canopy temp",1,0.508990867971132
+"canopy width",4,0
+"capsule length",4,0.527052002786824
+"chlorophyll concentration",10,0
+"chlorophyll content",2,0
+"coleoptile length (mm)",5,0.140106876893982
+"condensed tannins",1,NA
+"condition factor",2,0.263412849335198
+"corolla length",1,0
+"cotyledon area (mm2)",1,0
+"days taken to first lateral",1,NA
+"days to 50% flowering",3,0.208348946793664
+"days to 50% silking",2,0
+"days to anthesis",2,1
+"days to first flowering",4,0.844370860927152
+"days to first fruit set",4,NA
+"days to flower",12,0.539957949766872
+"days to flower initiation",4,0.336737696023261
+"days to flowering",2,0
+"days to harvest",4,0.135372632696481
+"days to heading",2,0
+"days to maturity",9,0.514597090536241
+"days to physiological maturity",1,NA
+"days to red fruit",4,0
+"days to ripe green fruit",4,0
+"days to silking",1,0
+"development time",12,0.292074002639865
+"development time with high food",5,0.370798624054062
+"development time with high food/propionic acid",5,0.644148037918166
+"development time with low food",4,0.297286671048379
+"diameter at breast height",2,0.815921992611635
+"difference in days between silking and pollen shedding",1,0
+"dispersal tendency",1,0.840555525826346
+"distance from stigma to anthers ",1,0.686273502349381
+"dry above ground biomass",1,1
+"dry fodder yield",2,NA
+"dry matter content",4,0.629981601963381
+"dry weight",1,0
+"ear diameter",19,0.0406268464265042
+"ear height",4,0.150107548527909
+"ear length",3,0.270793985544168
+"ear length ",17,0.0412109796849104
+"early fecundity",1,0.55664101335225
+"egg dispersal",4,0.122690330983049
+"egg dispersion",4,0.129428953239376
+"egg number",2,0.5
+"egg size",2,0.554819774986749
+"egg survival",1,NA
+"egg volume ",2,0.592689279825774
+"eggs per plant",4,0
+"eggshell color",1,1
+"eicosenoic acid",3,0.304158337596161
+"ejaculation",1,1
+"emergence",6,0.0483057515396216
+"eye-ball size",1,0
+"eye-nostril distance",2,NA
+"fatty acid concentration",18,0.172982838597404
+"fatty acid ratio",3,0.333333333333333
+"fatty acids",3,0.113241098076892
+"Fe root concentration",2,0
+"Fe shoot concentration",2,0
+"filled seeds/catkin",1,0
+"final plant height",2,0.5
+"finger 1 length",2,1
+"finger 3 length",2,1
+"first flowering",4,0.489544256760645
+"first siliqua height",4,0.75
+"fitness at high density of food",4,0.666666666666667
+"fitness at low density of food",4,1
+"flag leaf area",3,0.442758534572468
+"flag-leaf angle",4,0
+"flag-leaf area",4,0.218595737379728
+"flag-leaf duration",4,0.333333333333333
+"flight time",1,0
+"flower days",4,0.190993454481262
+"flower height",1,0.185646509086434
+"flower length",1,0
+"flower width",1,0
+"fluctuating asymmetry",1,0
+"foot length",2,1
+"fresh weight",2,0.143581564389616
+"front femue width",1,0.262841781430565
+"front femur length",4,0.323457648272193
+"front femur width",2,0.428563254690087
+"front gemur length",1,0.762244670105556
+"fruit bearing index",6,0.139559647185629
+"fruit diameter",1,0
+"fruit length",5,0.316684524769633
+"fruit number",1,0
+"fruit number per plant",2,0.353968227247286
+"fruit number per plot",6,0.179313365732036
+"fruit shape",3,0.195722017274718
+"fruit size",1,0
+"fruit weight",18,0.378576028820548
+"fruit weight per plant",2,0.6396577795578
+"fruit weight per plot (kg)",6,0.426772208372552
+"fruit width",4,0.333333333333333
+"fruit yield",8,0.386782677870452
+"fruit-size index (cm)",6,0.341210552122195
+"fusarium rot resistance",1,0.803804627050128
+"genital length",4,0.477903547998052
+"germination rate",1,0.809571317468318
+"germination success",1,0.563768229800233
+"germination time",1,0.715409742748165
+"gill raker length",1,0.638290144195831
+"gill raker number",3,0
+"ginning percentage",6,0.548418083726272
+"glycoalkaloid content",4,1
+"grade index",4,0.340413207369592
+"grain iron content",1,NA
+"grain weight",3,0.160299347564403
+"grain yield",12,0.428270203436761
+"grain yield ",1,0
+"grain yield (g/plant) for late sowing",1,0.401953751925015
+"grain yield (g/plant) for normal sowing",1,0
+"grain yield per plant",2,0.326852820284716
+"grain zinc content",1,0
+"grains per panicle",2,0.938990436679082
+"gross viscosity",1,0
+"growth rate",1,NA
+"growth rate length",2,0
+"growth rate littoral env vs open env",1,NA
+"growth rate mass",2,0.297040690706361
+"harvest index",8,0.295015596860105
+"harvesting time",2,0
+"hatching success high salinity",1,NA
+"hatching success low salinity",1,0
+"head length",2,0.709602526615569
+"head width",2,0
+"heading date",1,0
+"herbivore density",29,0.685217819403095
+"hind femur length",4,0.262431356902424
+"infection degree",1,0.417022474347284
+"infection index",1,NA
+"internode length",9,0.318379181326223
+"internode number",4,0
+"intromission",1,0.571428571428571
+"iodine",3,0.5
+"K root concentration",2,NA
+"K shoot concentration",2,0
+"kernel depth",1,0.666445805515398
+"kernel rows per ears",17,0
+"kernel weight",6,0.359921480736167
+"kernels per row",17,0
+"kernels per spike",1,1
+"kernels per spikelet",2,0.556728419623949
+"keyhole limpet hemocyanin",1,1
+"latency period - disease",2,0
+"leaf area",1,0
+"leaf discoloration red-green",2,0.221969072597111
+"leaf length",19,0.0160280851380888
+"leaf length width ratio",1,1
+"leaf water potential",8,0.168978004681385
+"leaf weight",4,0.146873076175638
+"leaf width",20,0.112548672008477
+"leaves number",1,0
+"leaves per plant",4,0
+"length ",8,0.015625
+"length of panicle",2,1
+"lesion-diameter",1,0
+"lesioned area",2,0
+"lesions per cm",3,0.197766586761505
+"lesions per foliole",1,NA
+"lesions per leaf",2,0.33108625618168
+"lifespan",12,0.206665026481047
+"lignoceric acid",3,0.830145040134054
+"linoleic acid",3,0.394228954896757
+"lint percent",2,0
+"lint yield pp",2,0.371976235906428
+"long chain fatty acids",3,0.567197221822077
+"longevity, reared on bean",2,0.467415522426255
+"longevity, reared on chickpea",2,0.811355792823248
+"lower corolla lobe length",1,0
+"lower corolla lobe width",1,0
+"main stem length",1,NA
+"main stem length (cm)",1,0.706092621849833
+"maternal fitness",1,1
+"mean stamen length",1,0
+"mesocotyl length",3,0
+"micronaire value",6,0.5
+"mid femur length",4,0.31755175044082
+"mineral matter",3,0.284720531895529
+"mortality rate",4,0.666666666666667
+"mounting",1,0
+"nicotine %",4,0.156922388953305
+"nitrogen fixation component",1,1
+"nornicotine %",4,0.372499563060319
+"number of adventitious roots",1,1
+"number of branches",12,0.682418060542606
+"number of capsules",4,0
+"number of catkins",1,0.585858883871005
+"number of chaetigerous segments at sex change",1,0
+"number of clusters per plant",1,0
+"number of days from seeding to pollen shedding",1,0.497741602449263
+"number of days from seeding to silking",1,NA
+"number of days taken to flower",6,0.263057231603003
+"number of ears per plant",17,0.0340715563306148
+"number of eggs hatched",1,1
+"number of eggs per unit body weight",2,0.20036592704776
+"number of females",1,0.709235599431004
+"number of flower nodes",1,NA
+"number of flowering stalks",1,NA
+"number of flowering stems",1,0
+"number of flowers",2,0
+"number of fruit",2,0
+"number of fruit per plant ",6,0.25886397982574
+"number of fruits",6,0.352923935795879
+"number of fruits per plant",6,0.69734123806156
+"number of fry to 10 months",1,NA
+"number of grains per spike",3,0.658238811787662
+"number of kernels",2,0
+"number of kernels per row",3,0.14339727307801
+"number of lateral roots",1,0
+"number of leasions",16,0.119150487872739
+"number of leaves",21,0.137507589142113
+"number of locules",5,0.271987107347157
+"number of males",1,0.541163543650192
+"number of mesocotyl roots",1,0.573180030639345
+"number of mite gals",1,0.583363669693568
+"number of nodes",2,0.312356547739768
+"number of nodes above ear",1,NA
+"number of nodes below ear",1,0.595476360343771
+"number of nodes per main stem",1,NA
+"number of offspring",27,0.607237529310072
+"number of ovules",1,0.309913744080921
+"number of parthenocarpic fruits per plant of cumulative harvest",3,0
+"number of parthenocarpic fruits per plant of first harvest",2,0
+"number of peduncles per plant",3,0.5
+"number of pods",2,0.468632358428479
+"number of pods per plant",16,0.439043968443626
+"number of primary branches",2,0
+"number of primary laterals",2,0
+"number of racemes per plant",4,0.319790099626781
+"number of ramets produced before the flowering season",1,NA
+"number of red spots on the corolla",1,0.0750810305166615
+"number of rows per ear",3,0.666666666666667
+"number of secondary branches",1,0
+"number of secondary branches per plant",1,NA
+"number of secondary roots",1,0
+"number of seeds",2,0.394211644415051
+"number of seeds per fruit",4,0
+"number of seeds per plant",1,0
+"number of seeds per pod",4,0.5
+"number of siliquae per plant",1,NA
+"number of spike bearing culms",2,0.147809443648837
+"number of spikes per plant",2,0.300948864097362
+"number of tillers",3,0.666666666666667
+"number of tillers per plant",29,0.0179690497506075
+"nursery survival at 6 months",1,NA
+"nuzzling",1,0.526315789473684
+"oil concentration",2,0
+"oil content in seeds",4,0.43513216068381
+"oil ratio",3,0.448538017767762
+"oleic acid",3,0.35590931112084
+"orbit diameter",2,1
+"ovariole number",3,0.672856461112406
+"ovary length",1,0
+"P root concentration",2,0
+"P shoot concentration",2,0.655999601851391
+"palmictic acid",3,0
+"panicle length",1,0
+"panicles per plant",1,0.790262866344493
+"parotid gland length",2,1
+"paternal fitness",1,NA
+"peak fecundity",1,NA
+"peanut bud necrosis incidence %",3,0
+"pedicel length",1,NA
+"peduncle length",1,0.440501405597489
+"pelvic spine length",1,0
+"percent grains per panicle",1,0.450432940088325
+"percent lesions",1,0.375389127318027
+"percent of offspring deformed",24,0.504701265631056
+"percent survival",2,0.809029233884428
+"pericarp firmness",1,0
+"pericarp thickness",9,0.112454621955717
+"petiole length",1,0.379488683309538
+"photoperiod response to flowering date at Ft. Pierce",3,0.228736202369937
+"photoperiod response to flowering date at Gainesville",3,0.415286075482567
+"pistil length",1,0
+"plant height",120,0.399979863512939
+"plant size",1,0
+"plant spread",5,0.112794467502648
+"plate number",1,0.106408442052012
+"pod length",10,0.185774163811245
+"pod weight",6,0.298244673409059
+"pod width",2,0.5
+"pod yield",4,0.5
+"pod yield per plant",4,0.589656158888477
+"polyphenol oxidase activity",4,0.930529050440474
+"precent defoliation",2,0.424023399360815
+"primary branch number",2,0
+"pronotum width",3,0.333333333333333
+"proportion eggs on cowpea",2,0.296227907507241
+"proportion of males",1,NA
+"proportion of survivors reproductive",1,1
+"proportion that flowered",1,NA
+"proportion that set fruit",1,NA
+"proportion viable pollen",1,1
+"ratio of cutting weight",1,1
+"reducing sugars",4,0.686348765593905
+"residual variance in biomass tolerance",1,NA
+"root dry weight (gm)",1,1
+"root fractal",1,NA
+"root fresh weight (g)",1,1
+"root length",2,0
+"root weight",2,1
+"running speed",2,0
+"seed color",1,0.347335018300494
+"seed height",1,0.244514106583073
+"seed length",1,0
+"seed number",2,0.716446992986968
+"seed number ",1,NA
+"seed oil",6,0.49010914116617
+"seed oil content",10,0.209814596046444
+"seed per pod",2,0.444444444444446
+"seed pod ratio",2,0.5
+"seed set",1,0.498595326157122
+"seed size",1,0.310809083663385
+"seed weight",40,0.414661015216114
+"seed width",1,0.359700574810397
+"seed yield",2,0.406854615989217
+"seed yield per plant",1,1
+"seed yield pp",2,0.713147523793767
+"seedling height",5,0.627161080607997
+"seeds per fruit",6,0.339645962177829
+"seeds per pod",4,0.333333333333333
+"segment 7 length",4,0.220678437048299
+"segment 8 length",4,0.525444536185274
+"sexual activity",1,0
+"shelling percent",2,0.174689619631406
+"shoot dry weight (mg)",1,1
+"shoot fresh weight (mg)",1,1
+"shoot length",2,0.299999224177301
+"shoot weight",2,0
+"skin reflectance",1,0
+"snout-vent length",2,1
+"sperm length",1,0.664532874581034
+"sperm receptacle length",1,0.820435143501177
+"spike length (cm)",5,0.264114009914892
+"spikelets per spike",1,0.474092481612517
+"spine width",4,0.221719265883765
+"stearic acid",3,0
+"stem fractal",1,0.798569882244891
+"stem weight",4,0.0436120678468358
+"straw yield per plant",2,0.234280998614726
+"style length",1,0
+"sugar %",4,0.377596250317536
+"survival",1,0.960045955116134
+"survival to eating high salinity",1,0
+"survival to eating low salinity",1,NA
+"tassel length (cm)",17,0.0640824036595724
+"test weight (g)",1,1
+"thorax length",7,0.562600331988914
+"thorax width",2,0.677933617910968
+"tibia length",2,NA
+"time to find food",1,NA
+"time to first feeding",2,0
+"time to flowering (anthesis)",1,0
+"time to germination ",1,1
+"total alkaloids %",4,0.154830009907618
+"total length",4,0.486458498904779
+"total number of aphids",1,NA
+"total phenol content",4,0.927088348026772
+"total soluble solids",3,0.334303532978053
+"total soluble sugars",4,0.815616025728477
+"typanum diameter",2,1
+"uniformity ratio",6,0.4
+"up ear leaves number",1,0
+"viability",3,0.666666666666667
+"viability with high food",5,0.636265838486127
+"viability with high food/propionic acid",5,0.75
+"viability with low food",5,0.807320822899674
+"width",9,0
+"wing area",10,0.151297291532482
+"wing index score",2,0
+"wing length",6,0.236007655310037
+"wing size",9,0
+"yield",15,0.248946210244257
+"yield per plant",6,0.816390587689399
+"yield per plant (kg)",6,0.863734444450646
+"yield per spike (g)",5,0.247727272727273
+"Zn root concentration",2,NA
+"Zn shoot concentration",2,NA

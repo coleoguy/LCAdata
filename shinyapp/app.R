@@ -159,18 +159,15 @@ server <- function(input, output) {
       return(x)
     })
 
-    output$table <- renderTable({ 
-      ref[,ref.table()]
-      na = ""
-      striped = T    
-      
-      urls <- ref$new.file.name
-      links <- paste0("<a href='",  urls,"' target='_blank'>", urls, "</a>")
-      data.frame(links)
+    output$table <-      renderTable({ 
+        urls <- ref$new.file.name
+        data <- paste0("<a href='",  urls,"' target='_blank'>", urls, "</a>")
+        data.frame(ref[,ref.table()], data)
+
+
+      }, sanitize.text.function = function(x) x)
       
 
-    }, sanitize.text.function = function(x) x)
-    
       
     output$downloadData <- downloadHandler(
       filename = paste("epistasis", Sys.Date(), ".csv", sep=""),
