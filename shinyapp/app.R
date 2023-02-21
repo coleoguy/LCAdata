@@ -1,4 +1,5 @@
 library(shiny)
+library(viridis)
 ref <- read.csv("ref_shiny.version.csv")
 # Define UI for application that creates figure
 ui <- fluidPage(
@@ -154,18 +155,18 @@ server <- function(input, output) {
         x2 <- seq(from=0, to=1, length.out=length(y2))
         x3 <- seq(from=0, to=1, length.out=length(y3))
         x4 <- seq(from=0, to=1, length.out=length(y4))
-        plot(y=y1, x=x1, col="red", type="l",
+        plot(y=y1, x=x1, col="#440154FF", type="l",
              xlab="proportion of datasets analyzed",
-             ylab="proportion of trait divergence that is epistasis",
+             ylab="proportion of trait divergence that is epistasic",
              ylim=c(0,1))
-        lines(y=y2, x=x2, col="blue")
-        lines(y=y3, x=x3, col="green")
-        lines(y=y4, x=x4, col="black")
-        points(y=y1, x=x1, col="red",pch=16, cex=.9)
-        points(y=y2, x=x2, col="blue", pch=16, cex=.9)
-        points(y=y3, x=x3, col="green", pch=16, cex=.9)
-        points(y=y4, x=x4, col="black", pch=16, cex=.9)
-        cols <- c("red", "blue", "green", "black")
+        lines(y=y2, x=x2, col="#7AD151FF")
+        lines(y=y3, x=x3, col="#22A884FF")
+        lines(y=y4, x=x4, col="#3B528BFF")
+        points(y=y1, x=x1, col="#440154FF",pch=16, cex=.9)
+        points(y=y2, x=x2, col="#7AD151FF", pch=16, cex=.9)
+        points(y=y3, x=x3, col="#22A884FF", pch=16, cex=.9)
+        points(y=y4, x=x4, col="#3B528BFF", pch=16, cex=.9)
+        cols <- c("#440154FF", "#7AD151FF", "#22A884FF", "#3B528BFF")
         yinc <- -.04
         ns <- c(length(x1), length(x2), length(x3), length(x4))[1:length(states)]
         for(i in 1:length(states)){

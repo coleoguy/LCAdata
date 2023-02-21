@@ -134,10 +134,26 @@ dev.off()
  # this only works well if there are results for the same phenotype in within AND between divergence
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
-dat <- dat[dat$species =="plant height",]
+dat <- dat[dat$trait =="number of fruit",]
 
 library(ggplot2)
-ggplot(dat, aes(Divergence, epi)) + geom_point() + theme_bw() + 
+ggplot(dat, aes(divergence, epi)) + geom_point() + theme_bw() + 
+    theme(axis.line = element_line(color='black'), 
+          plot.background = element_blank(),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          panel.border = element_blank())
+
+#####
+
+dat <- read.csv("../results/complete.results.csv")
+dat <- dat[! is.na(dat$add),]
+
+#create binary column of 0 for 0% epi, 1 for >0% epi
+dat$bin <- ifelse(dat$epi > 0, 1, 0)
+
+library(ggplot2)
+ggplot(dat, aes(class, bin)) + geom_jitter() + theme_bw() + 
     theme(axis.line = element_line(color='black'), 
           plot.background = element_blank(),
           panel.grid.major = element_blank(),
@@ -151,12 +167,19 @@ ggplot(dat, aes(Divergence, epi)) + geom_point() + theme_bw() +
 
 
 
+
+
+
+
+
+
 mean(dat[dat$divergence == "between", 'epi'])
 mean(dat[dat$divergence == "within", 'epi'])
 
-nrow(dat[dat$divergence == "between", ])
-nrow(dat[dat$divergence == "within", ])
-
+nrow(dat[dat$bin == "0" & dat$kingdom == "plant",])
+nrow(dat[dat$bin == "1" & dat$kingdom == "plant",])
+nrow(dat[dat$bin == "0" & dat$kingdom == "animal",])
+nrow(dat[dat$bin == "1" & dat$kingdom == "animal",])
 
 
 
