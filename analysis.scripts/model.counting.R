@@ -12,7 +12,7 @@ res <- list()
 maximum.allowed <- 7
 data.files <- list.files("../all.data/data/")
 ## which(data.files != ref$new.file.name)
-for(i in 1:length(data.files)){
+for(i in 910:length(data.files)){
   cat(paste("analyzing dataset", i, "of", length(data.files), "\r"))
   flush.console()
   cur.dat <- read.csv(paste("../all.data/data/", data.files[i],sep = ""))
@@ -26,20 +26,20 @@ for(i in 1:length(data.files)){
   max.pars <- nrow(cur.dat) - 2 
   if(max.pars > 7) max.pars <- maximum.allowed
   if(ref$data.type..standard..PSU..cmat[i] == "standard"){
-    res[[i]] <- LCA(data=cur.dat,
+    res[i] <- length(LCA(data=cur.dat,
                     SCS=ref[,5][i], parental="calc", env=FALSE,
-                    max.pars = max.pars, ret.all = F, messages=F)[c(4,6)]
+                    max.pars = max.pars, ret.all = F, messages=F)$best.eqns.w)
   }  
   if(ref$data.type..standard..PSU..cmat[i] == "cmat"){
     cname <- ref$cmat..if.assigned.[which(ref$new.file.name == data.files[i])]
     cmat <- as.matrix(read.csv(paste("../all.data/cmat/", cname, sep = "")))
-    res[[i]] <- LCA(cur.dat, Cmatrix = cmat, messages=F)[c(4,6)]
+    res[i] <- length(LCA(cur.dat, Cmatrix = cmat, messages=F)$best.eqns.w)
   }
   if(ref$data.type..standard..PSU..cmat[i] == "PSU"){
     keep.pars <- c("Aa","Ad","AaAa","AaAd","AdAd")
-    res[[i]] <- LCA(data = cur.dat, parental = "calc",env = FALSE, 
+    res[i] <- length(LCA(data = cur.dat, parental = "calc",env = FALSE, 
                     max.pars = max.pars, ret.all = F, keep.pars = keep.pars,
-                    messages = F)[c(4, 6)]
+                    messages = F)$best.eqns.w)
   }
 }
 names(res) <- ref$new.file.name
