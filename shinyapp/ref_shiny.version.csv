@@ -1,16 +1,10 @@
 ﻿new file name,organism,phenotype,SCS,trait class,clade,divergence,divergence.time.MYA,organism type,regression type,method,citation
-okra-flower1.csv,Abelmoschous esculentus,days to first flowering,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
-okra-flower2.csv,Abelmoschous esculentus,days to first flowering,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
-okra-fruit1.csv,Abelmoschous esculentus,days to first fruit set,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
-okra-fruit2.csv,Abelmoschous esculentus,days to first fruit set,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
-okra-yield1.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
-okra-yield2.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
 okra-first.flower1.csv,Abelmoschous esculentus,days to first flowering,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
 okra-first.flower2.csv,Abelmoschous esculentus,days to first flowering,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
 okra-first.fruit1.csv,Abelmoschous esculentus,days to first fruit set,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
 okra-first.fruit2.csv,Abelmoschous esculentus,days to first fruit set,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
-okra-total.yield1.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
-okra-total.yield2.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
+okra-flower1.csv,Abelmoschous esculentus,days to first flowering,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
+okra-flower2.csv,Abelmoschous esculentus,days to first flowering,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
 okra-fruit.yield1.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-fruit.yield2.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-fruit.yield3.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
@@ -19,6 +13,8 @@ okra-fruit.yield5.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,d
 okra-fruit.yield6.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-fruit.yield7.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-fruit.yield8.csv,Abelmoschous esculentus,fruit yield,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
+okra-fruit1.csv,Abelmoschous esculentus,days to first fruit set,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
+okra-fruit2.csv,Abelmoschous esculentus,days to first fruit set,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
 okra-pod.num1.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-pod.num2.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-pod.num3.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
@@ -27,6 +23,8 @@ okra-pod.num5.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,
 okra-pod.num6.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-pod.num7.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-pod.num8.csv,Abelmoschous esculentus,number of pods per plant,NSC,LH,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
+okra-total.yield1.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
+okra-total.yield2.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012b"
 okra-water1.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-water2.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-water3.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
@@ -35,6 +33,8 @@ okra-water5.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,
 okra-water6.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-water7.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
 okra-water8.csv,Abelmoschous esculentus,leaf water potential,NSC,M,plant,within,,domestic,N,PSU,"Naveed, Khan, and Khan 2009"
+okra-yield1.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
+okra-yield2.csv,Abelmoschous esculentus,yield,NSC,LH,plant,within,,domestic,Y,PSU,"P. S. Aulakh, Dhall, and Singh 2012a"
 okra-fruit-weight1.csv,Abelmoschus esculentus,fruit weight,NSC,LH,plant,within,,domestic,Y,PSU,Parjeet Singh Aulakh and Dhall 2012
 okra-fruit-weight2.csv,Abelmoschus esculentus,fruit weight,NSC,LH,plant,within,,domestic,Y,PSU,Parjeet Singh Aulakh and Dhall 2012
 okra-num-fruit-1.csv,Abelmoschus esculentus,number of fruit,NSC,LH,plant,within,,domestic,Y,PSU,Parjeet Singh Aulakh and Dhall 2012
@@ -113,6 +113,11 @@ peanut-Kroot-1.csv,Arachis hypogaea,K root concentration,NSC,M,plant,within,,dom
 peanut-Kroot-2.csv,Arachis hypogaea,K root concentration,NSC,M,plant,within,,domestic,N,PSU,Ajay et al. 2018
 peanut-Kshoot-1.csv,Arachis hypogaea,K shoot concentration,NSC,M,plant,within,,domestic,N,PSU,Ajay et al. 2018
 peanut-Kshoot-2.csv,Arachis hypogaea,K shoot concentration,NSC,M,plant,within,,domestic,N,PSU,Ajay et al. 2018
+peanut-necrosis1.csv,Arachis hypogaea,peanut bud necrosis incidence %,NSC,LH,plant,within,,domestic,Y,standard,Pensuk et al. 2004
+peanut-necrosis2.csv,Arachis hypogaea,peanut bud necrosis incidence %,NSC,LH,plant,within,,domestic,Y,standard,Pensuk et al. 2004
+peanut-necrosis3.csv,Arachis hypogaea,peanut bud necrosis incidence %,NSC,LH,plant,within,,domestic,Y,standard,Pensuk et al. 2004
+peanut-oil.conc1.csv,Arachis hypogaea,oil concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, and Simpson 2013"
+peanut-oil.conc2.csv,Arachis hypogaea,oil concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, and Simpson 2013"
 peanut-P-root1.csv,Arachis hypogaea,P root concentration,NSC,M,plant,within,,domestic,N,PSU,Ajay et al. 2018
 peanut-P-root2.csv,Arachis hypogaea,P root concentration,NSC,M,plant,within,,domestic,N,PSU,Ajay et al. 2018
 peanut-P-shoot1.csv,Arachis hypogaea,P shoot concentration,NSC,M,plant,within,,domestic,N,PSU,Ajay et al. 2018
@@ -157,6 +162,24 @@ peanut2-longchainFA-3.csv,Arachis hypogaea,long chain fatty acids,NSC,M,plant,wi
 peanut2-oil-ratio-1.csv,Arachis hypogaea,oil ratio,NSC,M,plant,within,,domestic,Y,PSU,Aruna and Nigam 2009
 peanut2-oil-ratio-2.csv,Arachis hypogaea,oil ratio,NSC,M,plant,within,,domestic,Y,PSU,Aruna and Nigam 2009
 peanut2-oil-ratio-3.csv,Arachis hypogaea,oil ratio,NSC,M,plant,within,,domestic,Y,PSU,Aruna and Nigam 2009
+peanut2-oil1.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2013"
+peanut2-oil10.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2014"
+peanut2-oil11.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2015"
+peanut2-oil12.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2016"
+peanut2-oil13.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2017"
+peanut2-oil14.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2018"
+peanut2-oil15.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2019"
+peanut2-oil16.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2020"
+peanut2-oil17.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2021"
+peanut2-oil18.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2022"
+peanut2-oil2.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2023"
+peanut2-oil3.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2024"
+peanut2-oil4.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2025"
+peanut2-oil5.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2026"
+peanut2-oil6.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2027"
+peanut2-oil7.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2028"
+peanut2-oil8.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2029"
+peanut2-oil9.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2013"
 peanut2-oleic.acid.1.csv,Arachis hypogaea,oleic acid,NSC,M,plant,within,,domestic,Y,PSU,Aruna and Nigam 2009
 peanut2-oleic.acid.2.csv,Arachis hypogaea,oleic acid,NSC,M,plant,within,,domestic,Y,PSU,Aruna and Nigam 2009
 peanut2-oleic.acid.3.csv,Arachis hypogaea,oleic acid,NSC,M,plant,within,,domestic,Y,PSU,Aruna and Nigam 2009
@@ -190,29 +213,6 @@ peanut4-seedsperpod1.csv,Arachis hypogaea,seed per pod,NSC,LH,plant,within,,dome
 peanut4-seedsperpod2.csv,Arachis hypogaea,seed per pod,NSC,LH,plant,within,,domestic,Y,PSU,Halward and Wynne 1991
 peanut4-seedweight1.csv,Arachis hypogaea,seed weight,NSC,LH,plant,within,,domestic,Y,PSU,Halward and Wynne 1991
 peanut4-seedweight2.csv,Arachis hypogaea,seed weight,NSC,LH,plant,within,,domestic,Y,PSU,Halward and Wynne 1991
-peanut-necrosis1.csv,Arachis hypogaea,peanut bud necrosis incidence %,NSC,LH,plant,within,,domestic,Y,standard,Pensuk et al. 2004
-peanut-necrosis2.csv,Arachis hypogaea,peanut bud necrosis incidence %,NSC,LH,plant,within,,domestic,Y,standard,Pensuk et al. 2004
-peanut-necrosis3.csv,Arachis hypogaea,peanut bud necrosis incidence %,NSC,LH,plant,within,,domestic,Y,standard,Pensuk et al. 2004
-peanut2-oil1.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2013"
-peanut2-oil10.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2014"
-peanut2-oil11.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2015"
-peanut2-oil12.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2016"
-peanut2-oil13.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2017"
-peanut2-oil14.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2018"
-peanut2-oil15.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2019"
-peanut2-oil16.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2020"
-peanut2-oil17.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2021"
-peanut2-oil18.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2022"
-peanut2-oil2.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2023"
-peanut2-oil3.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2024"
-peanut2-oil4.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2025"
-peanut2-oil5.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2026"
-peanut2-oil6.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2027"
-peanut2-oil7.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2028"
-peanut2-oil8.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2029"
-peanut2-oil9.csv,Arachis hypogaea,fatty acid concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, Chagoya, et al. 2013"
-peanut-oil.conc1.csv,Arachis hypogaea,oil concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, and Simpson 2013"
-peanut-oil.conc2.csv,Arachis hypogaea,oil concentration,NSC,M,plant,within,,domestic,Y,PSU,"Wilson, Baring, Burow, Rooney, and Simpson 2013"
 eyesize.csv,Astyanax,eye-ball size,NSC,M,animal,within,,lab,Y,PSU,Wlikens 1971
 flower.init.csv,Brassica juncea,days to flower initiation,NSC,LH,plant,within,,domestic,N,standard,Sachan and Singh 1986
 maturity.days.csv,Brassica juncea,days to maturity,NSC,LH,plant,within,,domestic,N,standard,Sachan and Singh 1986
@@ -258,14 +258,6 @@ grains.num.csv,bread wheat,number of grains per spike,NSC,LH,plant,within,,domes
 harvest.index.csv,bread wheat,harvest index,NSC,LH,plant,within,,domestic,N,PSU,"G. Singh, Bhullar, and Gill 1986"
 thous.grainwt.csv,bread wheat,grain weight,NSC,LH,plant,within,,domestic,N,PSU,"G. Singh, Bhullar, and Gill 1986"
 tiller.num.csv,bread wheat,number of tillers per plant,NSC,M,plant,within,,domestic,N,PSU,"G. Singh, Bhullar, and Gill 1986"
-beetle5-lifespan.mb.fem.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mb.male.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mc.fem.a.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mc.fem.b.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mc.fem.c.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mc.male.a.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mc.male.b.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
-beetle5-lifespan.mc.male.c.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
 beetle3-disp-cc.csv,Callosobruchus maculatus,egg dispersion,XY,LH,animal,within,,wild,Y,PSU,C. W. Fox et al. 2004
 beetle3-disp-cm.csv,Callosobruchus maculatus,egg dispersion,XY,LH,animal,within,,wild,Y,PSU,C. W. Fox et al. 2004
 beetle3-disp-mc.csv,Callosobruchus maculatus,egg dispersion,XY,LH,animal,within,,wild,Y,PSU,C. W. Fox et al. 2004
@@ -280,6 +272,14 @@ beetle4-mort-cowpea-fem.csv,Callosobruchus maculatus,mortality rate,XY,LH,animal
 beetle4-mort-cowpea-male.csv,Callosobruchus maculatus,mortality rate,XY,LH,animal,within,,wild,N,PSU,Charles W. Fox et al. 2011
 beetle4-mort-mung-fem.csv,Callosobruchus maculatus,mortality rate,XY,LH,animal,within,,wild,N,PSU,Charles W. Fox et al. 2011
 beetle4-mort-mung-male.csv,Callosobruchus maculatus,mortality rate,XY,LH,animal,within,,wild,N,PSU,Charles W. Fox et al. 2011
+beetle5-lifespan.mb.fem.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mb.male.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mc.fem.a.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mc.fem.b.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mc.fem.c.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mc.male.a.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mc.male.b.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
+beetle5-lifespan.mc.male.c.csv,Callosobruchus maculatus,lifespan,XY,LH,animal,within,,wild,Y,PSU,"C. W. Fox, Czesak, and Wallin 2004"
 eggdisp.BF.csv,Callosobruchus maculatus,egg dispersal,XY,LH,animal,within,,wild,Y,cmat,Charles W. Fox et al. 2009
 eggdisp.cowpeaA.csv,Callosobruchus maculatus,egg dispersal,XY,LH,animal,within,,wild,Y,cmat,Charles W. Fox et al. 2009
 eggdisp.cowpeaB.csv,Callosobruchus maculatus,egg dispersal,XY,LH,animal,within,,wild,Y,cmat,Charles W. Fox et al. 2009
@@ -388,16 +388,20 @@ melon-fruit.weight1.csv,Cucumis melo,fruit weight per plant,NSC,LH,plant,within,
 melon-fruit.weight2.csv,Cucumis melo,fruit weight per plant,NSC,LH,plant,within,,domestic,Y,PSU,"Zalapa, Staub, and McCreight 2006"
 melon-fruitwt.average1.csv,Cucumis melo,average weight per fruit,NSC,LH,plant,within,,domestic,Y,PSU,"Zalapa, Staub, and McCreight 2006"
 melon-fruitwt.average2.csv,Cucumis melo,average weight per fruit,NSC,LH,plant,within,,domestic,Y,PSU,"Zalapa, Staub, and McCreight 2006"
-NCSU.fruit.num.csv,Cucumis sativus,number of fruits per plant,NSC,LH,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-NCSU.internode.len.csv,Cucumis sativus,internode length,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-NCSU.lateral.num.csv,Cucumis sativus,number of primary laterals,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-NCSU.node.num.csv,Cucumis sativus,number of nodes,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-NCSU.stem.len.csv,Cucumis sativus,main stem length,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-space.fruit.num.csv,Cucumis sativus,number of fruits per plant,NSC,LH,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-space.internode.len.csv,Cucumis sativus,internode length,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-space.lateral.num.csv,Cucumis sativus,number of primary laterals,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-space.node.num.csv,Cucumis sativus,number of nodes,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
-space.stem.len.csv,Cucumis sativus,main stem length (cm),NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+cucumber-acid1.csv,Cucumis sativus,ascorbic acid content,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-acid2.csv,Cucumis sativus,ascorbic acid content,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-acid3.csv,Cucumis sativus,ascorbic acid content,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-mineral1.csv,Cucumis sativus,mineral matter,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-mineral2.csv,Cucumis sativus,mineral matter,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-mineral3.csv,Cucumis sativus,mineral matter,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-solids1.csv,Cucumis sativus,total soluble solids,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-solids2.csv,Cucumis sativus,total soluble solids,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber-solids3.csv,Cucumis sativus,total soluble solids,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
+cucumber2-first.harvest1.csv,Cucumis sativus,number of parthenocarpic fruits per plant of first harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
+cucumber2-first.harvest2.csv,Cucumis sativus,number of parthenocarpic fruits per plant of first harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
+cucumber2-total.harvest1.csv,Cucumis sativus,number of parthenocarpic fruits per plant of cumulative harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
+cucumber2-total.harvest2.csv,Cucumis sativus,number of parthenocarpic fruits per plant of cumulative harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
+cucumber2-total.harvest3.csv,Cucumis sativus,number of parthenocarpic fruits per plant of cumulative harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
 fruitindex1.csv,Cucumis sativus,fruit bearing index,NSC,LH,plant,within,,domestic,N,PSU,Ghaderi and Lower 1979
 fruitindex2.csv,Cucumis sativus,fruit bearing index,NSC,LH,plant,within,,domestic,N,PSU,Ghaderi and Lower 1979
 fruitindex3.csv,Cucumis sativus,fruit bearing index,NSC,LH,plant,within,,domestic,N,PSU,Ghaderi and Lower 1979
@@ -422,20 +426,16 @@ fruitwt3.csv,Cucumis sativus,fruit weight,NSC,LH,plant,within,,domestic,N,PSU,Gh
 fruitwt4.csv,Cucumis sativus,fruit weight,NSC,LH,plant,within,,domestic,N,PSU,Ghaderi and Lower 1979
 fruitwt5.csv,Cucumis sativus,fruit weight,NSC,LH,plant,within,,domestic,N,PSU,Ghaderi and Lower 1979
 fruitwt6.csv,Cucumis sativus,fruit weight,NSC,LH,plant,within,,domestic,N,PSU,Ghaderi and Lower 1979
-cucumber-acid1.csv,Cucumis sativus,ascorbic acid content,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-acid2.csv,Cucumis sativus,ascorbic acid content,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-acid3.csv,Cucumis sativus,ascorbic acid content,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-mineral1.csv,Cucumis sativus,mineral matter,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-mineral2.csv,Cucumis sativus,mineral matter,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-mineral3.csv,Cucumis sativus,mineral matter,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-solids1.csv,Cucumis sativus,total soluble solids,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-solids2.csv,Cucumis sativus,total soluble solids,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber-solids3.csv,Cucumis sativus,total soluble solids,NSC,M,plant,within,,domestic,Y,PSU,"Kaur, Dhall, and Sharma 2020"
-cucumber2-first.harvest1.csv,Cucumis sativus,number of parthenocarpic fruits per plant of first harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
-cucumber2-first.harvest2.csv,Cucumis sativus,number of parthenocarpic fruits per plant of first harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
-cucumber2-total.harvest1.csv,Cucumis sativus,number of parthenocarpic fruits per plant of cumulative harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
-cucumber2-total.harvest2.csv,Cucumis sativus,number of parthenocarpic fruits per plant of cumulative harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
-cucumber2-total.harvest3.csv,Cucumis sativus,number of parthenocarpic fruits per plant of cumulative harvest,NSC,LH,plant,within,,domestic,Y,PSU,"Sun, Lower, and Staub 2006"
+NCSU.fruit.num.csv,Cucumis sativus,number of fruits per plant,NSC,LH,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+NCSU.internode.len.csv,Cucumis sativus,internode length,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+NCSU.lateral.num.csv,Cucumis sativus,number of primary laterals,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+NCSU.node.num.csv,Cucumis sativus,number of nodes,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+NCSU.stem.len.csv,Cucumis sativus,main stem length,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+space.fruit.num.csv,Cucumis sativus,number of fruits per plant,NSC,LH,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+space.internode.len.csv,Cucumis sativus,internode length,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+space.lateral.num.csv,Cucumis sativus,number of primary laterals,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+space.node.num.csv,Cucumis sativus,number of nodes,NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
+space.stem.len.csv,Cucumis sativus,main stem length (cm),NSC,M,plant,within,,domestic,N,PSU,Delaney and Lower 1987
 internode.num1.csv,Datura stramonium,internode number,NSC,M,plant,within,,wild,N,PSU,Baghat and Mittal 1984
 internode.num2.csv,Datura stramonium,internode number,NSC,M,plant,within,,wild,N,PSU,Baghat and Mittal 1984
 internode.num3.csv,Datura stramonium,internode number,NSC,M,plant,within,,wild,N,PSU,Baghat and Mittal 1984
@@ -496,13 +496,13 @@ early.fecund.csv,"Drosophila madeirensis, Drosophila subobscura",early fecundity
 peak.fecund.csv,"Drosophila madeirensis, Drosophila subobscura",peak fecundity,XY,LH,animal,between,0.78,lab,Y,standard,"Rego, Santos, and Matos 2007"
 reprod.dros.csv,"Drosophila madeirensis, Drosophila subobscura",age of 1st reproduction,XY,LH,animal,between,0.78,lab,Y,standard,"Rego, Santos, and Matos 2007"
 surviv.csv,"Drosophila madeirensis, Drosophila subobscura",survival,XY,LH,animal,between,0.78,lab,Y,standard,"Rego, Santos, and Matos 2007"
-SO.fecundity.csv,Drosophila melanogaster,BxSO fecundity,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
-SO.fem.starv.csv,Drosophila melanogaster,BxSO female starvation resist,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
-SO.fem.time.csv,Drosophila melanogaster,BxSO fem develop time,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
-SO.femwt.csv,Drosophila melanogaster,BxSO female weight,XY,M,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
-SO.male.starv.csv,Drosophila melanogaster,BxSO male starvation resist,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
-SO.male.time.csv,Drosophila melanogaster,BxSO male develop time,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
-SO.malewt.csv,Drosophila melanogaster,BxSO male weight,XY,M,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.fecund.csv,Drosophila melanogaster,BxACO fecundity,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.fem.starv.csv,Drosophila melanogaster,BxACO female starvation resist,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.fem.time.csv,Drosophila melanogaster,BxACO fem develop time,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.femwt.csv,Drosophila melanogaster,BxACO female weight,XY,M,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.male.starv.csv,Drosophila melanogaster,BxACO male starvation resist,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.male.time.csv,Drosophila melanogaster,BxACO male develop time,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
+ACO.malewt.csv,Drosophila melanogaster,BxACO male weight,XY,M,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
 develop.acid1.csv,Drosophila melanogaster,development time with high food/propionic acid,XY,LH,animal,within,,lab,Y,PSU,Blows and Sokolowski 1995
 develop.acid2.csv,Drosophila melanogaster,development time with high food/propionic acid,XY,LH,animal,within,,lab,Y,PSU,Blows and Sokolowski 1995
 develop.acid3.csv,Drosophila melanogaster,development time with high food/propionic acid,XY,LH,animal,within,,lab,Y,PSU,Blows and Sokolowski 1995
@@ -529,26 +529,26 @@ dros2-wing.length.aus.fem.csv,Drosophila melanogaster,wing length,XY,M,animal,wi
 dros2-wing.length.aus.male.csv,Drosophila melanogaster,wing length,XY,M,animal,within,,lab,N,PSU,Gilchrist and Partridge 1999
 dros2-wing.length.sa.fem.csv,Drosophila melanogaster,wing length,XY,M,animal,within,,lab,N,PSU,Gilchrist and Partridge 1999
 dros2-wing.length.sa.male.csv,Drosophila melanogaster,wing length,XY,M,animal,within,,lab,N,PSU,Gilchrist and Partridge 1999
-drosophila-wing.female.csv,Drosophila melanogaster,wing index score,XY,M,animal,within,,lab,Y,PSU,Griffin 2007
-drosophila-wing.male.csv,Drosophila melanogaster,wing index score,XY,M,animal,within,,lab,Y,PSU,Griffin 2007
 dros3-wing.area.bs.csv,Drosophila melanogaster,wing area,XY,M,animal,within,,lab,Y,PSU,"Kennington, Jason Kennington, and Hoffmann 2010"
 dros3-wing.area.cs.csv,Drosophila melanogaster,wing area,XY,M,animal,within,,lab,Y,PSU,"Kennington, Jason Kennington, and Hoffmann 2010"
 dros3-wing.area.gs.csv,Drosophila melanogaster,wing area,XY,M,animal,within,,lab,Y,PSU,"Kennington, Jason Kennington, and Hoffmann 2010"
 dros3-wing.area.ms.csv,Drosophila melanogaster,wing area,XY,M,animal,within,,lab,Y,PSU,"Kennington, Jason Kennington, and Hoffmann 2010"
-flight.time.csv,Drosophila melanogaster,flight time,XY,M,animal,within,,lab,Y,standard,Luckinbill et al. 1988
-ACO.fecund.csv,Drosophila melanogaster,BxACO fecundity,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
-ACO.fem.starv.csv,Drosophila melanogaster,BxACO female starvation resist,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
-ACO.fem.time.csv,Drosophila melanogaster,BxACO fem develop time,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
-ACO.femwt.csv,Drosophila melanogaster,BxACO female weight,XY,M,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
-ACO.male.starv.csv,Drosophila melanogaster,BxACO male starvation resist,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
-ACO.male.time.csv,Drosophila melanogaster,BxACO male develop time,XY,LH,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
-ACO.malewt.csv,Drosophila melanogaster,BxACO male weight,XY,M,animal,within,,domestic,Y,standard,"Teotónio, Matos, and Rose 2004"
 dros5-circadian.fem.csv,Drosophila melanogaster,emergence,XY,LH,animal,within,,lab,Y,PSU,"Vaze, Nikhil, and Sharma 2013"
 dros5-circadian.male.csv,Drosophila melanogaster,emergence,XY,LH,animal,within,,lab,Y,PSU,"Vaze, Nikhil, and Sharma 2013"
 dros5-evening.fem.csv,Drosophila melanogaster,emergence,XY,LH,animal,within,,lab,Y,PSU,"Vaze, Nikhil, and Sharma 2013"
 dros5-evening.male.csv,Drosophila melanogaster,emergence,XY,LH,animal,within,,lab,Y,PSU,"Vaze, Nikhil, and Sharma 2013"
 dros5-morning.fem.csv,Drosophila melanogaster,emergence,XY,LH,animal,within,,lab,Y,PSU,"Vaze, Nikhil, and Sharma 2013"
 dros5-morning.male.csv,Drosophila melanogaster,emergence,XY,LH,animal,within,,lab,Y,PSU,"Vaze, Nikhil, and Sharma 2013"
+drosophila-wing.female.csv,Drosophila melanogaster,wing index score,XY,M,animal,within,,lab,Y,PSU,Griffin 2007
+drosophila-wing.male.csv,Drosophila melanogaster,wing index score,XY,M,animal,within,,lab,Y,PSU,Griffin 2007
+flight.time.csv,Drosophila melanogaster,flight time,XY,M,animal,within,,lab,Y,standard,Luckinbill et al. 1988
+SO.fecundity.csv,Drosophila melanogaster,BxSO fecundity,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+SO.fem.starv.csv,Drosophila melanogaster,BxSO female starvation resist,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+SO.fem.time.csv,Drosophila melanogaster,BxSO fem develop time,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+SO.femwt.csv,Drosophila melanogaster,BxSO female weight,XY,M,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+SO.male.starv.csv,Drosophila melanogaster,BxSO male starvation resist,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+SO.male.time.csv,Drosophila melanogaster,BxSO male develop time,XY,LH,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
+SO.malewt.csv,Drosophila melanogaster,BxSO male weight,XY,M,animal,within,,lab,Y,standard,"Teotónio, Matos, and Rose 2004"
 dros.sperm.csv,Drosophila mojavensis,sperm length,XY,LH,animal,within,,lab,Y,cmat,"Miller, Starmer, and Pitnick 2003"
 dros.sr.csv,Drosophila mojavensis,sperm receptacle length,XY,LH,animal,within,,lab,Y,cmat,"Miller, Starmer, and Pitnick 2003"
 viability.acid1.csv,Drosophila rnelanogaster,viability with high food/propionic acid,XY,LH,animal,within,,lab,Y,PSU,Blows and Sokolowski 1995
@@ -797,11 +797,30 @@ rabbit-bodyweight-day7.csv,Oryctolagus cuniculus domesticus,body weight day 7,XY
 rabbit-bodyweight-day70.csv,Oryctolagus cuniculus domesticus,body weight day 70,XY,LH,animal,within,,domestic,Y,PSU,Jakubec et al. 1985
 rabbit-bodyweight-day77.csv,Oryctolagus cuniculus domesticus,body weight day 77,XY,LH,animal,within,,domestic,Y,PSU,Jakubec et al. 1985
 rabbit-bodyweight-day84.csv,Oryctolagus cuniculus domesticus,body weight day 84,XY,LH,animal,within,,domestic,Y,PSU,Jakubec et al. 1985
+mesolen1.csv,Oryza sativa,mesocotyl length,NSC,M,plant,within,,domestic,Y,PSU,"Mgonja, Ladeinde, and Aken’Ova 1993"
+mesolen2.csv,Oryza sativa,mesocotyl length,NSC,M,plant,within,,domestic,Y,PSU,"Mgonja, Ladeinde, and Aken’Ova 1993"
+mesolen3.csv,Oryza sativa,mesocotyl length,NSC,M,plant,within,,domestic,Y,PSU,"Mgonja, Ladeinde, and Aken’Ova 1993"
 rice-branches-per-panicle.csv,Oryza sativa,branches per panicle,NSC,M,plant,within,,domestic,Y,PSU,Hastini et al. 2021
+rice-canopy.csv,Oryza sativa,canopy temp,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-chlorophyll.csv,Oryza sativa,chlorophyll content,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-flag.area.csv,Oryza sativa,flag leaf area,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-flower.days.csv,Oryza sativa,days to 50% flowering,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-grain.iron.csv,Oryza sativa,grain iron content,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-grain.yield.csv,Oryza sativa,grain yield per plant,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-grain.zinc.csv,Oryza sativa,grain zinc content,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
 rice-grains-per-panicle.csv,Oryza sativa,grains per panicle,NSC,LH,plant,within,,domestic,Y,PSU,Hastini et al. 2021
+rice-grains.panicle.csv,Oryza sativa,grains per panicle,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-harvest.index.csv,Oryza sativa,harvest index,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-mature.days.csv,Oryza sativa,days to maturity,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-panicle.len.csv,Oryza sativa,panicle length,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-panicles.csv,Oryza sativa,panicles per plant,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
 rice-percent-grains-per-panicle.csv,Oryza sativa,percent grains per panicle,NSC,LH,plant,within,,domestic,Y,PSU,Hastini et al. 2021
+rice-plant.height.csv,Oryza sativa,plant height,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
+rice-testwt.csv,Oryza sativa,test weight (g),NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
 rice2-daystoflowering1.csv,Oryza sativa,days to flowering,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
 rice2-daystoflowering2.csv,Oryza sativa,days to flowering,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
+rice2-freshwt1.csv,Oryza sativa,fresh weight,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
+rice2-freshwt2.csv,Oryza sativa,fresh weight,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-grainyieldperplant1.csv,Oryza sativa,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
 rice2-grainyieldperplant2.csv,Oryza sativa,grain yield ,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
 rice2-harvestindex1.csv,Oryza sativa,harvest index,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
@@ -812,33 +831,14 @@ rice2-numberoftillers1.csv,Oryza sativa,number of tillers,NSC,M,plant,within,,do
 rice2-numberoftillers2.csv,Oryza sativa,number of tillers,NSC,M,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
 rice2-plantheight1.csv,Oryza sativa,plant height,NSC,M,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
 rice2-plantheight2.csv,Oryza sativa,plant height,NSC,M,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
-rice2-strawyieldperplant1.csv,Oryza sativa,straw yield per plant,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
-rice2-strawyieldperplant2.csv,Oryza sativa,straw yield per plant,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
-rice-canopy.csv,Oryza sativa,canopy temp,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-chlorophyll.csv,Oryza sativa,chlorophyll content,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-flag.area.csv,Oryza sativa,flag leaf area,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-flower.days.csv,Oryza sativa,days to 50% flowering,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-grain.iron.csv,Oryza sativa,grain iron content,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-grain.yield.csv,Oryza sativa,grain yield per plant,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-grain.zinc.csv,Oryza sativa,grain zinc content,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-grains.panicle.csv,Oryza sativa,grains per panicle,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-harvest.index.csv,Oryza sativa,harvest index,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-mature.days.csv,Oryza sativa,days to maturity,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-panicle.len.csv,Oryza sativa,panicle length,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-panicles.csv,Oryza sativa,panicles per plant,NSC,LH,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-plant.height.csv,Oryza sativa,plant height,NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-rice-testwt.csv,Oryza sativa,test weight (g),NSC,M,plant,within,,domestic,Y,PSU,Kumar et al. 2020
-mesolen1.csv,Oryza sativa,mesocotyl length,NSC,M,plant,within,,domestic,Y,PSU,"Mgonja, Ladeinde, and Aken’Ova 1993"
-mesolen2.csv,Oryza sativa,mesocotyl length,NSC,M,plant,within,,domestic,Y,PSU,"Mgonja, Ladeinde, and Aken’Ova 1993"
-mesolen3.csv,Oryza sativa,mesocotyl length,NSC,M,plant,within,,domestic,Y,PSU,"Mgonja, Ladeinde, and Aken’Ova 1993"
-rice2-freshwt1.csv,Oryza sativa,fresh weight,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
-rice2-freshwt2.csv,Oryza sativa,fresh weight,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-rg1.csv,Oryza sativa,leaf discoloration red-green,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-rg2.csv,Oryza sativa,leaf discoloration red-green,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-root.len1.csv,Oryza sativa,root length,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-root.len2.csv,Oryza sativa,root length,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-shoot.len1.csv,Oryza sativa,shoot length,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
 rice2-shoot.len2.csv,Oryza sativa,shoot length,NSC,M,plant,within,,domestic,Y,PSU,Nugraha et al. 2016
+rice2-strawyieldperplant1.csv,Oryza sativa,straw yield per plant,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
+rice2-strawyieldperplant2.csv,Oryza sativa,straw yield per plant,NSC,LH,plant,within,,domestic,Y,PSU,"Jondhale, Bhave, and Jogi 2018"
 c.anthesis1.csv,Pennisetum typhoides,plant height,NSC,M,plant,within,,domestic,N,PSU,Sagar 1990
 c.anthesis2.csv,Pennisetum typhoides,plant height,NSC,M,plant,within,,domestic,N,PSU,Sagar 1990
 c.anthesis3.csv,Pennisetum typhoides,plant height,NSC,M,plant,within,,domestic,N,PSU,Sagar 1990
@@ -887,8 +887,8 @@ seed.height.csv,Phaseolus vulgaris,seed height,NSC,LH,plant,within,,domestic,Y,P
 seed.length.csv,Phaseolus vulgaris,seed length,NSC,LH,plant,within,,domestic,Y,PSU,"Motto, Soressi, and Salamini 1978"
 seed.weight.csv,Phaseolus vulgaris,seed weight,NSC,LH,plant,within,,domestic,Y,PSU,"Motto, Soressi, and Salamini 1978"
 seed.width.csv,Phaseolus vulgaris,seed width,NSC,LH,plant,within,,domestic,Y,PSU,"Motto, Soressi, and Salamini 1978"
-seed.mf.csv,Pisum sativum,seed number,NSC,LH,plant,within,,domestic,Y,PSU,"S. P. Singh and Singh, n.d."
-seed.sylvia.csv,Pisum sativum,seed number ,NSC,LH,plant,within,,domestic,Y,PSU,"S. P. Singh and Singh, n.d."
+seed.mf.csv,Pisum sativum,seed number,NSC,LH,plant,within,,domestic,Y,PSU,"S. P. Singh and Singh, 1979"
+seed.sylvia.csv,Pisum sativum,seed number ,NSC,LH,plant,within,,domestic,Y,PSU,"S. P. Singh and Singh, 1979"
 populus1-root.csv,"Populus angustifolia, Populus fremontii",root fractal,NSC,M,plant,between,NA,wild,Y,PSU,Bangert et al. 2008
 populus1-stem.csv,"Populus angustifolia, Populus fremontii",stem fractal,NSC,M,plant,between,NA,wild,Y,PSU,Bangert et al. 2008
 populus1-tanin.csv,"Populus angustifolia, Populus fremontii",condensed tannins,NSC,M,plant,between,NA,wild,Y,PSU,Bangert et al. 2008
@@ -908,10 +908,33 @@ rat-loco.4est.csv,rat,"4 hour estimate, locomotor activity",XY,M,animal,within,,
 rat-loco.acro.csv,rat,"acrophase, locomotor activity",XY,M,animal,within,,lab,Y,PSU,"Wollnik, Gartner, and Bittner 1987"
 rat-loco.amp.csv,rat,"amplitude, locomotor activity",XY,M,animal,within,,lab,Y,PSU,"Wollnik, Gartner, and Bittner 1987"
 broad-rat-activity.csv,Rattus norvegicus,activity level,XY,LH,animal,within,,lab,Y,PSU,Broadhurst and Jinks 1961
+A.tetanothrixa.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,wild,Y,standard,Hochwender and Fritz 2004
 aphid.num.csv,"Salix eriocephala, Salix sericea",total number of aphids,NSC,M,plant,between,NA,wild,Y,standard,Czesak et al. 2004
 aphid.survA.csv,"Salix eriocephala, Salix sericea",aphid survival,NSC,M,plant,between,NA,wild,Y,standard,Czesak et al. 2004
 aphid.survB.csv,"Salix eriocephala, Salix sericea",aphid survival,NSC,M,plant,between,NA,wild,Y,standard,Czesak et al. 2004
+Caloptilia.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+catkin.gardens.csv,"Salix eriocephala, Salix sericea",number of catkins,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
+catkin.num.csv,"Salix eriocephala, Salix sericea",filled seeds/catkin,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
+dry.biomass.csv,"Salix eriocephala, Salix sericea",dry above ground biomass,NSC,M,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
+E.s-gracilis.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+germ.rate.csv,"Salix eriocephala, Salix sericea",germination rate,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
+leafLFa.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+leafv.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
 mite.num.csv,"Salix eriocephala, Salix sericea",number of mite gals,NSC,M,plant,between,NA,domestic,Y,standard,Czesak et al. 2004
+P.eleanorae.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+P.nigrita.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+P.salicifolia.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+P.salicifoliella.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+P.sp.C.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+P.terminalis.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+R.rigidaea.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+R.salicisbrassicoides.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+R.sp.Ga.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
+seed.product.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
+willow-biotol.csv,"Salix eriocephala, Salix sericea",biomass tolerance,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
+willow-cuttingwt.csv,"Salix eriocephala, Salix sericea",ratio of cutting weight,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
+willow-damage.csv,"Salix eriocephala, Salix sericea",% damage,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
+willow-resvar.csv,"Salix eriocephala, Salix sericea",residual variance in biomass tolerance,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
 willow.herbA.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,R. S. Fritz et al. 2003
 willow.herbB.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,R. S. Fritz et al. 2003
 willow.herbC.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,R. S. Fritz et al. 2003
@@ -926,29 +949,6 @@ willow.herbK.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,pla
 willow.herbL.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,R. S. Fritz et al. 2003
 willow.herbM.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,R. S. Fritz et al. 2003
 willow.herbN.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,R. S. Fritz et al. 2003
-catkin.gardens.csv,"Salix eriocephala, Salix sericea",number of catkins,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
-catkin.num.csv,"Salix eriocephala, Salix sericea",filled seeds/catkin,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
-dry.biomass.csv,"Salix eriocephala, Salix sericea",dry above ground biomass,NSC,M,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
-germ.rate.csv,"Salix eriocephala, Salix sericea",germination rate,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
-seed.product.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,LH,plant,between,NA,domestic,Y,standard,Robert S. Fritz et al. 2006
-A.tetanothrixa.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,wild,Y,standard,Hochwender and Fritz 2004
-Caloptilia.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-E.s-gracilis.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-leafLFa.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-leafv.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-P.eleanorae.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-P.nigrita.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-P.salicifolia.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-P.salicifoliella.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-P.sp.C.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-P.terminalis.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-R.rigidaea.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-R.salicisbrassicoides.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-R.sp.Ga.csv,"Salix eriocephala, Salix sericea",herbivore density,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender and Fritz 2004
-willow-biotol.csv,"Salix eriocephala, Salix sericea",biomass tolerance,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
-willow-cuttingwt.csv,"Salix eriocephala, Salix sericea",ratio of cutting weight,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
-willow-damage.csv,"Salix eriocephala, Salix sericea",% damage,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
-willow-resvar.csv,"Salix eriocephala, Salix sericea",residual variance in biomass tolerance,NSC,M,plant,between,NA,domestic,Y,standard,Hochwender et al. 2013
 coleolen1.csv,Secale cereale,coleoptile length (mm),NSC,M,plant,within,,domestic,N,PSU,Lapinski and Parzyszek 1982
 coleolen2.csv,Secale cereale,coleoptile length (mm),NSC,M,plant,within,,domestic,N,PSU,Lapinski and Parzyszek 1982
 coleolen3.csv,Secale cereale,coleoptile length (mm),NSC,M,plant,within,,domestic,N,PSU,Lapinski and Parzyszek 1982
@@ -1020,36 +1020,6 @@ branch.no3.csv,Solanum melongena,number of branches,NSC,M,plant,within,,domestic
 branch.no4.csv,Solanum melongena,number of branches,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
 branch.no5.csv,Solanum melongena,number of branches,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
 branch.no6.csv,Solanum melongena,number of branches,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-flower.day1.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-flower.day2.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-flower.day3.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-flower.day4.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-flower.day5.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-flower.day6.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.in1.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.in2.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.in3.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.in4.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.in5.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.in6.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.no1.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.no2.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.no3.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.no4.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.no5.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-fruit.no6.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-pltht1.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-pltht2.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-pltht3.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-pltht4.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-pltht5.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-pltht6.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
-yield1.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-yield2.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-yield3.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-yield4.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-yield5.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
-yield6.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
 eggplant-anthocy1.csv       ,Solanum melongena,anthocyanin content,NSC,M,plant,within,,domestic,Y,PSU,"Sabolu et al., 2014"
 eggplant-anthocy2.csv,Solanum melongena,anthocyanin content,NSC,M,plant,within,,domestic,Y,PSU,"Sabolu et al., 2014"
 eggplant-anthocy3.csv       ,Solanum melongena,anthocyanin content,NSC,M,plant,within,,domestic,Y,PSU,"Sabolu et al., 2014"
@@ -1090,11 +1060,49 @@ eggplant-soluble.sugar1.csv ,Solanum melongena,total soluble sugars,NSC,M,plant,
 eggplant-soluble.sugar2.csv ,Solanum melongena,total soluble sugars,NSC,M,plant,within,,domestic,Y,PSU,"Sabolu et al., 2014"
 eggplant-soluble.sugar3.csv ,Solanum melongena,total soluble sugars,NSC,M,plant,within,,domestic,Y,PSU,"Sabolu et al., 2014"
 eggplant-soluble.sugar4.csv,Solanum melongena,total soluble sugars,NSC,M,plant,within,,domestic,Y,PSU,"Sabolu et al., 2014"
+flower.day1.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+flower.day2.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+flower.day3.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+flower.day4.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+flower.day5.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+flower.day6.csv,Solanum melongena,number of days taken to flower,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.in1.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.in2.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.in3.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.in4.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.in5.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.in6.csv,Solanum melongena,fruit-size index (cm),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.no1.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.no2.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.no3.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.no4.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.no5.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+fruit.no6.csv,Solanum melongena,number of fruit per plant ,NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+pltht1.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
+pltht2.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
+pltht3.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
+pltht4.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
+pltht5.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
+pltht6.csv,Solanum melongena,plant height,NSC,M,plant,within,,domestic,N,PSU,Gill and Rs 1976
+yield1.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+yield2.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+yield3.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+yield4.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+yield5.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
+yield6.csv,Solanum melongena,yield per plant (kg),NSC,LH,plant,within,,domestic,N,PSU,Gill and Rs 1976
 germLCA.csv,"Solanum pennellii, Solanum lycopersicum",time to germination ,NSC,LH,plant,between,2.14,domestic,Y,standard,"Elliott, Jorja"
 sorghum-egg1.csv,Sorghum bicolor,eggs per plant,NSC,LH,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-egg2.csv,Sorghum bicolor,eggs per plant,NSC,LH,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-egg3.csv,Sorghum bicolor,eggs per plant,NSC,LH,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-egg4.csv,Sorghum bicolor,eggs per plant,NSC,LH,plant,within,,domestic,Y,PSU,Lad et al. 2013
+sorghum-flower-ms.csv,Sorghum bicolor,days to 50% flowering,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-flower-ns.csv,Sorghum bicolor,days to 50% flowering,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-fodder-ms.csv,Sorghum bicolor,dry fodder yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-fodder-ns.csv,Sorghum bicolor,dry fodder yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-grain-ms.csv,Sorghum bicolor,grain yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-grain-ns.csv,Sorghum bicolor,grain yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-harvest-ms.csv,Sorghum bicolor,harvest index,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
+sorghum-harvest-ns.csv,Sorghum bicolor,harvest index,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., 2021"
 sorghum-leaves1.csv,Sorghum bicolor,leaves per plant,NSC,M,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-leaves2.csv,Sorghum bicolor,leaves per plant,NSC,M,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-leaves3.csv,Sorghum bicolor,leaves per plant,NSC,M,plant,within,,domestic,Y,PSU,Lad et al. 2013
@@ -1103,26 +1111,18 @@ sorghum-plantht1.csv,Sorghum bicolor,plant height,NSC,M,plant,within,,domestic,Y
 sorghum-plantht2.csv,Sorghum bicolor,plant height,NSC,M,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-plantht3.csv,Sorghum bicolor,plant height,NSC,M,plant,within,,domestic,Y,PSU,Lad et al. 2013
 sorghum-plantht4.csv,Sorghum bicolor,plant height,NSC,M,plant,within,,domestic,Y,PSU,Lad et al. 2013
-sorghum-flower-ms.csv,Sorghum bicolor,days to 50% flowering,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-flower-ns.csv,Sorghum bicolor,days to 50% flowering,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-fodder-ms.csv,Sorghum bicolor,dry fodder yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-fodder-ns.csv,Sorghum bicolor,dry fodder yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-grain-ms.csv,Sorghum bicolor,grain yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-grain-ns.csv,Sorghum bicolor,grain yield,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-harvest-ms.csv,Sorghum bicolor,harvest index,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-sorghum-harvest-ns.csv,Sorghum bicolor,harvest index,NSC,LH,plant,within,,domestic,N,PSU,"Rokade et al., n.d."
-stickleback1-bdepth-fem.csv,stickleback,body depth,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
-stickleback1-bdepth-male.csv,stickleback,body depth,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
-stickleback1-bshape-fem.csv,stickleback,body shape,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
-stickleback1-bshape-male.csv,stickleback,body shape,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
-stickleback1-rakers-fem.csv,stickleback,gill raker number,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
-stickleback1-rakers-male.csv,stickleback,gill raker number,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
 gill.rake.len.csv,stickleback,gill raker length,XY,M,animal,within,,wild,Y,standard,Hatfield 1997
 gill.rake.num.csv,stickleback,gill raker number,XY,M,animal,within,,wild,Y,standard,Hatfield 1997
 growth.csv,stickleback,growth rate,XY,LH,animal,within,,wild,Y,standard,Hatfield 1997
 pelvic.len.csv,stickleback,pelvic spine length,XY,M,animal,within,,wild,Y,standard,Hatfield 1997
 plate.num.csv,stickleback,plate number,XY,M,animal,within,,wild,Y,standard,Hatfield 1997
 stickleback_data2.csv,stickleback,growth rate littoral env vs open env,XY,LH,animal,within,,wild,Y,standard,Rundle 2002
+stickleback1-bdepth-fem.csv,stickleback,body depth,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
+stickleback1-bdepth-male.csv,stickleback,body depth,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
+stickleback1-bshape-fem.csv,stickleback,body shape,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
+stickleback1-bshape-male.csv,stickleback,body shape,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
+stickleback1-rakers-fem.csv,stickleback,gill raker number,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
+stickleback1-rakers-male.csv,stickleback,gill raker number,XY,M,animal,within,,wild,N,PSU,Berner et al. 2011
 beetle-dispersal.csv,T. castaneum,dispersal tendency,XY,LH,animal,within,,lab,Y,standard,Ruckman and Blackmon 2020
 txh.end.csv,Toad,eye-nostril distance,NSC,M,animal,between,,wild,Y,standard,Fontenot 2009
 txh.F1.csv,Toad,finger 1 length,NSC,M,animal,between,,wild,Y,standard,Fontenot 2009
@@ -1197,27 +1197,6 @@ trib35par.inf.csv,Tribolium castaneum,percent of offspring deformed,XY,LH,animal
 trib35per.san.csv,Tribolium castaneum,percent of offspring deformed,XY,LH,animal,within,,lab,Y,standard,J. P. Demuth 2004
 trib35pin.sin.csv,Tribolium castaneum,percent of offspring deformed,XY,LH,animal,within,,lab,Y,standard,J. P. Demuth 2004
 trib35sin.cro.csv,Tribolium castaneum,percent of offspring deformed,XY,LH,animal,within,,lab,Y,standard,J. P. Demuth 2004
-wheat-kernels-bsul.csv,Triticum aestivum,kernels per spikelet,NSC,LH,plant,within,,domestic,Y,PSU,Ibrahim et al. 1983
-wheat-grains1.csv,Triticum aestivum,number of grains per spike,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-grains2.csv,Triticum aestivum,number of grains per spike,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-grainwt1.csv,Triticum aestivum,grain weight,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-grainwt2.csv,Triticum aestivum,grain weight,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-grainyield1.csv,Triticum aestivum,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-grainyield2.csv,Triticum aestivum,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-head1.csv,Triticum aestivum,days to heading,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-head2.csv,Triticum aestivum,days to heading,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-leafarea1.csv,Triticum aestivum,flag leaf area,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-leafarea2.csv,Triticum aestivum,flag leaf area,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-spikes1.csv,Triticum aestivum,number of spikes per plant,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-spikes2.csv,Triticum aestivum,number of spikes per plant,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
-wheat-gr.yield.csv,Triticum aestivum,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-head.date.csv,Triticum aestivum,heading date,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-ker.spike.csv,Triticum aestivum,kernels per spike,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-ker.spikelet.csv,Triticum aestivum,kernels per spikelet,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-kernelwt.csv,Triticum aestivum,kernel weight,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-plantht.csv,Triticum aestivum,plant height,NSC,M,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-spikelets.csv,Triticum aestivum,spikelets per spike,NSC,M,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
-wheat-tiller.csv,Triticum aestivum,number of tillers,NSC,M,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
 spike.culms1.csv,Triticum aestivum,number of spike bearing culms,NSC,M,plant,within,,domestic,N,PSU,Merrit 1988
 spike.culms2.csv,Triticum aestivum,number of spike bearing culms,NSC,M,plant,within,,domestic,N,PSU,Merrit 1988
 wheat-chloro1.csv,Triticum aestivum,chlorophyll concentration,NSC,M,plant,within,,domestic,Y,PSU,Moroni et al. 2013
@@ -1230,6 +1209,34 @@ wheat-chloro6.csv,Triticum aestivum,chlorophyll concentration,NSC,M,plant,within
 wheat-chloro7.csv,Triticum aestivum,chlorophyll concentration,NSC,M,plant,within,,domestic,Y,PSU,Moroni et al. 2013
 wheat-chloro8.csv,Triticum aestivum,chlorophyll concentration,NSC,M,plant,within,,domestic,Y,PSU,Moroni et al. 2013
 wheat-chloro9.csv,Triticum aestivum,chlorophyll concentration,NSC,M,plant,within,,domestic,Y,PSU,Moroni et al. 2013
+wheat-FLADuration1.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLADuration2.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLADuration3.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLADuration4.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLAngle1.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLAngle2.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLAngle3.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLAngle4.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLArea1.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLArea2.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLArea3.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-FLArea4.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
+wheat-gr.yield.csv,Triticum aestivum,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-grains1.csv,Triticum aestivum,number of grains per spike,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-grains2.csv,Triticum aestivum,number of grains per spike,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-grainwt1.csv,Triticum aestivum,grain weight,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-grainwt2.csv,Triticum aestivum,grain weight,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-grainyield1.csv,Triticum aestivum,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-grainyield2.csv,Triticum aestivum,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-head.date.csv,Triticum aestivum,heading date,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-head1.csv,Triticum aestivum,days to heading,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-head2.csv,Triticum aestivum,days to heading,NSC,LH,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-ker.spike.csv,Triticum aestivum,kernels per spike,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-ker.spikelet.csv,Triticum aestivum,kernels per spikelet,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-kernels-bsul.csv,Triticum aestivum,kernels per spikelet,NSC,LH,plant,within,,domestic,Y,PSU,Ibrahim et al. 1983
+wheat-kernelwt.csv,Triticum aestivum,kernel weight,NSC,LH,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-leafarea1.csv,Triticum aestivum,flag leaf area,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-leafarea2.csv,Triticum aestivum,flag leaf area,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
 wheat-leafareaA1.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,domestic,N,PSU,"Mullaney, Martin, and Scharen 1982"
 wheat-leafareaA2.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,domestic,N,PSU,"Mullaney, Martin, and Scharen 1982"
 wheat-leafareaA3.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,domestic,N,PSU,"Mullaney, Martin, and Scharen 1982"
@@ -1246,20 +1253,13 @@ wheat-lesionsB1.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,dom
 wheat-lesionsB2.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,domestic,N,PSU,"Mullaney, Martin, and Scharen 1982"
 wheat-lesionsB3.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,domestic,N,PSU,"Mullaney, Martin, and Scharen 1982"
 wheat-lesionsBcom.csv,Triticum aestivum,number of leasions,NSC,M,plant,within,,domestic,N,PSU,"Mullaney, Martin, and Scharen 1982"
+wheat-plantht.csv,Triticum aestivum,plant height,NSC,M,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-spikelets.csv,Triticum aestivum,spikelets per spike,NSC,M,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
+wheat-spikes1.csv,Triticum aestivum,number of spikes per plant,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-spikes2.csv,Triticum aestivum,number of spikes per plant,NSC,M,plant,within,,domestic,Y,PSU,Kandil et al. 2022
+wheat-tiller.csv,Triticum aestivum,number of tillers,NSC,M,plant,within,,domestic,Y,PSU,"Ketata, Edwards, and Smith 1976"
 yield.late.csv,Triticum aestivum,grain yield (g/plant) for late sowing,NSC,LH,plant,within,,domestic,Y,PSU,"Sandhu and Anand, 2012"
 yield.normal.csv,Triticum aestivum,grain yield (g/plant) for normal sowing,NSC,LH,plant,within,,domestic,Y,PSU,"Sandhu and Anand, 2012"
-wheat-FLADuration1.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLADuration2.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLADuration3.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLADuration4.csv,Triticum aestivum,flag-leaf duration,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLAngle1.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLAngle2.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLAngle3.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLAngle4.csv,Triticum aestivum,flag-leaf angle,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLArea1.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLArea2.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLArea3.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
-wheat-FLArea4.csv,Triticum aestivum,flag-leaf area,NSC,M,plant,within,,domestic,Y,PSU,Simón 1999
 faba-been-daystoflower1.csv,Vicia faba,days to flower,NSC,LH,plant,within,,domestic,Y,PSU,Fouad 2019
 faba-been-daystoflower2.csv,Vicia faba,days to flower,NSC,LH,plant,within,,domestic,Y,PSU,Fouad 2019
 faba-been-harvest-index1.csv,Vicia faba,harvest index,NSC,LH,plant,within,,domestic,Y,PSU,Fouad 2019
@@ -1338,46 +1338,30 @@ eFL.wFL.high.csv,Wyeomyia smithii,fitness at high density of food,XY,LH,animal,w
 eFL.wFL.low.csv,Wyeomyia smithii,fitness at low density of food,XY,LH,animal,within,,wild,Y,PSU,"Armbruster, Bradshaw, and Holzapfel 1997"
 ON.ME.high.csv,Wyeomyia smithii,fitness at high density of food,XY,LH,animal,within,,wild,Y,PSU,"Armbruster, Bradshaw, and Holzapfel 1997"
 ON.ME.low.csv,Wyeomyia smithii,fitness at low density of food,XY,LH,animal,within,,wild,Y,PSU,"Armbruster, Bradshaw, and Holzapfel 1997"
-corn-fusarium-resistance.csv,Zea mays,fusarium rot resistance,NSC,LH,plant,within,,domestic,Y,PSU,Archana et al. 2019
-earht.csv,Zea mays,ear height,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
-nodes.above.csv,Zea mays,number of nodes above ear,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
-nodes.below.csv,Zea mays,number of nodes below ear,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
-plantht.csv,Zea mays,plant height,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
-peri.677a.b37.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.677a.b68.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.677a.h55.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.677a.hi26.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.AA8.b37.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.AA8.b68.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.AA8.h55.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-peri.AA8.hi26.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
-corn-harvest1.csv,Zea mays,harvesting time,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
-corn-harvest2.csv,Zea mays,harvesting time,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
-corn-kernel.num1.csv,Zea mays,number of kernels,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
-corn-kernel.num2.csv,Zea mays,number of kernels,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
-corn-plant.height1.csv,Zea mays,final plant height,NSC,M,plant,within,,domestic,N,PSU,Maryam and Jones 1985
-corn-plant.height2.csv,Zea mays,final plant height,NSC,M,plant,within,,domestic,N,PSU,Maryam and Jones 1985
-diff.silk.shed.csv,Zea mays,difference in days between silking and pollen shedding,NSC,LH,plant,within,,domestic,Y,standard,Mohamed 1958
-pollen_data.csv,Zea mays,number of days from seeding to pollen shedding,NSC,LH,plant,within,,domestic,Y,standard,Mohamed 1958
-silking_data.csv,Zea mays,number of days from seeding to silking,NSC,LH,plant,within,,domestic,Y,standard,Mohamed 1958
 adven.root.csv,Zea mays,number of adventitious roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
-lat.root.csv,Zea mays,number of lateral roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
-meso.root.csv,Zea mays,number of mesocotyl roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
-root.drywt.csv,Zea mays,root dry weight (gm),NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
-sec.root.csv,Zea mays,number of secondary roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
 corn-anthesis.csv,Zea mays,days to anthesis,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-ear.height.csv,Zea mays,ear height,NSC,M,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-ear.length.csv,Zea mays,ear length,NSC,M,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
+corn-fusarium-resistance.csv,Zea mays,fusarium rot resistance,NSC,LH,plant,within,,domestic,Y,PSU,Archana et al. 2019
 corn-grain.yield.csv,Zea mays,grain yield,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
+corn-harvest1.csv,Zea mays,harvesting time,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
+corn-harvest2.csv,Zea mays,harvesting time,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
 corn-ker.num.csv,Zea mays,number of kernels per row,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-kernel.depth.csv,Zea mays,kernel depth,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
+corn-kernel.num1.csv,Zea mays,number of kernels,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
+corn-kernel.num2.csv,Zea mays,number of kernels,NSC,LH,plant,within,,domestic,N,PSU,Maryam and Jones 1985
 corn-kernelwt.csv,Zea mays,kernel weight,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-leaves.csv,Zea mays,leaves number,NSC,M,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-phys.mature.csv,Zea mays,days to physiological maturity,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-plant.height.csv,Zea mays,plant height,NSC,M,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
+corn-plant.height1.csv,Zea mays,final plant height,NSC,M,plant,within,,domestic,N,PSU,Maryam and Jones 1985
+corn-plant.height2.csv,Zea mays,final plant height,NSC,M,plant,within,,domestic,N,PSU,Maryam and Jones 1985
 corn-row.num.csv,Zea mays,number of rows per ear,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-silking.csv,Zea mays,days to silking,NSC,LH,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
 corn-up.ear.csv,Zea mays,up ear leaves number,NSC,M,plant,within,,domestic,Y,PSU,"Shahrokhi et al., 1990"
+diff.silk.shed.csv,Zea mays,difference in days between silking and pollen shedding,NSC,LH,plant,within,,domestic,Y,standard,Mohamed 1958
+earht.csv,Zea mays,ear height,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
+lat.root.csv,Zea mays,number of lateral roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
 maize-ear.diameter1.csv ,Zea mays,ear diameter,NSC,M,plant,within,,domestic,Y,PSU,"Wannows, Sabbouh, and Al- Ahmad 2015"
 maize-ear.diameter2.csv ,Zea mays,ear diameter,NSC,M,plant,within,,domestic,Y,PSU,"Wannows, Sabbouh, and Al- Ahmad 2015"
 maize-ear.height1.csv   ,Zea mays,ear height,NSC,M,plant,within,,domestic,Y,PSU,"Wannows, Sabbouh, and Al- Ahmad 2015"
@@ -1396,6 +1380,107 @@ maize-plant.height1.csv ,Zea mays,plant height,NSC,LH,plant,within,,domestic,Y,P
 maize-plant.height2.csv ,Zea mays,plant height,NSC,LH,plant,within,,domestic,Y,PSU,"Wannows, Sabbouh, and Al- Ahmad 2015"
 maize-silking.days1.csv ,Zea mays,days to 50% silking,NSC,LH,plant,within,,domestic,Y,PSU,"Wannows, Sabbouh, and Al- Ahmad 2015"
 maize-silking.days2.csv,Zea mays,days to 50% silking,NSC,LH,plant,within,,domestic,Y,PSU,"Wannows, Sabbouh, and Al- Ahmad 2015"
+meso.root.csv,Zea mays,number of mesocotyl roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
+nodes.above.csv,Zea mays,number of nodes above ear,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
+nodes.below.csv,Zea mays,number of nodes below ear,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
+peri.677a.b37.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.677a.b68.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.677a.h55.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.677a.hi26.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.AA8.b37.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.AA8.b68.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.AA8.h55.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+peri.AA8.hi26.csv,Zea mays,pericarp thickness,NSC,LH,plant,within,,domestic,Y,PSU,Ito and Brewbaker 1991
+plantht.csv,Zea mays,plant height,NSC,M,plant,within,,domestic,N,PSU,Harville and Josephon 1979
+pollen_data.csv,Zea mays,number of days from seeding to pollen shedding,NSC,LH,plant,within,,domestic,Y,standard,Mohamed 1958
+root.drywt.csv,Zea mays,root dry weight (gm),NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
+sec.root.csv,Zea mays,number of secondary roots,NSC,M,plant,within,,domestic,N,PSU,H. Rahman et al. 1994
+silking_data.csv,Zea mays,number of days from seeding to silking,NSC,LH,plant,within,,domestic,Y,standard,Mohamed 1958
+eardiam.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi25w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi26w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi27w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi28w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi29w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi30w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi31w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi32w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi33w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi34w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+eardiam.hi35w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi25w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi26w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi27w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi28w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi29w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi30w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi31w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi32w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi33w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi34w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+earlen.hi35w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi25w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi26w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi27w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi28w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi29w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi30w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi31w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi32w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi33w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi34w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+ears.hi35w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi25w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi26w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi27w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi28w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi29w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi30w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi31w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi32w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi33w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi34w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kernum.hi35w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi25w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi26w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi27w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi28w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi29w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi30w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi31w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi32w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi33w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi34w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
+kerrow.hi35w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
 leaflen.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",leaf length,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
 leaflen.hi25w.csv,"Zea mays, Zea diploperennis Iltis",leaf length,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
 leaflen.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",leaf length,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
@@ -1520,88 +1605,3 @@ tiller.hi34w.csv,"Zea mays, Zea diploperennis Iltis",number of tillers per plant
 tiller.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",number of tillers per plant,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
 tiller.hi35su.csv,"Zea mays, Zea diploperennis Iltis",number of tillers per plant,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
 tiller.hi35w.csv,"Zea mays, Zea diploperennis Iltis",number of tillers per plant,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi25w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi26w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi27w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi28w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi29w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi30w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi31w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi32w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi33w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi34w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-eardiam.hi35w.csv,"Zea mays, Zea diploperennis Iltis",ear diameter,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi25w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi26w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi27w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi28w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi29w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi30w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi31w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi32w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi33w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi34w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-earlen.hi35w.csv,"Zea mays, Zea diploperennis Iltis",ear length ,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi25w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi26w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi27w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi28w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi29w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi30w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi31w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi32w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi33w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi34w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-ears.hi35w.csv,"Zea mays, Zea diploperennis Iltis",number of ears per plant,NSC,LH,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi25w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi26w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi27w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi28w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi29w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi30w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi31w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi32w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi33w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi34w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kernum.hi35w.csv,"Zea mays, Zea diploperennis Iltis",kernels per row,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi25w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi26sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi26w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi27sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi27w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi28sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi28w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi29w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi30w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi31w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi32w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi33sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi33w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi34w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi35sp.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"
-kerrow.hi35w.csv,"Zea mays, Zea diploperennis Iltis",kernel rows per ears,NSC,M,plant,between,2.69,domestic,N,PSU,"Srinivasan and Brewbaker, 1999"

@@ -13,6 +13,9 @@ ui <- fluidPage(
     # Sidebar with various dropdowns to subset data 
     sidebarLayout(
         sidebarPanel(
+          width=4,
+          img(src = "./epi-logo.png", width=250, align = "center"),
+          h3("Plot options"),
           radioButtons("colorby", label = h4("Select data to color by:"),
                        choices = list("Clade" = 7, 
                                       "Divergence" = 12, 

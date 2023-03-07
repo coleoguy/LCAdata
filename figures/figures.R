@@ -99,8 +99,8 @@ pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/D_W.pdf",
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within or between species
-# dat <- dat[dat$divergence == "within",]
-# dat <- dat[dat$divergence == "between",]
+# dat <- dat[dat$class == "LH",]
+dat <- dat[dat$method == "standard",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by domestication status
@@ -129,7 +129,7 @@ dev.off()
 
 
 
-
+ 
 ######### junk plot to see difference in within vs between for various phenotypes ######### 
  # this only works well if there are results for the same phenotype in within AND between divergence
 dat <- read.csv("../results/complete.results.csv")
@@ -144,16 +144,21 @@ ggplot(dat, aes(divergence, epi)) + geom_point() + theme_bw() +
           panel.grid.minor = element_blank(),
           panel.border = element_blank())
 
-#####
+######### plotting diverg x epi under different subsets ######### 
 
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
+# dat <- dat[grep("Zea", dat$species),]
+dat <- dat[dat$kingdom == "animal",]
+           
+dat <- dat[dat$method != "PSU",]
+
 
 #create binary column of 0 for 0% epi, 1 for >0% epi
-dat$bin <- ifelse(dat$epi > 0, 1, 0)
+# dat$bin <- ifelse(dat$epi > 0, 1, 0)
 
 library(ggplot2)
-ggplot(dat, aes(class, bin)) + geom_jitter() + theme_bw() + 
+ggplot(dat, aes(class, epi)) + geom_jitter() + theme_bw() + 
     theme(axis.line = element_line(color='black'), 
           plot.background = element_blank(),
           panel.grid.major = element_blank(),
@@ -161,30 +166,37 @@ ggplot(dat, aes(class, bin)) + geom_jitter() + theme_bw() +
           panel.border = element_blank())
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-mean(dat[dat$divergence == "between", 'epi'])
 mean(dat[dat$divergence == "within", 'epi'])
+mean(dat[dat$divergence == "between", 'epi'])
 
-nrow(dat[dat$bin == "0" & dat$kingdom == "plant",])
-nrow(dat[dat$bin == "1" & dat$kingdom == "plant",])
-nrow(dat[dat$bin == "0" & dat$kingdom == "animal",])
-nrow(dat[dat$bin == "1" & dat$kingdom == "animal",])
-
+nrow(dat[dat$divergence == "within",])
+nrow(dat[dat$divergence == "between",])
 
 
+######### plotting NA datasets ######### 
+# these are the datasets that did not meet initial criteria #
+dat <- read.csv("../results/trashthis.csv")
+dat <- dat[is.na(dat$add),]
 
-ref <- read.csv("ref.csv")
+#dat <- dat[dat$method == "cmat",]
+
+
+#library(ggplot2)
+#ggplot(dat, aes(weighted)) + geom_violin() + theme_bw() + 
+#    theme(axis.line = element_line(color='black'), 
+#          plot.background = element_blank(),
+#          panel.grid.major = element_blank(),
+#          panel.grid.minor = element_blank(),
+#          panel.border = element_blank())
+
+
+
+
+dat <- dat[dat$species > 5,]
+
+
+
+
 
 
 

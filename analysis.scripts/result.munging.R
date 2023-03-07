@@ -40,7 +40,7 @@ final.results$SCS <- ref$SCS
 final.results$divergence <- ref$withinor.between.species
 final.results$weighted <- ref$SE.provided.
 final.results$method <- ref$data.type..standard..PSU..cmat
-write.csv(final.results,"../results/complete.results.csv", row.names = F)
+#write.csv(final.results,"../results/complete.results.csv", row.names = F)
 
 
 
