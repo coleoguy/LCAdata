@@ -1,5 +1,6 @@
-#script for complete_cohorts vs reduced_cohorts
+# script for complete_cohorts vs reduced_cohorts
 
+# dat is complete_cohorts_results.csv + reduced_cohorts_results.csv
 dat <- read.csv("../results/all.cohort.results.csv")
 ggplot(dat, aes(cohorts, epi)) + geom_jitter(width = 0.2) + theme_bw() + 
   theme(axis.line = element_line(color='black'), 
