@@ -2,17 +2,17 @@
 library(SAGA2)
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
-ref <- ref[c(14, 15, 16, 58, 168, 257, 278, 279, 581:589, 719:721, 765, 766, 817, 948, 949, 1022, 1227),]
+ref <- ref[c(1438:1461),]
 res <- list()
 maximum.allowed <- 7
 data.files <- list.files("../all.data/data/")
-data.files <- data.files[c(14, 15, 16, 58, 168, 257, 278, 279, 581:589, 719:721, 765, 766, 817, 948, 949, 1022, 1227)]
+data.files <- data.files[c(1438:1461)]
 
 for(i in 1:length(data.files)){
   cat(paste("analyzing dataset", i, "of", length(data.files), "\r"))
   flush.console()
   cur.dat <- read.csv(paste("../all.data/data/", data.files[i],sep = ""))
-  
+  }
   # max pars max = 7 otherwise 2 minus cohorts
   max.pars <- nrow(cur.dat) - 2 
   if(max.pars > 7) max.pars <- maximum.allowed
@@ -23,13 +23,13 @@ for(i in 1:length(data.files)){
   }  
 }
 names(res) <- ref$new.file.name
-save(res, file="../results/complete_cohorts.RData")
+save(res, file="../results/complete_cohorts2.RData")
 
 #############result munging of files with complete cohorts#############
 load("../results/complete_cohorts.RData")
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
-ref <- ref[c(14, 15, 16, 58, 168, 257, 278, 279, 581:589, 719:721, 765, 766, 817, 948, 949, 1022, 1227),]
+ref <- ref[c(1438:1461),]
 procLCA <- function(x){
   mcomp <- rep(0, 3)
   est <- matrix(as.numeric(unlist(x[[1]])),nrow=nrow(x[[1]]))
@@ -70,7 +70,7 @@ final.results$SCS <- ref$SCS
 final.results$divergence <- ref$withinor.between.species
 final.results$weighted <- ref$SE.provided.
 final.results$method <- ref$data.type..standard..PSU..cmat
-write.csv(final.results,"../results/complete_cohorts_results.csv", row.names = F)
+write.csv(final.results,"../results/complete_cohorts_results2.csv", row.names = F)
 
 #############LCA of files with reduced cohorts#############
 # subset all files to be only 5 cohorts (P1, P2, F1, BC1, BC2)
@@ -78,7 +78,8 @@ for(i in 1:length(data.files)){
   cat(paste("analyzing dataset", i, "of", length(data.files), "\r"))
   flush.console()
   cur.dat <- read.csv(paste("../all.data/data/", data.files[i],sep = ""))
-  cur.dat <- cur.dat[c(1:3, 9, 15),]
+  cur.dat <- cur.dat[c(1:3, 8, 14),]
+  }
   # max pars max = 7 otherwise 2 minus cohorts
   max.pars <- nrow(cur.dat) - 2 
   if(max.pars > 7) max.pars <- maximum.allowed
@@ -89,13 +90,13 @@ for(i in 1:length(data.files)){
   }  
 }
 names(res) <- ref$new.file.name
-save(res, file="../results/reduced_cohorts.RData")
+save(res, file="../results/reduced_cohorts2.RData")
 
 #############result munging of files with reduced cohorts#############
 load("../results/reduced_cohorts.RData")
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
-ref <- ref[c(14, 15, 16, 58, 168, 257, 278, 279, 581:589, 719:721, 765, 766, 817, 948, 949, 1022, 1227),]
+ref <- ref[c(1438:1461),]
 procLCA <- function(x){
   mcomp <- rep(0, 3)
   est <- matrix(as.numeric(unlist(x[[1]])),nrow=nrow(x[[1]]))
@@ -136,4 +137,4 @@ final.results$SCS <- ref$SCS
 final.results$divergence <- ref$withinor.between.species
 final.results$weighted <- ref$SE.provided.
 final.results$method <- ref$data.type..standard..PSU..cmat
-write.csv(final.results,"../results/reduced_cohorts_results.csv", row.names = F)
+write.csv(final.results,"../results/reduced_cohorts_results2.csv", row.names = F)

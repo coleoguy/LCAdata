@@ -1,6 +1,6 @@
 # script for complete_cohorts vs reduced_cohorts
 
-# dat is complete_cohorts_results.csv + reduced_cohorts_results.csv
+# dat is complete_cohorts_results.csv + reduced_cohorts_results.csv + complete_cohorts_results.csv2 + reduced_cohorts_results.csv2
 dat <- read.csv("../results/all.cohort.results.csv")
 dat <- replace(dat, is.na(dat), 0)
   
