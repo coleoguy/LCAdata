@@ -2,6 +2,9 @@
 
 # dat is complete_cohorts_results.csv + reduced_cohorts_results.csv
 dat <- read.csv("../results/all.cohort.results.csv")
+dat <- replace(dat, is.na(dat), 0)
+  
+
 ggplot(dat, aes(cohorts, epi)) + geom_jitter(width = 0.2) + theme_bw() + 
   theme(axis.line = element_line(color='black'), 
         plot.background = element_blank(),
