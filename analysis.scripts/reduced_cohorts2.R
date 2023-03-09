@@ -2,7 +2,7 @@
 library(SAGA2)
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
-ref <- ref[c(1438:1461),]
+ref <- ref[1438:1461,]
 res <- list()
 maximum.allowed <- 7
 data.files <- list.files("../all.data/data/")
@@ -12,7 +12,7 @@ for(i in 1:length(data.files)){
   cat(paste("analyzing dataset", i, "of", length(data.files), "\r"))
   flush.console()
   cur.dat <- read.csv(paste("../all.data/data/", data.files[i],sep = ""))
-  }
+  
   # max pars max = 7 otherwise 2 minus cohorts
   max.pars <- nrow(cur.dat) - 2 
   if(max.pars > 7) max.pars <- maximum.allowed
@@ -26,7 +26,7 @@ names(res) <- ref$new.file.name
 save(res, file="../results/complete_cohorts2.RData")
 
 #############result munging of files with complete cohorts#############
-load("../results/complete_cohorts.RData")
+load("../results/complete_cohorts2.RData")
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
 ref <- ref[c(1438:1461),]
@@ -79,7 +79,7 @@ for(i in 1:length(data.files)){
   flush.console()
   cur.dat <- read.csv(paste("../all.data/data/", data.files[i],sep = ""))
   cur.dat <- cur.dat[c(1:3, 8, 14),]
-  }
+  
   # max pars max = 7 otherwise 2 minus cohorts
   max.pars <- nrow(cur.dat) - 2 
   if(max.pars > 7) max.pars <- maximum.allowed
@@ -93,7 +93,7 @@ names(res) <- ref$new.file.name
 save(res, file="../results/reduced_cohorts2.RData")
 
 #############result munging of files with reduced cohorts#############
-load("../results/reduced_cohorts.RData")
+load("../results/reduced_cohorts2.RData")
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
 ref <- ref[c(1438:1461),]
