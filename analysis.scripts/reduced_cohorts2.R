@@ -1,3 +1,4 @@
+# this is the reduced cohorts analysis for the tribolium datasets # of offspring deformed
 #############LCA of files with complete cohorts#############
 library(SAGA2)
 ref <- read.csv("../all.data/ref.csv")
