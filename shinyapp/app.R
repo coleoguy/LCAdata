@@ -83,15 +83,11 @@ the hyperlink file name in the last column. In the citations tab, you can see al
 Data taken from the database must not be reproduced in published lists, online databases, or other
 formats, nor redistributed without permission. The information in this database is provided
 solely for personal and academic use, and must not be used for the purposes of financial gain.
-<br>
-<br>
-<b>The database should be cited as follows: ADD CITE HERE</b>
-<br>
-<a href='http://www.bioone.org/doi/abs/10.1649/0010-065X-69.1.174' target='_blank'> Blackmon, Heath, and Jeffery P. Demuth. Coleoptera Karyotype Database. The Coleopterists Bulletin 69.1 (2015): 174-175.</a>
+
 <br>
 <br>
 
-Current version of the database is XXX last updated XXXdate."), style = "font-size:100%")),
+Current version of the database is 0.1 last updated 21 March 2023."), style = "font-size:100%")),
             
             
             tabPanel("Plot",plotOutput("distPlot")),

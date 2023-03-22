@@ -38,6 +38,8 @@ plot(x=jitter(dat.psu$epi,20),
               blue = 136/255,
               alpha=0.5))
 lines(x=c(0,1), y=c(0,1))
+text(0.2, 1, labels="R"^2 ~ "= 0.642")
+#legend(0.1, 1, "R"^2 ~ "= 0.642")
 
 dev.off()
 dat.psu$epi > 0 & dat$epi ==0

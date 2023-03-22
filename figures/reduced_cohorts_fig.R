@@ -26,7 +26,13 @@ library(beeswarm)
 beeswarm(dat$epi~dat$cohorts,
          method = "hex",
          pch=16,
-         corral = "gutter")
+         corral = "gutter",
+         xlab = "",
+         ylab = "Proportion of trait divergence that is epistatic")
+mucomp <- mean(dat$epi[dat$cohorts=="complete"])
+mured <- mean(dat$epi[dat$cohorts=="reduced"])
+lines(x=c(.8,1.2), y=rep(mucomp, 2), lwd=3, col="red")
+lines(x=c(1.8,2.2), y=rep(mured, 2), lwd=3, col="red")
 
 
       
