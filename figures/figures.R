@@ -61,15 +61,15 @@ dev.off()
 
 
 ######### plot for within vs between ######### 
-pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/W_B.pdf", 
-    width = 5, 
-    height = 5)
+#pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/W_B.pdf", 
+#    width = 5, 
+#    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
 # dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
-dat <- dat[dat$weighted == "Y",]
+#dat <- dat[dat$weighted == "Y",]
 
 dat <- dat[dat$species != "Zea mays, Zea diploperennis Iltis",]
 # leave out psu datasets
@@ -81,7 +81,7 @@ withinx <- seq(from=0, to=100, length.out=length(within))
 betweenx <- seq(from=0, to=100, length.out=length(between))
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
-     ylab="proportion of trait divergence that is epistasis")
+     ylab="proportion of trait divergence that is epistasic")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
 lines(y=within, x=withinx, col= "#3F4788FF",lwd=3) #within
 lines(y=between, x=betweenx, col="#74D055FF",lwd=3) #between
@@ -90,7 +90,7 @@ points(y=between, x=betweenx, col="#74D055FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=""), 
                            paste("between species (n=", length(betweenx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
-dev.off()
+#dev.off()
 ######### plot for within vs between ######### 
 
 
