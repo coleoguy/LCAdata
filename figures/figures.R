@@ -70,11 +70,13 @@ dat <- dat[! is.na(dat$add),]
 # dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
 dat <- dat[dat$weighted == "Y",]
+
+dat <- dat[dat$species != "Zea mays, Zea diploperennis Iltis",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by trait type
-within <- sort(rowSums(dat[dat$divergence == "within", 2:3]))
-between <- sort(rowSums(dat[dat$divergence == "between", 2:3]))
+within <- sort(dat[dat$divergence == "within", 3])
+between <- sort(dat[dat$divergence == "between", 3])
 withinx <- seq(from=0, to=100, length.out=length(within))
 betweenx <- seq(from=0, to=100, length.out=length(between))
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
