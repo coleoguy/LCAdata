@@ -1,7 +1,7 @@
 ######## plot for LH vs M ########
-pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/LH_M.pdf", 
-    width = 5, 
-    height = 5)
+#pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/LH_M.pdf", 
+#    width = 5, 
+#    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -10,13 +10,13 @@ dat <- dat[! is.na(dat$add),]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by trait type
-LH <- sort(rowSums(dat[dat$class == "LH", 2:3]))
-M <- sort(rowSums(dat[dat$class == "M", 2:3]))
+LH <- sort(dat[dat$class == "LH", 3])
+M <- sort(dat[dat$class == "M", 3])
 LHx <- seq(from=0, to=100, length.out=length(LH))
 Mx <- seq(from=0, to=100, length.out=length(M))
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
-     ylab="proportion of trait divergence that is epistasis")
+     ylab="proportion of trait divergence that is epistasic")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
 lines(y=LH, x=LHx, col= "#3F4788FF",lwd=3) #LH
 lines(y=M, x=Mx, col="#74D055FF",lwd=3) #M
@@ -25,7 +25,7 @@ points(y=M, x=Mx, col="#74D055FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""), 
                            paste("morphological (n=", length(Mx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
-dev.off()
+#dev.off()
 ######## plot for LH vs M ########
 
 
@@ -36,18 +36,18 @@ pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf",
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
-# dat <- dat[dat$divergence == "within",]
+dat <- dat[dat$divergence == "within",]
 # dat <- dat[dat$divergence == "between",]
 # leave out psu datasets
 # dat <- dat[dat$method %in% c("cmat","standard"),]
 # split data by trait type
-plant <- sort(rowSums(dat[dat$kingdom == "plant", 2:3]))
-animal <- sort(rowSums(dat[dat$kingdom == "animal", 2:3]))
+plant <- sort(dat[dat$kingdom == "plant", 3])
+animal <- sort(dat[dat$kingdom == "animal", 3])
 plantx <- seq(from=0, to=100, length.out=length(plant))
 animalx <- seq(from=0, to=100, length.out=length(animal))
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
-     ylab="proportion of trait divergence that is epistasis")
+     ylab="proportion of trait divergence that is epistasic")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
 lines(y=plant, x=plantx, col= "#3F4788FF",lwd=3) #plant
 lines(y=animal, x=animalx, col="#74D055FF",lwd=3) #animal

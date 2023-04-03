@@ -22,7 +22,7 @@ ui <- fluidPage(
                                       "Trait class" = 6,
                                       "Organism type" = 8,
                                       "Sex chromosome system" = 11,
-                                      "Method" = 14,
+#                                     "Method" = 14,
                                       "Regression type" = 13), 
                        selected = 7),
           h4("Select subset options:"),
@@ -52,12 +52,12 @@ ui <- fluidPage(
                                      "Unweighted LSR" = "N",
                                      "All" = "all"), 
                       selected = "all"),
-          selectInput("method", label = h5("Method"), 
-                      choices = list("Standard" = "standard", 
-                                     "Cmatrix provided" = "cmat",
-                                     "Parental Sex Unknown" = "PSU",
-                                     "All" = "all"), 
-                      selected = "all")
+#          selectInput("method", label = h5("Method"), 
+#                      choices = list("Standard" = "standard", 
+#                                     "Cmatrix provided" = "cmat",
+#                                     "Parental Sex Unknown" = "PSU",
+#                                     "All" = "all"), 
+#                      selected = "all")
         ),
         mainPanel(
           
@@ -102,7 +102,6 @@ Current version of the database is 0.1 last updated 21 March 2023."), style = "f
                                                     "Divergence time (MYA)",
                                                     "Organism type",
                                                     "Regression type",
-                                                    "Method",
                                                     "Citation"),
                                         selected = c("Organism", "Phenotype", "Citation"),
                                         inline = T),
@@ -140,9 +139,9 @@ server <- function(input, output) {
         if(input$regress != "all"){
           x <- x[x$weighted == input$regress,]
         }
-        if(input$method != "all"){
-          x <- x[x$method == input$method,]
-        }
+#       if(input$method != "all"){
+#          x <- x[x$method == input$method,]
+#        }
         z <- as.numeric(input$colorby)
         states <- unique(x[, z])
 
@@ -184,7 +183,7 @@ server <- function(input, output) {
       if("Divergence time (MYA)" %in% input$table) x <- c(x, 8)
       if("Organism type" %in% input$table) x <- c(x, 9)
       if("Regression type" %in% input$table) x <- c(x, 10)
-      if("Method" %in% input$table) x <- c(x, 11)
+#     if("Method" %in% input$table) x <- c(x, 11)
       if("Citation" %in% input$table) x <- c(x, 12)
       return(x)
     })
