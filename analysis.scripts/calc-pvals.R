@@ -17,7 +17,7 @@ for(i in 1:length(unique)){
   new.res$combo[i] <- unique[i]
 }
 rm(res, hit, i, unique, combos)
-write.csv(new.res, "../results/thinned.comp.csv")
+#write.csv(new.res, "../results/thinned.comp.csv")
 
 ## TODO START HERE CODING JORJA - I BELIEVE IN YOU!!!
 res2 <- new.res
@@ -60,7 +60,7 @@ table(res2$class[res2$divergence == "within"])
 202/(202+195)
 
 # Clade
-res2 <- res2[res2$divergence == "between",]
+#res2 <- res2[res2$divergence == "between",]
 pl <- res2$epi[res2$kingdom == "plant"]
 an <-  res2$epi[res2$kingdom == "animal"]
 obs.diff <- mean(pl) - mean(an)

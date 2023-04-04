@@ -1,5 +1,6 @@
 library(vcd)
 library(viridis)
+library(Ternary)
 res <- read.csv("../results/complete.results.csv")
 res <- res[!is.na(res$epi),]
 res <- res[order(res$epi),]
@@ -17,12 +18,19 @@ points(sort(res$dom), col=rgb(.5,0,0,.15), pch=16)
 
 hist(res[,1])
 
-cols <- plasma(7, alpha=.5)[c(2,6)][as.factor(res$class)]
-pchs <- c(15,16)[as.factor(res$kingdom)]
+##### ternary plots #####
+
+cols <- plasma(7, alpha=.5)[c(2,6)][as.factor(res$kingdom)]
+#pchs <- c(15,16)[as.factor(res$kingdom)]
 ternaryplot(res[,1:3],
             col=cols,
             cex=.45,
-            pch=16)
+            pch=16, main="", dimnames=c("additive", "dominance", "epistatic"), 
+            dimnames_position="corner", grid=F)
+
+#just another option
+TernaryPlot(alab = "Additive", blab = "Dominance", clab = "Epistatic", main="")
+TernaryPoints(res[,1:3], col = cols, cex = .45, pch=pchs)
 
 
 round(res$add * 9)
