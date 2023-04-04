@@ -41,6 +41,7 @@ table(res2$divergence[res2$class=="LH"])
 table(res2$divergence[res2$class=="M"])
 
 # Divergence
+res2 <- res2[res2$kingdom == "plant",]
 bw <- res2$epi[res2$divergence == "between"]
 wi <- res2$epi[res2$divergence == "within"]
 # hyp bw should be larger

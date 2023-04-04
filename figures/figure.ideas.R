@@ -5,7 +5,37 @@ res <- read.csv("../results/complete.results.csv")
 res <- res[!is.na(res$epi),]
 res <- res[order(res$epi),]
 
+##### ternary plots #####
 
+#cols <- plasma(7, alpha=.5)[c(2,6)][as.factor(res$kingdom)]
+#pchs <- c(15,16)[as.factor(res$kingdom)]
+ternaryplot(res[,1:3],
+            cex=.5,
+            pch=16, main="", dimnames=c("additive", "dominance", "epistatic"), 
+            dimnames_position="corner", grid=F, col=rgb(1,0,0,0.5))
+
+
+
+
+
+#just another option
+TernaryPlot(alab = "Additive", blab = "Dominance", clab = "Epistatic", main="")
+TernaryPoints(res[,1:3], col = cols, cex = .45, pch=pchs)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#stuff we prob dont need
 cats <- as.factor(round(res$add * 9)+1)
 library(beeswarm)
 beeswarm(res$epi~cats, pch=16, cex=.3,corral="random", col=rgb(.5,0,0,.5))
@@ -17,21 +47,6 @@ points(sort(res$epi), col=rgb(0,0,.5,.15), pch=16)
 points(sort(res$dom), col=rgb(.5,0,0,.15), pch=16)
 
 hist(res[,1])
-
-##### ternary plots #####
-
-cols <- plasma(7, alpha=.5)[c(2,6)][as.factor(res$kingdom)]
-#pchs <- c(15,16)[as.factor(res$kingdom)]
-ternaryplot(res[,1:3],
-            col=cols,
-            cex=.45,
-            pch=16, main="", dimnames=c("additive", "dominance", "epistatic"), 
-            dimnames_position="corner", grid=F)
-
-#just another option
-TernaryPlot(alab = "Additive", blab = "Dominance", clab = "Epistatic", main="")
-TernaryPoints(res[,1:3], col = cols, cex = .45, pch=pchs)
-
 
 round(res$add * 9)
 library(ggplot2)

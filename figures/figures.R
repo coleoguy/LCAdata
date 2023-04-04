@@ -178,7 +178,7 @@ legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""),
 ######### using only unique combo sp+pheno # within vs between ######### 
 dat <- read.csv("../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
-#dat <- dat[dat$species != "Zea mays, Zea diploperennis Iltis",]
+dat <- dat[dat$kingdom == "plant",]
 within <- sort(dat[dat$divergence == "within", 2])
 between <- sort(dat[dat$divergence == "between", 2])
 withinx <- seq(from=0, to=100, length.out=length(within))
