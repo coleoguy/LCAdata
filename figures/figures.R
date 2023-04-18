@@ -28,7 +28,6 @@ legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""),
 #dev.off()
 ######## plot for LH vs M ########
 
-
 ######### plot for plant vs animal ######### 
 pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf", 
     width = 5, 
@@ -58,7 +57,6 @@ legend("topleft", legend=c(paste("plant (n=", length(plantx),")", sep=""),
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
 dev.off()
 ######### plot for plant vs animal ######### 
-
 
 ######### plot for within vs between ######### 
 #pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/W_B.pdf", 
@@ -92,7 +90,6 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
 #dev.off()
 ######### plot for within vs between ######### 
-
 
 ######### plot for domestic vs wild vs lab #########
 pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/D_W.pdf", 
@@ -149,6 +146,9 @@ dev.off()
 ######### plot for domestic vs wild vs lab ######### 
 
 
+
+
+
 ######### using only unique combo sp+pheno # LH vs M ######### 
 dat <- read.csv("../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
@@ -178,7 +178,6 @@ legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""),
 ######### using only unique combo sp+pheno # within vs between ######### 
 dat <- read.csv("../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
-dat <- dat[dat$kingdom == "plant",]
 within <- sort(dat[dat$divergence == "within", 2])
 between <- sort(dat[dat$divergence == "between", 2])
 withinx <- seq(from=0, to=100, length.out=length(within))
@@ -195,6 +194,48 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
                            paste("between species (n=", length(betweenx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
 ######### using only unique combo sp+pheno # within vs between ######### 
+
+######### using only unique combo sp+pheno # within vs between animals only #########
+dat <- read.csv("../results/thinned.comp.csv")
+#dat <- dat[! is.na(dat$add),]
+dat <- dat[dat$kingdom == "animal",]
+within <- sort(dat[dat$divergence == "within", 2])
+between <- sort(dat[dat$divergence == "between", 2])
+withinx <- seq(from=0, to=100, length.out=length(within))
+betweenx <- seq(from=0, to=100, length.out=length(between))
+plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
+     xaxt="n", xlab="proportion of datasets analyzed",
+     ylab="proportion of trait divergence that is epistasic")
+axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
+lines(y=within, x=withinx, col= "#3F4788FF",lwd=3) #within
+lines(y=between, x=betweenx, col="#74D055FF",lwd=3) #between
+points(y=within, x=withinx, col="#3F4788FF",pch=16, cex=.9)
+points(y=between, x=betweenx, col="#74D055FF",pch=16, cex=.9)
+legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=""), 
+                           paste("between species (n=", length(betweenx),")", sep="")), 
+       fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
+######### using only unique combo sp+pheno # within vs between animals only #########
+
+######### using only unique combo sp+pheno # within vs between plants only #########
+dat <- read.csv("../results/thinned.comp.csv")
+#dat <- dat[! is.na(dat$add),]
+dat <- dat[dat$kingdom == "plant",]
+within <- sort(dat[dat$divergence == "within", 2])
+between <- sort(dat[dat$divergence == "between", 2])
+withinx <- seq(from=0, to=100, length.out=length(within))
+betweenx <- seq(from=0, to=100, length.out=length(between))
+plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
+     xaxt="n", xlab="proportion of datasets analyzed",
+     ylab="proportion of trait divergence that is epistasic")
+axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
+lines(y=within, x=withinx, col= "#3F4788FF",lwd=3) #within
+lines(y=between, x=betweenx, col="#74D055FF",lwd=3) #between
+points(y=within, x=withinx, col="#3F4788FF",pch=16, cex=.9)
+points(y=between, x=betweenx, col="#74D055FF",pch=16, cex=.9)
+legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=""), 
+                           paste("between species (n=", length(betweenx),")", sep="")), 
+       fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
+######### using only unique combo sp+pheno # within vs between plants only #########
 
 ######### using only unique combo sp+pheno # plant vs animal ######### 
 dat <- read.csv("../results/thinned.comp.csv")
@@ -218,89 +259,4 @@ legend("topleft", legend=c(paste("plant (n=", length(plantx),")", sep=""),
                            paste("animal (n=", length(animalx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
 ######### using only unique combo sp+pheno # plant vs animal #########
-
-
-
-
-
-
-
-
-
-
-
-
-
-#junk stuff after here, can prob trash
-######### junk plot to see difference in within vs between for various phenotypes ######### 
- # this only works well if there are results for the same phenotype in within AND between divergence
-dat <- read.csv("../results/complete.results.csv")
-dat <- dat[! is.na(dat$add),]
-dat <- dat[dat$trait =="number of fruit",]
-
-library(ggplot2)
-ggplot(dat, aes(divergence, epi)) + geom_point() + theme_bw() + 
-    theme(axis.line = element_line(color='black'), 
-          plot.background = element_blank(),
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank(),
-          panel.border = element_blank())
-
-######### plotting diverg x epi under different subsets ######### 
-
-dat <- read.csv("../results/complete.results.csv")
-dat <- dat[! is.na(dat$add),]
-# dat <- dat[grep("Zea", dat$species),]
-dat <- dat[dat$kingdom == "animal",]
-           
-dat <- dat[dat$method != "PSU",]
-
-
-#create binary column of 0 for 0% epi, 1 for >0% epi
-# dat$bin <- ifelse(dat$epi > 0, 1, 0)
-
-library(ggplot2)
-ggplot(dat, aes(class, epi)) + geom_jitter() + theme_bw() + 
-    theme(axis.line = element_line(color='black'), 
-          plot.background = element_blank(),
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank(),
-          panel.border = element_blank())
-
-
-mean(dat[dat$divergence == "within", 'epi'])
-mean(dat[dat$divergence == "between", 'epi'])
-
-nrow(dat[dat$divergence == "within",])
-nrow(dat[dat$divergence == "between",])
-
-
-######### plotting NA datasets ######### 
-# these are the datasets that did not meet initial criteria #
-dat <- read.csv("../results/trashthis.csv")
-dat <- dat[is.na(dat$add),]
-
-#dat <- dat[dat$method == "cmat",]
-
-
-#library(ggplot2)
-#ggplot(dat, aes(weighted)) + geom_violin() + theme_bw() + 
-#    theme(axis.line = element_line(color='black'), 
-#          plot.background = element_blank(),
-#          panel.grid.major = element_blank(),
-#          panel.grid.minor = element_blank(),
-#          panel.border = element_blank())
-
-
-
-
-dat <- dat[dat$species > 5,]
-
-
-
-
-
-
-
-
 
