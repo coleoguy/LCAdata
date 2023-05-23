@@ -33,10 +33,7 @@ plot(x=jitter(dat.psu$epi,20),
      ylab = "Full model proportion epistasis",
      pch=16,
      cex=1,
-     col= rgb(red = 63/255,
-              green = 71/255,
-              blue = 136/255,
-              alpha=0.5))
+     col= rgb(0,0,0,0.5))
 lines(x=c(0,1), y=c(0,1))
 text(0.2, 1, labels="R"^2 ~ "= 0.642")
 #legend(0.1, 1, "R"^2 ~ "= 0.642")

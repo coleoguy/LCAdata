@@ -29,9 +29,9 @@ legend("topleft", legend=c(paste("life history (n=", length(LHx),")", sep=""),
 ######## plot for LH vs M ########
 
 ######### plot for plant vs animal ######### 
-pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf", 
-    width = 5, 
-    height = 5)
+#pdf(file = "/Users/jorjaelliott/Desktop/Repositories/LCAdata/figures/P_A.pdf", 
+#    width = 5, 
+#    height = 5)
 dat <- read.csv("../results/complete.results.csv")
 dat <- dat[! is.na(dat$add),]
 # get just within species
@@ -55,7 +55,7 @@ points(y=animal, x=animalx, col="#74D055FF",pch=16, cex=.9)
 legend("topleft", legend=c(paste("plant (n=", length(plantx),")", sep=""), 
                            paste("animal (n=", length(animalx),")", sep="")), 
        fill=c("#3F4788FF", "#74D055FF"), cex=0.8, bty="n")
-dev.off()
+#dev.off()
 ######### plot for plant vs animal ######### 
 
 ######### plot for within vs between ######### 
