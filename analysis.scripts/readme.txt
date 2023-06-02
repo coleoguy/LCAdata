@@ -11,3 +11,7 @@ red_cohorts_offspring.R: this script runs LCA on the number of offspring T. cast
 Reduced.medel.analysis.R: this script runs the datasets that have parental sex known under both a complete and reduced model set. 
 
 reduced.result.munging.R: this script takes the results from the reduced.model.run.RData and munges them into the three genetic effects.  
+
+t_tests.R: this script runs a t test on two analyses: complete vs reduced number of cohorts in T. castaneum and full model set vs reduced model set analysis. 
+
+trait.table.R: this script creates a table of the phenotypes observed in this study, with their frequency and mean epistatic contribution to trait divergence across all datasets where that phenotype was observed. 

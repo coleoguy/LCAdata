@@ -1,0 +1,52 @@
+﻿add,dom,epi,file,refile,cohorts,class,kingdom,domestication,trait,species,SCS,divergence,weighted,method
+0.199624229,0,0.800375771,ban.inf.csv,ban.inf.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0.085764803,0.914235197,ban.osa.csv,ban.osa.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0.501560783,0.498439217,ban.sq.csv,ban.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0.390301302,0.609698698,bh.sq.csv,bh.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.357891049,0.136303503,0.505805448,col.ban.csv,col.ban.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+NA,NA,NA,cro.inf.csv,cro.inf.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.152555973,0.433069121,0.414374905,da.sq.csv,da.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0.55786764,0.44213236,dar.bho.csv,dar.bho.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.014411078,0.474854663,0.510734259,h-ba.sq.csv,h-ba.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0.381766104,0.618233896,h-ban.osa.csv,h-ban.osa.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.013682306,0.421339745,0.564977949,h-bh.sq.csv,h-bh.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.263975187,0.146388479,0.589636334,h-col.ban.csv,h-col.ban.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0,1,h-da.sq.csv,h-da.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0.595658158,0.404341842,h-dar.bho.csv,h-dar.bho.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+NA,NA,NA,h-nig.sing.csv,h-nig.sing.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.310031045,0,0.689968955,h-osa.col.csv,h-osa.col.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0,0,1,h-pm.sin.csv,h-pm.sin.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,within,Y,standard
+0.030551764,0.459757855,0.50969038,m-ba.sq.csv,m-ba.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0,0.452904086,0.547095914,m-bh.sq.csv,m-bh.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0.032413815,0.420919325,0.54666686,m-da.sq.csv,m-da.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0.33249707,0,0.66750293,nig.cro.csv,nig.cro.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0,0,1,nig.sing.csv,nig.sing.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0.250197238,0.402697961,0.347104801,osa.col.csv,osa.col.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0,0,1,per.inf.csv,per.inf.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0.05599825,0.551316764,0.392684986,per.sq.csv,per.sq.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+0,1,0,pm.sin.csv,pm.sin.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+NA,NA,NA,sin.cro.csv,sin.cro.csv,complete,LH,animal,lab,number of offspring,Tribolium castaneum,XY,between,Y,standard
+NA,NA,NA,trib29ban.inf.csv,trib29ban.inf.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.125,0.375,0.5,trib29ban.osa.csv,trib29ban.osa.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.094842829,0.45758284,0.44757433,trib29col.ban.csv,trib29col.ban.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,0,1,trib29cro.inf.csv,trib29cro.inf.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,0,1,trib29dar.bho.csv,trib29dar.bho.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.253548993,0,0.746451007,trib29nig.cro.csv,trib29nig.cro.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.110330584,0.430332287,0.459337129,trib29nig.sin.csv,trib29nig.sin.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,0.600000007,0.399999993,trib29osa.col.csv,trib29osa.col.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,0,1,trib29par.inf.csv,trib29par.inf.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,0.402425714,0.597574286,trib29per.san.csv,trib29per.san.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+1,0,0,trib29pin.sin.csv,trib29pin.sin.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.133236384,0,0.866763616,trib29sin.cro.csv,trib29sin.cro.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+NA,NA,NA,trib35ban.inf.csv,trib35ban.inf.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.125,0.375,0.5,trib35ban.osa.csv,trib35ban.osa.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,1,0,trib35col.ban.csv,trib35col.ban.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+1,0,0,trib35cro.inf.csv,trib35cro.inf.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0,0.576007104,0.423992896,trib35dar.bho.csv,trib35dar.bho.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.288765623,0,0.711234377,trib35nig.cro.csv,trib35nig.cro.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.277489127,0,0.722510873,trib35nig.sin.csv,trib35nig.sin.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.316517672,0,0.683482328,trib35osa.col.csv,trib35osa.col.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.075440718,0.384753537,0.539805745,trib35par.inf.csv,trib35par.inf.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+NA,NA,NA,trib35per.san.csv,trib35per.san.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+0.205489089,0.794510911,0,trib35pin.sin.csv,trib35pin.sin.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard
+1,0,0,trib35sin.cro.csv,trib35sin.cro.csv,complete,LH,animal,lab,percent of offspring deformed,Tribolium castaneum,XY,within,Y,standard

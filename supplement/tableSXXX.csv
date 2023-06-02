@@ -1,0 +1,212 @@
+Morphological Traits,Life History Traits
+% damage,% of eggs laid on mushrooms relative to tomatoes
+2.5% span length,100-seed weight
+"24 hour estimate, locomotor activity",20 year growth of survivors
+"4 hour estimate, locomotor activity",20 year survival
+"48 hour estimate, locomotor activity",activity
+60 day bodyweight in females,activity level
+60 day bodyweight in males,age of 1st reproduction
+abdominal length,average weight per fruit
+abdominal width,body weight day 0
+above ground biomass,body weight day 14
+acetylene reduced (nmoles/h),body weight day 21
+"acrophase, locomotor activity",body weight day 28
+"amplitude, locomotor activity",body weight day 35
+anthocyanin content,body weight day 42
+aphid survival,body weight day 49
+arachidic acid,body weight day 56
+ascorbic acid content,body weight day 63
+beak length,body weight day 7
+behenic acid,body weight day 70
+biomass tolerance,body weight day 77
+body depth,body weight day 84
+body length,boll number
+body shape,boll weight
+body weight,fecundity
+body width,fem develop time
+branches per panicle,female starvation resist
+bristle size,male develop time
+bundle strength (g/tex),male starvation resist
+female weight,condition factor
+male weight,days to 50% flowering
+calyx length,days to 50% silking
+canopy temp,days to anthesis
+canopy width,days to first flowering
+chlorophyll content,days to first fruit set
+coleoptile length,days to flower initiation
+condensed tannins,days to harvest
+corolla length,days to heading
+cotyledon area,days to maturity
+days taken to first lateral,days to physiological maturity
+diameter at breast height,days to red fruit
+dry matter content,days to ripe green fruit
+dry weight,days to silking
+ear diameter,development time
+ear height,development time with high food
+ear length,development time with high food/propionic acid
+eggshell color,development time with low food
+eicosenoic acid,difference in days between silking and pollen shedding
+eye-ball size,dispersal tendency
+eye-nostril distance,distance from stigma to anthers 
+fatty acid concentration,dry fodder yield
+Fe root concentration,early fecundity
+Fe shoot concentration,egg dispersal
+finger 1 length,egg number
+finger 3 length,egg size
+first siliqua height,egg survival
+flag-leaf angle,egg volume 
+flag-leaf area,eggs per plant
+flag-leaf duration,ejaculation
+flight time,emergence
+flower height,filled seeds/catkin
+flower length,first flowering
+flower width,fitness at high density of food
+fluctuating asymmetry,fitness at low density of food
+foot length,fruit bearing index
+fresh weight,fruit diameter
+front femur length,fruit length
+front femur width,fruit number
+fruit shape,fruit number per plant
+genital length,fruit number per plot
+gill raker length,fruit size
+gill raker number,fruit weight
+ginning percentage,fruit weight per plant
+glycoalkaloid content,fruit weight per plot
+grade index,fruit width
+grain iron content,fruit yield
+grain zinc content,fruit-size index
+gross viscosity,fusarium rot resistance
+head length,germination rate
+head width,germination success
+herbivore density,germination time
+hind femur length,grain weight
+internode length,grain yield 
+internode number,grain yield for late sowing
+iodine,grain yield for normal sowing
+K root concentration,grain yield per plant
+K shoot concentration,grains per panicle
+kernel rows per ears,growth rate
+kernels per row,growth rate length
+leaf area,growth rate mass
+leaf discoloration red-green,harvest index
+leaf length,harvesting time
+leaf length width ratio,hatching success high salinity
+leaf water potential,hatching success low salinity
+leaf weight,heading date
+leaf width,herbivore density
+leaves number,infection degree
+leaves per plant,infection index
+length of panicle,intromission
+lesion-diameter,kernel depth
+lesioned area,kernel weight
+lesions per cm,kernels per spike
+lesions per foliole,kernels per spikelet
+lesions per leaf,keyhole limpet hemocyanin
+lignoceric acid,latency period - disease
+linoleic acid,lifespan
+lint percent,"longevity, reared on bean"
+lint yield pp,"longevity, reared on chickpea"
+long chain fatty acids,maternal fitness
+lower corolla lobe length,mean stamen length
+lower corolla lobe width,mortality rate
+main stem length,mounting
+mesocotyl length,number of capsules
+micronaire value,number of catkins
+mid femur length,number of days from seeding to pollen shedding
+mineral matter,number of days from seeding to silking
+nicotine %,number of days taken to flower
+nitrogen fixation component,number of ears per plant
+nornicotine %,number of eggs hatched
+number of adventitious roots,number of eggs per unit body weight
+number of branches,number of females
+number of chaetigerous segments at sex change,number of flowering stems
+number of clusters per plant,number of flowers
+number of flower nodes,number of fruit
+number of flowering stalks,number of fruit per plant 
+number of lateral roots,number of fruits
+number of leasions,number of fruits per plant
+number of leaves,number of fry to 10 months
+number of mesocotyl roots,number of grains per spike
+number of mite gals,number of kernels
+number of nodes,number of kernels per row
+number of nodes above ear,number of locules
+number of nodes below ear,number of males
+number of nodes per main stem,number of offspring
+number of primary branches,number of ovules
+number of primary laterals,number of parthenocarpic fruits per plant of cumulative harvest
+number of red spots on the corolla,number of parthenocarpic fruits per plant of first harvest
+number of secondary branches,number of peduncles per plant
+number of secondary branches per plant,number of pods
+number of secondary roots,number of pods per plant
+number of spike bearing culms,number of racemes per plant
+number of spikes per plant,number of ramets produced before the flowering season
+number of tillers per plant,number of rows per ear
+oil concentration,number of seeds
+oleic acid,number of seeds per fruit
+orbit diameter,number of seeds per plant
+P root concentration,number of seeds per pod
+P shoot concentration,number of siliquae per plant
+palmictic acid,nursery survival at 6 months
+panicle length,nuzzling
+parotid gland length,ovariole number
+pedicel length,ovary length
+peduncle length,panicles per plant
+pelvic spine length,paternal fitness
+percent lesions,peak fecundity
+pericarp firmness,peanut bud necrosis incidence percent
+petiole length,percent grains per panicle
+photoperiod response to flowering date ,percent of offspring deformed
+plant height,percent survival
+plant size,pericarp thickness
+plant spread,pistil length
+plate number,plant height
+pod length,pod length
+polyphenol oxidase activity,pod weight
+precent defoliation,pod width
+primary branch number,pod yield
+pronotum width,proportion eggs on cowpea
+ratio of cutting weight,proportion of males
+reducing sugars,proportion of survivors reproductive
+residual variance in biomass tolerance,proportion that flowered
+root dry weight,proportion that set fruit
+root fractal,proportion viable pollen
+root fresh weight,running speed
+root length,seed height
+root weight,seed length
+seed color,seed per pod
+seed oil content,seed pod ratio
+seedling height,seed set
+segment 7 length,seed size
+segment 8 length,seed weight
+shelling percent,seed width
+shoot dry weight,seed yield
+shoot fresh weight,seed yield per plant
+shoot length,seed yield pp
+shoot weight,seeds per fruit
+skin reflectance,seeds per pod
+snout-vent length,sexual activity
+spike length,sperm length
+spikelets per spike,sperm receptacle length
+spine width,straw yield per plant
+stearic acid,style length
+stem fractal,survival
+stem weight,survival to eating high salinity
+sugar percent,survival to eating low salinity
+test weight,tassel length
+thorax length,time to find food
+thorax width,time to first feeding
+tibia length,time to germination 
+total alkaloids percent,viability
+total length,viability with high food
+total number of aphids,viability with high food/propionic acid
+total phenol content,viability with low food
+total soluble solids,yield
+total soluble sugars,yield per plant
+typanum diameter,yield per spike
+uniformity ratio,
+wing area,
+wing index score,
+wing length,
+wing size,
+Zn root concentration,
+Zn shoot concentration,
