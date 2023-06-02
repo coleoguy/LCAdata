@@ -19,7 +19,7 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
        fill=c(rgb(0.6, 0.2, 1),rgb(0.2, 0.8, 0.4)), cex=0.8, bty="n")
 ##### figure using thinned datasets #####
 
-##### figure using only animal datasets thinned#####
+##### figure using only animal datasets thinned##### -- saved for talks, not in paper
 dat <- read.csv("../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 dat <- dat[dat$kingdom == "animal",]
@@ -40,7 +40,7 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
        fill=c(rgb(0.6, 0.2, 1),rgb(0.2, 0.8, 0.4)), cex=0.8, bty="n")
 ##### figure using only animal datasets #####
 
-##### figure using only plant datasets thinned#####
+##### figure using only plant datasets thinned##### -- saved for talks, not in paper
 dat <- read.csv("../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 dat <- dat[dat$kingdom == "plant",]
