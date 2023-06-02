@@ -68,4 +68,6 @@ plot(density(null.dist), main="", xlab="mean difference in epistatic contributio
 polygon(density(null.dist), col=rgb(0.6, 0.2, 1, 0.1))
 abline(v=obs.diff,lwd=2,col=rgb(0.6, 0.2, 1))
 
+# Exported all at 5.5 x 4
+
 

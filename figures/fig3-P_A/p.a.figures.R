@@ -1,6 +1,6 @@
 #plant versus animal figures script
 ##### figure using only unique combinations of species-phenotype #####
-dat <- read.csv("../results/thinned.comp.csv")
+dat <- read.csv("../../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 # get just within species
 #dat <- dat[dat$divergence == "within",]
@@ -20,4 +20,5 @@ points(y=animal, x=animalx, col=rgb(0.6, 0.2, 1),pch=16, cex=.9)
 legend("topleft", legend=c(paste("plant (n=", length(plantx),")", sep=""), 
                            paste("animal (n=", length(animalx),")", sep="")), 
        fill=c(rgb(0.2, 0.8, 0.4),rgb(0.6, 0.2, 1)), cex=0.8, bty="n")
+# Exported at 5.5 x 4
 ##### figure using only unique combinations of species-phenotype #####

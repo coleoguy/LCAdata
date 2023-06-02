@@ -1,6 +1,6 @@
 #within-species versus between-species crosses figures script
 ##### figure using thinned datasets #####
-dat <- read.csv("../results/thinned.comp.csv")
+dat <- read.csv("../../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 within <- sort(dat[dat$divergence == "within", 2])
 between <- sort(dat[dat$divergence == "between", 2])
@@ -17,6 +17,7 @@ points(y=between, x=betweenx, col=rgb(0.2, 0.8, 0.4),pch=16, cex=.9)
 legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=""), 
                            paste("between species (n=", length(betweenx),")", sep="")), 
        fill=c(rgb(0.6, 0.2, 1),rgb(0.2, 0.8, 0.4)), cex=0.8, bty="n")
+# Exported at 5.5 x 4
 ##### figure using thinned datasets #####
 
 ##### figure using only animal datasets thinned##### -- saved for talks, not in paper
@@ -38,6 +39,8 @@ points(y=between, x=betweenx, col=rgb(0.2, 0.8, 0.4),pch=16, cex=.9)
 legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=""), 
                            paste("between species (n=", length(betweenx),")", sep="")), 
        fill=c(rgb(0.6, 0.2, 1),rgb(0.2, 0.8, 0.4)), cex=0.8, bty="n")
+# Exported at 5.5 x 4
+
 ##### figure using only animal datasets #####
 
 ##### figure using only plant datasets thinned##### -- saved for talks, not in paper

@@ -8,7 +8,7 @@
 library(SAGA2)
 ref <- read.csv("../all.data/ref.csv")
 ref <- ref[order(ref$new.file.name),]
-res <- list()
+res <- c()
 maximum.allowed <- 7
 data.files <- list.files("../all.data/data/")
 ## which(data.files != ref$new.file.name)
@@ -28,18 +28,18 @@ for(i in 910:length(data.files)){
   if(ref$data.type..standard..PSU..cmat[i] == "standard"){
     res[i] <- length(LCA(data=cur.dat,
                     SCS=ref[,5][i], parental="calc", env=FALSE,
-                    max.pars = max.pars, ret.all = F, messages=F)$best.eqns.w)
+                    max.pars = max.pars, ret.all = F, messages=F)$daicc)
   }  
   if(ref$data.type..standard..PSU..cmat[i] == "cmat"){
     cname <- ref$cmat..if.assigned.[which(ref$new.file.name == data.files[i])]
     cmat <- as.matrix(read.csv(paste("../all.data/cmat/", cname, sep = "")))
-    res[i] <- length(LCA(cur.dat, Cmatrix = cmat, messages=F)$best.eqns.w)
+    res[i] <- length(LCA(cur.dat, Cmatrix = cmat, messages=F)$daicc)
   }
   if(ref$data.type..standard..PSU..cmat[i] == "PSU"){
     keep.pars <- c("Aa","Ad","AaAa","AaAd","AdAd")
     res[i] <- length(LCA(data = cur.dat, parental = "calc",env = FALSE, 
                     max.pars = max.pars, ret.all = F, keep.pars = keep.pars,
-                    messages = F)$best.eqns.w)
+                    messages = F)$daicc)
   }
 }
 names(res) <- ref$new.file.name
