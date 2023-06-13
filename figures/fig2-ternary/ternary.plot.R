@@ -1,5 +1,5 @@
 library(Ternary)
-res <- read.csv("../results/complete.results.csv")
+res <- read.csv("../../results/complete.results.csv")
 res <- res[!is.na(res$epi),]
 res <- res[order(res$epi),]
 
