@@ -21,7 +21,7 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
 ##### figure using thinned datasets #####
 
 ##### figure using only animal datasets thinned##### -- saved for talks, not in paper
-dat <- read.csv("../results/thinned.comp.csv")
+dat <- read.csv("../../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 dat <- dat[dat$kingdom == "animal",]
 within <- sort(dat[dat$divergence == "within", 2])
@@ -44,7 +44,7 @@ legend("topleft", legend=c(paste("within species (n=", length(withinx),")", sep=
 ##### figure using only animal datasets #####
 
 ##### figure using only plant datasets thinned##### -- saved for talks, not in paper
-dat <- read.csv("../results/thinned.comp.csv")
+dat <- read.csv("../../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 dat <- dat[dat$kingdom == "plant",]
 within <- sort(dat[dat$divergence == "within", 2])

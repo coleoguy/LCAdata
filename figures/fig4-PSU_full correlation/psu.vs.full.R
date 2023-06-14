@@ -4,10 +4,10 @@
 #### LOAD IN DATA ####
 
 #PSU reduced dataset
-dat.psu <- read.csv("../results/reduced.results.csv")
+dat.psu <- read.csv("../../results/reduced.results.csv")
 
 #Non-PSU dataset
-dat <- read.csv("../results/complete.results.csv")
+dat <- read.csv("../../results/complete.results.csv")
 
 #### SUBSET TO JUST STANDARD AND CMAT ####
 
@@ -29,8 +29,8 @@ cairo_pdf(paste0("../figures/PSU_Fullcor.pdf"),
 
 plot(x=jitter(dat.psu$epi,20),
      y=jitter(dat$epi,20),
-     xlab = "PSU model proportion epistasis",
-     ylab = "Full model proportion epistasis",
+     xlab = "Reduced model set proportion epistasis",
+     ylab = "Full model set proportion epistasis",
      pch=16,
      cex=1,
      col= rgb(0,0,0,0.5))
