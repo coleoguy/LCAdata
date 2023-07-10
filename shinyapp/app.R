@@ -51,13 +51,7 @@ ui <- fluidPage(
                       choices = list("Weighted LSR" = "Y", 
                                      "Unweighted LSR" = "N",
                                      "All" = "all"), 
-                      selected = "all"),
-#          selectInput("method", label = h5("Method"), 
-#                      choices = list("Standard" = "standard", 
-#                                     "Cmatrix provided" = "cmat",
-#                                     "Parental Sex Unknown" = "PSU",
-#                                     "All" = "all"), 
-#                      selected = "all")
+                      selected = "all")
         ),
         mainPanel(
           
@@ -139,9 +133,6 @@ server <- function(input, output) {
         if(input$regress != "all"){
           x <- x[x$weighted == input$regress,]
         }
-#       if(input$method != "all"){
-#          x <- x[x$method == input$method,]
-#        }
         z <- as.numeric(input$colorby)
         states <- unique(x[, z])
 
@@ -183,7 +174,6 @@ server <- function(input, output) {
       if("Divergence time (MYA)" %in% input$table) x <- c(x, 8)
       if("Organism type" %in% input$table) x <- c(x, 9)
       if("Regression type" %in% input$table) x <- c(x, 10)
-#     if("Method" %in% input$table) x <- c(x, 11)
       if("Citation" %in% input$table) x <- c(x, 12)
       return(x)
     })

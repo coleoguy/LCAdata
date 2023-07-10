@@ -1,7 +1,7 @@
-ref <- read.csv("../all.data/ref.csv")
+ref <- read.csv("../../all.data/ref.csv")
 
 # Data that is only unique species-phenotype combinations
-thin <- read.csv("../results/thinned.comp.csv")
+thin <- read.csv("../../results/thinned.comp.csv")
 
 # Add div.time column to matching rows
 thin$div.time <- NA
@@ -16,7 +16,7 @@ thin_cleannew <- thin_clean[thin_clean$div.time != 0 & thin_clean$div.time != 26
 
 # Plot
 plot(y=(thin_cleannew$epi), x=thin_cleannew$div.time, 
-     ylab="proportion of trait divergence that is epistatic", 
-     xlab="divergence time", col=rgb(0.6, 0.2, 1, 0.5), pch=16)
+     ylab="proportion epistatic", 
+     xlab="divergence time (MY)", col=rgb(0.6, 0.2, 1, 0.5), pch=16)
 summary(lm(thin_cleannew$epi~thin_cleannew$div.time))
 

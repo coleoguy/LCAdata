@@ -30,7 +30,7 @@ withinx <- seq(from=0, to=100, length.out=length(within))
 betweenx <- seq(from=0, to=100, length.out=length(between))
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
-     ylab="proportion of trait divergence that is epistasic")
+     ylab="proportion epistasic")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
 lines(y=within, x=withinx, col= rgb(0.6, 0.2, 1),lwd=3) #within
 lines(y=between, x=betweenx, col=rgb(0.2, 0.8, 0.4),lwd=3) #between
@@ -53,7 +53,7 @@ withinx <- seq(from=0, to=100, length.out=length(within))
 betweenx <- seq(from=0, to=100, length.out=length(between))
 plot(0,0,col="white",xlim=c(0,100),ylim=c(0,1),
      xaxt="n", xlab="proportion of datasets analyzed",
-     ylab="proportion of trait divergence that is epistasic")
+     ylab="proportion epistasic")
 axis(side=1, at=c(0,50,100), c("0%","50%","100%"))
 lines(y=within, x=withinx, col= rgb(0.6, 0.2, 1),lwd=3) #within
 lines(y=between, x=betweenx, col=rgb(0.2, 0.8, 0.4),lwd=3) #between
