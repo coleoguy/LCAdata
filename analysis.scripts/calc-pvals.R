@@ -27,8 +27,7 @@ obs.diff <- mean(lh) - mean(mo)
 null.dist <- c()
 for(i in 1:10000){
   keys <- sample(res2$class) == "LH"
-  null.dist[i] <- mean(res2$epi[keys]) - 
-    mean(res2$epi[!keys])
+  null.dist[i] <- mean(res2$epi[keys]) - mean(res2$epi[!keys])
 }
 plot(density(null.dist), main="", xlab="mean difference in epistatic contribution 
      (LH-M)", ylab="density", xlim=c(-0.15,0.15))
@@ -116,7 +115,7 @@ for(i in 1:10000){
 plot(density(null.dist), main="", xlab="mean difference in epistatic contribution", ylab="density", xlim=c(-0.15,0.15))
 polygon(density(null.dist), col=rgb(0.6, 0.2, 1, 0.1))
 abline(v=obs.diff,lwd=2,col=rgb(0.6, 0.2, 1))
-sum(null.dist>=obs.diff)/10000
+sum(null.dist<=obs.diff)/10000
 table(res2$class[res2$kingdom=="plant"])
 table(res2$class[res2$kingdom=="animal"])
 
