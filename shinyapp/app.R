@@ -60,28 +60,38 @@ ui <- fluidPage(
             tabPanel("Information", div(HTML("
 <br>
 <br>
-Since the 1930s, scientists have debated the importance of 
-epistatic gene action relative to additive gene action in trait divergence. Previous studies have been limited in the number of datasets for which
-they are able to accurately quantify epistatic effects. In an effort to resolve this debate, we have conducted an extensive literature search, 
-as well as generate several of our own datasets, allowing us to quantify the composite genetic effects that underlie trait
-divergence across the tree of life. This database houses over 1600 datasets sourced from 130 publications, allowing viewers to 
-visualize the effect of epistasis on a range of organisms and phenotypes. In the plot tab, you can select the data you wish to 
-color the base plot by, then select options to subset the data further. In the table tab, you can customize a table to include any 
-of the listed parameters and use the download button to retrieve a CSV file containing the selected data. Each dataset can also be downloaded by clicking
-the hyperlink file name in the last column. In the citations tab, you can see all of the complete citations used in the literature search.
+Since the 1930s, scientists have debated the importance of epistatic gene action 
+relative to additive gene action in trait divergence. Previous studies have been 
+limited in the number of datasets for which they can accurately quantify epistatic 
+effects. To resolve this debate, we have conducted an extensive literature search 
+and generated several datasets, allowing us to quantify the composite genetic effects 
+that underlie trait divergence across the tree of life. This database houses over 
+1,600 datasets from 130 publications, allowing viewers to visualize the effect of 
+epistasis on a range of organisms and phenotypes. In the plot tab, you can select 
+the data you wish to color the base plot, then select options to further subset 
+the data. In the table tab, you can customize a table to include any listed 
+parameters. Each dataset can be downloaded by clicking the hyperlink file 
+name in the last column. You can see all of the complete citations used in the 
+literature search in the citations tab.
 <br>
 <br>
 <b>Submitting Data:</b> If you are aware of any available records that should be added to the database, please email us and we will incorporate the missing data.
-<a href='mailto:jorjaelliott@tamu.edu'>Contact Us</a><br>
+<a href='mailto:blackmon@tamu.edu'>Contact Us</a><br>
 <br>
 Data taken from the database must not be reproduced in published lists, online databases, or other
 formats, nor redistributed without permission. The information in this database is provided
 solely for personal and academic use, and must not be used for the purposes of financial gain.
-
 <br>
 <br>
-
-Current version of the database is 0.1 last updated 21 March 2023."), style = "font-size:100%")),
+<b>The database should be cited as follows:</b>
+<br>
+<a href='XXXX' target='_blank'> Elliott, Jorja, Maximos Chin, Brian E. Fontenot, 
+Sabyasachi Mandal, Thomas D. McKnight, Jeffery P. Demuth, Heath Blackmon, 
+Wright was Right: Analysis of over one thousand datasets supports the critical 
+role of epistasis in genetics and evolution. XXX</a>
+<br>
+<br>
+Current version of the database is 1.0 last updated 14 July 2023."), style = "font-size:100%")),
             
             
             tabPanel("Plot",plotOutput("distPlot")),
@@ -99,12 +109,14 @@ Current version of the database is 0.1 last updated 21 March 2023."), style = "f
                                                     "Citation"),
                                         selected = c("Organism", "Phenotype", "Citation"),
                                         inline = T),
-                     downloadButton("downloadData", "Download table"), tableOutput("table")),
+#                     downloadButton("downloadData", "Download table"), 
+                     tableOutput("table")),
             tabPanel("Citations", div(tableOutput("citTable"), style = "font-size:80%"))
-          )
-        )
-    )
-)
+))))
+          
+        
+    
+
 
 
 
@@ -188,11 +200,11 @@ server <- function(input, output) {
       
 
       
-    output$downloadData <- downloadHandler(
-      filename = paste("epistasis", Sys.Date(), ".csv", sep=""),
-      content = function(file) {
-        write.csv(x[,ref.table()], file, row.names = FALSE)
-      })
+#    output$downloadData <- downloadHandler(
+#      filename = paste("epistasis", Sys.Date(), ".csv", sep=""),
+#      content = function(file) {
+#        write.csv(x[,ref.table()], file, row.names = FALSE)
+#      })
     output$citTable <- renderTable(cit.table,
                                    na = "",
                                    striped = T)
