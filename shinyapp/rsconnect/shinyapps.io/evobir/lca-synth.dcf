@@ -1,0 +1,13 @@
+name: lca-synth
+title: lca-synth
+username:
+account: evobir
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8645133
+bundleId: 7445627
+url: https://evobir.shinyapps.io/lca-synth/
+when: 1689106026.01175
+lastSyncTime: 1689106026.01176
+asMultiple: FALSE
+asStatic: FALSE
