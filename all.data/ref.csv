@@ -1364,7 +1364,7 @@ file 15 .csv,sin.cro.csv,Tribolium castaneum,number of offspring,XY,LH,animal,wi
 ,thorax.len18.csv,Drosophila hibisci,thorax length,XY,M,animal,within,0,lab,Y,,standard,,Starmer et al. 1998,,,,,,,,,,,
 ,thorax.len21.csv,Drosophila hibisci,thorax length,XY,M,animal,within,0,lab,Y,,standard,,Starmer et al. 1998,,,,,,,,,,,
 ,thorax.len25.csv,Drosophila hibisci,thorax length,XY,M,animal,within,0,lab,Y,,cmat,cmat.starmer.csv,Starmer et al. 1998,,,,,,,,,,,
-,thous.grainwt.csv,bread wheat,grain weight,NSC,LH,plant,within,0,domestic,N,,PSU,,"G. Singh, Bhullar, and Gill 1986",,,,,,,,,,,
+,thous.grainwt.csv,Triticum aestivum,grain weight,NSC,LH,plant,within,0,domestic,N,,PSU,,"G. Singh, Bhullar, and Gill 1986",,,,,,,,,,,
 ,thous.seedwt.csv,Brassica juncea,seed weight,NSC,LH,plant,within,0,domestic,N,,standard,,Sachan and Singh 1986,,,,,,,,,,,
 ,tiller.hi25sp.csv,"Zea mays, Zea diploperennis Iltis",number of tillers per plant,NSC,M,plant,between,2.69,domestic,N,,PSU,,"Srinivasan and Brewbaker, 1999",,,,,,,,,,,
 ,tiller.hi25su.csv,"Zea mays, Zea diploperennis Iltis",number of tillers per plant,NSC,M,plant,between,2.69,domestic,N,,PSU,,"Srinivasan and Brewbaker, 1999",,,,,,,,,,,
