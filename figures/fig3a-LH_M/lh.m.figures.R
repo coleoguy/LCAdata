@@ -1,6 +1,6 @@
 #Life history versus morphological traits figure script
 ######## figure using only unique combinations of species-phenotype#######
-dat <- read.csv("../../results/thinned.comp.csv")
+dat <- read.csv("../results/thinned.comp.csv")
 #dat <- dat[! is.na(dat$add),]
 # get just within species
 # dat <- dat[dat$divergence == "within",]
