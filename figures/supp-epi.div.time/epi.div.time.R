@@ -1,7 +1,7 @@
-ref <- read.csv("../../all.data/ref.csv")
+ref <- read.csv("../all.data/ref.csv")
 
 # Data that is only unique species-phenotype combinations
-thin <- read.csv("../../results/thinned.comp.csv")
+thin <- read.csv("../results/thinned.comp.csv")
 
 # Add div.time column to matching rows
 thin$div.time <- NA
