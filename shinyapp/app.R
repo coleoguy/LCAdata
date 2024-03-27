@@ -85,10 +85,10 @@ solely for personal and academic use, and must not be used for the purposes of f
 <br>
 <b>The database should be cited as follows:</b>
 <br>
-<a href='XXXX' target='_blank'> Elliott, Jorja, Maximos Chin, Brian E. Fontenot, 
-Sabyasachi Mandal, Thomas D. McKnight, Jeffery P. Demuth, Heath Blackmon, 
-Wright was Right: Analysis of over one thousand datasets supports the critical 
-role of epistasis in genetics and evolution. XXX</a>
+<a href='https://doi.org/10.1093/evolut/qpae003' target='_blank'> Jorja Burch, Maximos Chin, Brian E. Fontenot, 
+Sabyasachi Mandal, Thomas D. McKnight, Jeffery P. Demuth, Heath Blackmon. (2024). 
+Wright was Right: leveraging old data and new methods to illustrate the critical 
+role of epistasis in genetics and evolution. Evolution, 78(4), 624-634. </a>
 <br>
 <br>
 Current version of the database is 1.0 last updated 14 July 2023."), style = "font-size:100%")),
